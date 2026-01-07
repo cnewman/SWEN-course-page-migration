@@ -13,4 +13,8 @@ term = ["HTML"]
 page = ["HTML"]
 
 [markup.goldmark.renderer]
-  unsafe = true
+unsafe = true
+
+[params]
+Logo ='se-logo.png'
+LogoLink = 'https://www.rit.edu/computing/department-software-engineering'

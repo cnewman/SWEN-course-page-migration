@@ -1,15 +1,20 @@
 {{ $menuSection := default "docs" .Site.Params.MenuSection  }}
+{{ $logoLink := default .Site.Home.RelPermalink .Site.Params.LogoLink}}
 
 <aside class="menu">
     <div class="menu-content">
         <nav>
             <h2 class="brand">
-                <a class="flex align-center" href="{{ .Site.Home.RelPermalink }}">
+                <div class="flex align-center">
                     {{- with .Site.Params.Logo -}}
-                    <img src="{{ . | relURL }}" alt="Logo" />
+                        <a href="{{ $logoLink }}">
+                            <img src="{{ . | relURL }}" alt="Logo" />
+                        </a>
                     {{- end -}}
-                    <span>{{ .Site.Title }}</span>
-                </a>
+                    <a href="{{ .Site.Home.RelPermalink }}">
+                        <span>{{ .Site.Title }}</span>
+                    </a>
+                </div>
             </h2>
             {{ with .Site.GetPage $menuSection }}
                 {{ template "section" (dict "Section" . "CurrentPage" $) }}

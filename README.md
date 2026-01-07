@@ -12,7 +12,7 @@ hugo new content topics/new-topic.md --kind topic
 
 The above example will create a content file called `new-topic.md` in the `content/topics` directory using the site's `topic.md` archetype. Omitting `--kind topic` from the command will create the content file using the Book theme's default archetype instead
 
-## Testing and Deployment
+## Testing
 
 Hugo uses a series of layouts and content markdown files to create web pages. In order to see what the website looks like, you will need to have Hugo build the site on a local server. You can use either of the following console commands to build and start the server, run from indside the site's directory within the repo. Note that Windows user should not run commands in Command Prompt or Windows PowerShell.
 
@@ -25,13 +25,16 @@ hugo server --buildDrafts
 ```
 
 This will start a server that includes content that is flagged as a draft. If you don't want to include draft content, use `hugo server` instead.
-In order to create the public facing web pages from the Hugo files, run the following command.<br>
 
-```
-hugo --cleanDestinationDir
-```
+## Site Navigation
 
-This will build, but not deploy, the site. Before building Hugo will delete any files from a previous build, ensuring the new build does not include outdated or draft content.
+The site will automatically create a table-of-contents style navigation mention on the left side of the page based on the filestructutre of the `content` directory. Content files located in `content/docs` will be included in the menu, and the menu will reflect the structure of the `docs` directory (including subdirectories). The content of `docs` will be the first level of the menu, while the content of subdirectories will be subsequent levels.
+
+Note: subdirectories need an _index.md file containing a title in the frontmatter, but do not require any content. Adding content to these _index.md files will make that part of the menu a clickle link, otherwise it will just be a title with other content pages in that directory underneath it.
+
+### Page Navigation
+
+The site will also create a table-of-contents for each page using the second and third level headings of the markdown. This table of contents is on by default, and pages that do not need it (or need to turn it off for extra horizontal space) should add `ToC: false` to their frontmatter.
 
 ## Hugo Components
 
@@ -59,7 +62,7 @@ Internal resource files, such as .pptx files or images, will be stored in Hugo�
 
 Shortcodes allow small reusable sections of html to be included in a markdown file, and are mostly be provided by the book theme. See the Theme subsection for more shortcodes from the book theme.
 
-There are currently two shortcodes available in the site template: flex-table and snippet
+There are currently 7 shortcodes available in the site template: flex-table and snippet
 
 #### flex-table
 
@@ -78,6 +81,93 @@ This shortcode allows you to create a table using a normal markdown list. The ta
 
 * headings="x;y;z"
 
+#### cell-color
+
+This will color the background of a cell in the flextable shortcode, and accepts any valid css value for `background-color`.
+
+It should be used in-line with the content of the cell:
+
+```markdown
+- * normal cell
+  * {{% cell-color color="rgba(0, 0, 255, .5)" %}}blue cell with tranparency{{% /cell-color %}}
+  * normal cell
+  * {{% cell-color color:"red" %}}red cell without transparency{{% /cell-color %}}
+```
+
+#### columns
+
+This shortcode will organize a list of content into up to 3 columns
+
+```markdown
+{{% columns %}}
+- left
+
+- middle
+
+- right
+{{% /columns %}}
+```
+
+#### hint
+
+Creates a hint/notification block to display content
+
+```
+{{% hint warning %}}
+content goes here
+{{% /hint %}}
+```
+
+there are 5 colors for hint blocks: info (blue), success (green), warning (yellow), danger (red), important (purple)
+
+#### snippet
+
+This shortcode allows you to reuse text across multiple pages. Put the reused content in a markdown file inside the site's `assets` folder, then call the snippet shortcode where the content needs to go.
+
+For example, if you have two pieces of reusable content in `assets/snippets`:
+
+```markdown
+# Title
+
+## Section 1
+
+{{% snippet src="snippets/reusable-A.md" %}}
+
+## Section 2
+
+some page-specific content
+
+## Section 3
+
+{{% snippet src="snippets/reusable-B.md" %}}
+```
+
+#### steps
+
+This sortcode styles an ordered list so that the numbers on the list are connected to help keep larger step-by-step instructions organized
+
+```markdown
+{{% steps %}}
+1. step 1
+
+2. step 2
+
+3. step 3
+{{% /steps %}}
+```
+
+#### card
+
+Adds a border around the inner content, and can optionally act as a link by using the `href` parameter
+
+```markdown
+{{% card %}}
+some content inside a border
+{{% /card %}}
+```
+
+**Note:** the card shortcode can behave inconsistently when it is inside of another shortcode
+
 ### Theme
 
 We are currently using a slimmed down version of the Book theme (found [here](https://github.com/alex-shpak/hugo-book)), which consists of just the normal layout and relevant CSS.
@@ -88,14 +178,14 @@ The site’s files will be divided between the site’s main directories and the
 
 * Archetypes: 610/archetypes
 * Content: 610/content
-    * pages included in the site navigation menu will be in the /docs subdirectory.
+    * pages included in the ToC-style site navigation menu will be in the /docs subdirectory.
     * other content pages will be in their own subdirectories such as /assignments
 * Resource Files: 610/static or 610/assets
 * CSS: 610/assets/scss
 * Resuable Content: 610/assets/snippets
 * Layouts: 610/layouts
 * Partials: 610/layouts/partials
-* Shortcodes: 610layouts/shortcodes
+* Shortcodes: 610/layouts/shortcodes
 
 ## Migration
 
