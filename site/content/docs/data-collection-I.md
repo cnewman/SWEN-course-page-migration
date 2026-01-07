@@ -9,17 +9,21 @@ bookSearchExclude: false
 draft: true
 ---
 
-## Data Collection I: Software Artifacts
+# STRATA — DC1: Software Artifacts Mining (Data Collection I)
 
 **Mode:** Test-driven assignment — your **tests** and **test data seeds** *are* the requirements.
 
 **Builds on:** DC0 (working Postgres, GitPython, pytest, CI). You will merge the DC1 branch into your DC0 repository and extend it.
 
-### Goal
+---
+
+## Goal
 
 Build an **idempotent** miner that walks a Git repository’s history and stores commit-, parent-, and file-level facts in Postgres, with **provenance** recorded for each run and **validation** of key invariants.
 
-### Learning Outcomes
+---
+
+## Learning Outcomes
 
 1. **Mining:** Extract commit history and file-level change data from Git using GitPython.
 2. **Storage:** Normalize and store data in Postgres with appropriate keys and indexes.
@@ -27,10 +31,12 @@ Build an **idempotent** miner that walks a Git repository’s history and stores
 4. **Idempotent ETL & Reproducibility:** Re-running the miner does not duplicate data; justify schema/constraints that enable this.
 5. **Provenance & Validation:** Record provenance of each run and verify invariants (counts/parents) programmatically.
 
-### What You Will Implement
+---
+
+## What You Will Implement
 
 - `mine_history(repo_path: str, max_commits: Optional[int] = None) -> int`
-  - Walk `HEAD` ancestry and write:
+  - Walk `HEAD` ancestry and write to the `DB`:
     - `commits(commit_hash UNIQUE, author_name, message, commit_ts)`
     - `commit_parents(commit_id, parent_hash)`
     - `commit_stats(commit_id, files_changed, insertions, deletions)`
@@ -38,11 +44,11 @@ Build an **idempotent** miner that walks a Git repository’s history and stores
   - Record a `run_log(repo_path, head_hash, commit_count, started_at DEFAULT now())` row.
 - `validate_invariants() -> (n_commits, n_stats, n_orphan_parents)`
 
-**Idempotency** is enforced by a **UNIQUE** index on `commits(commit_hash)` and a **UNIQUE** index on `commit_files(commit_id, file_path)` together with `ON CONFLICT DO NOTHING` during inserts.
+> **Idempotency** shoudl be enforced by a **UNIQUE** index on `commits(commit_hash)` and a **UNIQUE** index on `commit_files(commit_id, file_path)` together with `ON CONFLICT DO NOTHING` during inserts.
 
-### Required Schema
+---
 
-same as DC0 + additions
+## Repository Layout (same as DC0 + additions)
 
 ```
 .
@@ -60,7 +66,9 @@ same as DC0 + additions
    └─ db.yml
 ```
 
-### Test Data Seeds
+---
+
+## Test Data Seeds (You Create These In Tests)
 
 Create small, deterministic Git repositories **on the fly** in tests (temporary directories) to seed scenarios:
 
@@ -79,16 +87,18 @@ Create small, deterministic Git repositories **on the fly** in tests (temporary 
 
 > All seeds must set `user.name` and `user.email` in the test repo config to avoid identity errors.
 
-### Test Case Sketches
+---
+
+## Test Case Sketches (You Write These Tests)
 
 Treat each sketch as an acceptance criterion. Name tests clearly and keep them small.
 
-#### A. Head-mining compatibility (DC0 continuity)
+### A. Head-mining compatibility (DC0 continuity)
 - **Given** the two-commit seed repo
 - **When** calling `mine_and_store(temp_repo)`
 - **Then** one row exists in `commits` whose `commit_hash` matches `HEAD` and `author_name` is the configured value.
 
-#### B. Full-history mining populates stats and files
+### B. Full-history mining populates stats and files
 - **Given** the two-commit seed repo
 - **When** calling `mine_history(temp_repo)`
 - **Then**
@@ -96,12 +106,12 @@ Treat each sketch as an acceptance criterion. Name tests clearly and keep them s
   - `COUNT(commit_stats) == COUNT(commits)`
   - `commit_files` has at least one row for `hello.txt` with non-negative `additions` and `deletions`.
 
-#### C. Idempotent ETL (must not duplicate on re-run)
+### C. Idempotent ETL (must not duplicate on re-run)
 - **Given** the two-commit seed repo
 - **When** calling `mine_history(temp_repo)` twice
 - **Then** the counts for `commits`, `commit_stats`, and `commit_files` are unchanged between runs.
 
-#### D. Provenance recorded in run_log
+### D. Provenance recorded in run_log
 - **Given** the two-commit seed repo
 - **When** calling `mine_history(temp_repo, record_run=True)`
 - **Then** a `run_log` row exists whose:
@@ -109,20 +119,20 @@ Treat each sketch as an acceptance criterion. Name tests clearly and keep them s
   - `head_hash` equals the latest `commits.commit_hash` (HEAD),
   - `commit_count` equals the returned traversal count.
 
-#### E. Validation invariants
+### E. Validation invariants
 - **Given** any mined repo (≥ 2 commits)
 - **When** calling `validate_invariants()`
 - **Then**
   - `n_stats == n_commits`
   - `n_orphan_parents == 0`
 
-#### F. (Optional) File rename/new-file path
+### F. (Optional) File rename/new-file path
 - **Given** a third commit renaming `hello.txt` → `greetings.txt` (or adding a new file)
 - **Then** `commit_files` includes appropriate `file_path` rows and a reasonable `change_type` (best-effort).
 
-### Required SQL Constraints
+---
 
-Put These In `schema.sql`
+## Required SQL Constraints (Put These In `schema.sql`)
 
 - `UNIQUE(commits.commit_hash)`
 - `UNIQUE(commit_files.commit_id, commit_files.file_path)`
@@ -133,7 +143,9 @@ Put These In `schema.sql`
 
 > Your tests should **fail** if these integrity guarantees are missing (duplicates on re-run).
 
-### Commands
+---
+
+## Commands
 
 - Initialize schema:
   ```bash
@@ -148,7 +160,9 @@ Put These In `schema.sql`
   pytest -q
   ```
 
-### Deliverables
+---
+
+## Deliverables
 
 1. Updated `schema.sql`, `git_miner.py`, and tests under `tests/`.
 2. A README section titled **Idempotency & Invariants** that explains:
@@ -158,7 +172,9 @@ Put These In `schema.sql`
    - `top_commits_by_churn.sql` — `insertions + deletions`, top 5.
    - `most_changed_files.sql` — files with most commits touching them, top 5.
 
-### Grading Outline
+---
+
+## Grading Outline (no points shown)
 
 - **Schema & Constraints:** correct keys, uniqueness, and helpful indexes.
 - **Miner Correctness:** commits, parents, stats, files inserted as specified.
@@ -168,14 +184,10 @@ Put These In `schema.sql`
 - **Code Quality:** function boundaries, clear names, comments where they help.
 - **Queries:** both analytics queries run and return sensible results.
 
-### Hints
+---
+
+## Hints
 
 - Wrap best-effort diffs in `try/except` and still record stats.
 - Favor small, focused tests over monoliths.
 - Use `ON CONFLICT DO NOTHING` with your UNIQUE indexes to keep re-runs clean.
-
-### Stretch Goals (Optional)
-
-- CLI wrapper (`python -m src.cli mine --repo PATH --max-commits N`).
-- Author emails and timezone-aware timestamps.
-- Branch tips table, branch-aware mining.

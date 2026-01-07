@@ -17,70 +17,63 @@ draft: true
 - * 1
   * Thinking Like a Data-Driven Engineer
   * * Scientific thinking
-    * research vs. development
-    * pipelines as the unit of work
+    * Research vs. development
+    * Pipelines as the unit of work
 
 - * 2
   * [Data Collection I: Software Artifacts](/docs/data-collection-i)
   * * Mining repos
-    * static/dynamic data
-    * scripting/APIs
+    * Static/dynamic data
+    * Scripting/APIs
 
 - * 3
   * [Data Collection II: Ecosystem Artifacts](/docs/data-collection-ii)
   * * Issues/PRs, CI logs, releases
-    * ID unification
-    * lineage
+    * Idempotency
+    * Lineage
 
 - * 4
   * Data Integrity I: Unstructured Qualitative Data
   * Logs & free text:
-    * templating
-    * tokenization
-    * PII scrubbing
-    * JSONL schemas
-    * normalization
+    * Templating
+    * Tokenization
+    * Normalization
 
 - * 5
   * Data Integrity II: Sampling & Bias
   * * Sampling frames
-    * representativeness
-    * temporal splits
-    * leakage checks
-    * seeds
+    * Representativeness
+    * Leakage checks
+    * Seeds & Reproducibility
 
 - * 6
   * Data Analysis I: Code Structure via AST (srcML)
   * * srcML XML AST
-    * traverse files/classes/methods/calls
-    * compute structural features
-    * join to text/log tables
+    * Traverse files/classes/methods/calls
+    * Compute structural features
+    * Join to text/log tables
 
 - * 7
   * Data Analysis II: Exploratory Data Analysis
   * * Correlation
-    * clustering previews
-    * visualization
-    * reproducible notebooks
+    * Clustering previews
+    * Visualization
 
 - * 8
-  * Modeling I: Prediction
+  * Modeling: Prediction
   * * Regression/classification
-    * baselines
-    * feature engineering
-    * transparency
+    * Feature engineering
 
 - * 9
-  * Modeling II: Infrastructure & Scaling
-  * * Pipelines
-    * experiment tracking
-    * MLflow/DVC basics
+  * Evaluation
+  * * Precision/Recall/F1
+    * Overfitting/Underfitting
 
 - * 10
-  * Modeling III: Evaluation
-  * * Precision/recall
-    * overfitting
-    * robustness checks
+  * Choose a Project
+  * * Human Subjects Research
+    * Empirical Studies
+    * Sample Studies
 
 - * 11
   * Experimental Design & Causality
@@ -91,13 +84,12 @@ draft: true
 - * 12
   * Evaluating Tools & Techniques
   * * Benchmarks
-    * accuracy metrics
-    * SE tool studies
+    * Types of Validity
 
 - * 13
   * Operationalizing Research
-  * * Reproducibility at scale
-    * automation
+  * * Reproducibility
+    * Automation
     * DevOps for research
 
 - * 14

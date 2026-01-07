@@ -110,9 +110,6 @@ ci_jobs(
   UNIQUE(provider, repo, job_id)
 )
 
--- helpful indexes
-CREATE INDEX IF NOT EXISTS idx_pipeline_sha ON ci_pipelines(sha);
-CREATE INDEX IF NOT EXISTS idx_jobs_pipeline_id ON ci_jobs(provider, repo, pipeline_id);
 ```
 
 ### Test Data Seeds
