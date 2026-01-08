@@ -47,7 +47,9 @@ draft: true
     * Normalization
 
 - * 5
-  * Data Integrity II: Sampling & Bias
+  * [Data Integrity II: Sampling & Bias](https://docs.google.com/presentation/d/13lwwVIbB0t-3j4q9yj2Rtfv60--E0m50IrBskZ4HzzM/edit?usp=sharing)
+    * [DI2](/docs/data-integrity-ii)
+    * [Paper](/papers/newman_closed_category.pdf)
   * * Sampling frames
     * Representativeness
     * Leakage checks
