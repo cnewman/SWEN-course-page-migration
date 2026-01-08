@@ -18,3 +18,9 @@ unsafe = true
 [params]
 Logo ='se-logo.png'
 LogoLink = 'https://www.rit.edu/computing/department-software-engineering'
+
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [["$$", "$$"], ["\\[", "\\]"]]
+inline = [["\\(", "\\)"]]

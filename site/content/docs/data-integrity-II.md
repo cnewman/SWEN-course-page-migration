@@ -6,6 +6,7 @@ weight: 3
 bookToC: true
 bookSearchExclude: false
 
+math: true
 draft: true
 ---
 
@@ -51,39 +52,39 @@ Students are not expected to derive these formulas from first principles, but yo
 
   $$n_0 = \frac{z^2 \; p (1-p)}{E^2}$$
 
-  - $p$: a guess for the population proportion (when unknown, use $p=0.5$ for the most conservative / largest $n$).
-  - $E$: desired margin of error (e.g., $0.05$ for ±5 percentage points).
-  - $z$: z-score for the desired confidence level (1.96 for 95%).
+  - `p`: a guess for the population proportion (when unknown, use `p=0.5` for the most conservative / largest `n`).
+  - `E`: desired margin of error (e.g., `0.05` for ±5 percentage points).
+  - `z`: z-score for the desired confidence level (1.96 for 95%).
 
 2) Finite population correction (FPC):
 
-  When the population size $N$ is not huge compared to $n_0$, apply the FPC to get a reduced required sample:
+  When the population size `N` is not huge compared to `n_0`, apply the FPC to get a reduced required sample:
 
   $$n = \frac{n_0}{1 + (n_0 - 1) / N}$$
 
-  Finally, round up (ceiling) to an integer and cap at $N$.
+  Finally, round up (ceiling) to an integer and cap at `N`.
 
 3) Mean sample size (known/assumed $\sigma$):
 
-  To estimate a population mean with known/assumed standard deviation $\sigma$ the analogous formula is:
+  To estimate a population mean with known/assumed standard deviation `σ` the analogous formula is:
 
   $$n_0 = \frac{z^2 \; \sigma^2}{E^2}$$
 
-  Apply the same FPC as above when $N$ is provided.
+  Apply the same FPC as above when `N` is provided.
 
 4) Stratified sampling notes:
 
   - Stratified sampling splits the population into disjoint strata (groups) and samples within each group. This reduces variance when the strata are internally homogeneous.
-  - Two common strategies are (a) equal allocation (same $n$ per stratum) and (b) proportional allocation (sample fraction proportional to stratum size). Both are supported by the `sample_stratified` function via `n` or `frac`.
+  - Two common strategies are (a) equal allocation (same `n` per stratum) and (b) proportional allocation (sample fraction proportional to stratum size). Both are supported by the `sample_stratified` function via `n` or `frac`.
 
 5) Systematic sampling notes:
 
   - Systematic sampling picks a random start in the first `step` items and then selects every `step`-th item. If the list is large and roughly randomly ordered, this approximates uniform sampling but is cheaper to implement in streaming contexts.
 
 Practical tips:
- - Use $p=0.5$ when in doubt for proportions; it produces the largest (most conservative) required $n$.
- - When strata sizes are very small, don't force a fixed $n$ per stratum; instead sample up to the available members.
- - Document your assumptions (confidence level, margin, $p$ or $\sigma$, and whether you used FPC) when reporting sample sizes.
+ - Use `p=0.5` when in doubt for proportions; it produces the largest (most conservative) required `n`.
+ - When strata sizes are very small, don't force a fixed `n` per stratum; instead sample up to the available members.
+ - Document your assumptions (confidence level, margin, `p` or `σ`, and whether you used FPC) when reporting sample sizes.
 
 ## Test seeds and acceptance criteria
 

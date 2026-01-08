@@ -4,4 +4,7 @@
     {{ $style := resources.Get "scss/style.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
     <title>{{- .Site.Title -}}</title>
+    {{ if .Params.math }}
+        {{ partial "math.html" . }}
+    {{ end }}
 </head>
