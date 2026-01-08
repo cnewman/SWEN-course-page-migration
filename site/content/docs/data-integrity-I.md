@@ -1,5 +1,5 @@
 ---
-title: 'Data Integiry I'
+title: 'Data Integrity I'
 date: '2025-09-29T11:31:00-04:00'
 
 weight: 3
