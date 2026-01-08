@@ -15,19 +15,22 @@ draft: true
   * Topics
 
 - * 1
-  * Thinking Like a Data-Driven Engineer
+  * [Thinking Like a Data-Driven Engineer](https://docs.google.com/presentation/d/1hMmxhHkxHohHJmhwL3hTnIEKw8agXITUM0763P1BxoY/edit?usp=sharing)
+    * [Starting your pipeline](https://docs.google.com/presentation/d/1eTuxdrZeJEhWc-Dn7quoemPpFj5OHiUCLrcAJ5b6trg/edit?usp=sharing)
+    * [DC0](/docs/data-collection-0)
   * * Scientific thinking
     * Research vs. development
     * Pipelines as the unit of work
 
 - * 2
-  * [Data Collection I: Software Artifacts](/docs/data-collection-i)
-  * * Mining repos
-    * Static/dynamic data
+  * [Data Collection I: Software Artifacts](https://docs.google.com/presentation/d/1DGO9fLSewbHUI1z4ACzF7zD6Q3zcX7C2MTHJmXXuymY/edit?usp=sharing) 
+    * [DC1](/docs/data-collection-i)
+  * * Static/dynamic data
     * Scripting/APIs
 
 - * 3
-  * [Data Collection II: Ecosystem Artifacts](/docs/data-collection-ii)
+  * Data Collection II: Ecosystem Artifacts
+    * [DC2](/docs/data-collection-ii)
   * * Issues/PRs, CI logs, releases
     * Idempotency
     * Lineage
