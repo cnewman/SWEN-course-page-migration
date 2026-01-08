@@ -23,13 +23,15 @@ draft: true
     * Pipelines as the unit of work
 
 - * 2
-  * [Data Collection I: Software Artifacts](https://docs.google.com/presentation/d/1DGO9fLSewbHUI1z4ACzF7zD6Q3zcX7C2MTHJmXXuymY/edit?usp=sharing) 
+  * [Research Methods - An Overview](https://docs.google.com/presentation/d/1Ot-AWnxC1KaXiq-zxrOgVC33Ie_eOiHl_tK_wPZyGiA/edit?usp=sharing)
+    * [Data Collection I: Software Artifacts](https://docs.google.com/presentation/d/1DGO9fLSewbHUI1z4ACzF7zD6Q3zcX7C2MTHJmXXuymY/edit?usp=sharing) 
     * [DC1](/docs/data-collection-i)
   * * Static/dynamic data
     * Scripting/APIs
 
 - * 3
-  * Data Collection II: Ecosystem Artifacts
+  * [Research Methods - An Overview - Cont'd](https://docs.google.com/presentation/d/1Ot-AWnxC1KaXiq-zxrOgVC33Ie_eOiHl_tK_wPZyGiA/edit?usp=sharing)
+    * [Data Collection II: Ecosystem Artifacts](https://docs.google.com/presentation/d/1vxvo3Ejj-FpEMpB8NBn573q3jHMdumTgKbMKBPhTHGA/edit?usp=sharing)
     * [DC2](/docs/data-collection-ii)
   * * Issues/PRs, CI logs, releases
     * Idempotency

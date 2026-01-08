@@ -9,13 +9,15 @@ bookSearchExclude: false
 draft: true
 ---
 
-## Data Collection II Ecosystem Artifacts
+# STRATA — DC2: Ecosystem Artifacts (Issues, PRs, CI) — Data Collection II
 
 **Mode:** Test-driven assignment — your **test sketches** and **test data seeds** *are* the requirements you will implement against.
 
 **Builds on:** DC1 (commit mining, idempotent ETL, invariants). DC2 extends the schema and code to ingest **issues**, **pull/merge requests**, and **CI pipelines/jobs** while keeping DC1 behavior intact.
 
-### Goal
+---
+
+## Goal
 
 Augment your miner to collect provider-agnostic ecosystem data and persist it **idempotently**:
 
@@ -25,7 +27,9 @@ Augment your miner to collect provider-agnostic ecosystem data and persist it **
 
 This expands the research substrate for later modeling: *How do code changes, review activity, and CI outcomes interrelate?*
 
-### Learning Outcomes
+---
+
+## Learning Outcomes
 
 1. **Provider-Agnostic Ingestion:** Normalize GitHub/GitLab JSON into a stable relational shape.
 2. **Schema Design for Idempotency:** Use composite unique keys and conflict-aware upserts to make re-runs safe.
@@ -33,7 +37,9 @@ This expands the research substrate for later modeling: *How do code changes, re
 4. **Reproducible Tests:** Drive development with small, deterministic tests and synthetic seeds.
 5. **Research Ops Thinking:** Document what you sampled, how you sampled it, and how re-runs produce the same result set.
 
-### What You Will Implement
+---
+
+## What You Will Implement
 
 Extend your `src/` code with idempotent ingestion helpers (exact names are **required** so that our autograder can find them):
 
@@ -52,7 +58,9 @@ Extend your `src/` code with idempotent ingestion helpers (exact names are **req
 
 > You may add small helper functions (e.g., timestamp coercion), but keep public function names and signatures above intact.
 
-### Required Schema
+---
+
+## Required Schema (Additions to `data/schema.sql`)
 
 Create these tables **in addition to** your DC1 tables. Keys indicated with **UNIQUE** are required.
 
@@ -110,9 +118,14 @@ ci_jobs(
   UNIQUE(provider, repo, job_id)
 )
 
+-- helpful indexes
+CREATE INDEX IF NOT EXISTS idx_pipeline_sha ON ci_pipelines(sha);
+CREATE INDEX IF NOT EXISTS idx_jobs_pipeline_id ON ci_jobs(provider, repo, pipeline_id);
 ```
 
-### Test Data Seeds
+---
+
+## Test Data Seeds (You Create These Inside Tests)
 
 Use only small, synthetic inputs. Keep them deterministic and comprehensible.
 
@@ -141,35 +154,39 @@ Use only small, synthetic inputs. Keep them deterministic and comprehensible.
 
 > Set `user.name` and `user.email` in the temporary repo as in DC1 to avoid identity issues.
 
-### Test Case Sketches
+---
+
+## Test Case Sketches (Acceptance Criteria)
 
 Treat each sketch as a requirement. Your actual tests can combine steps, but keep them small and focused.
 
-#### A. Issues/PRs are upserted idempotently
+### A. Issues/PRs are upserted idempotently
 - **Given** issues & PRs seeds (two each) for a provider/repo
 - **When** calling `ingest_issues` and `ingest_pull_requests` twice
 - **Then** `COUNT(issues) == 2` and `COUNT(pull_requests) == 2`  
 - **And** PR with non-null `merged_at` has normalized state `merged`
 
-#### B. CI pipelines/jobs are upserted idempotently
+### B. CI pipelines/jobs are upserted idempotently
 - **Given** the CI seed (1 pipeline, 2 jobs)
 - **When** calling `ingest_ci` twice
 - **Then** `COUNT(ci_pipelines) == 1` and `COUNT(ci_jobs) == 2`
 
-#### C. CI pipeline SHA matches a mined commit
+### C. CI pipeline SHA matches a mined commit
 - **Given** the CI seed with `sha=HEAD` of the mined repo
 - **Then** a query `SELECT 1 FROM commits WHERE commit_hash = sha` returns a row
 
-#### D. DC1 tests still pass
+### D. DC1 tests still pass
 - **Given** your DC1 repository and schema now extended for DC2
 - **Then** previously written DC1 tests pass unchanged (minor message changes are acceptable, but **schema and behavior guarantees must hold**).
 
-#### E. Timestamp coercion is robust (lightweight)
+### E. Timestamp coercion is robust (lightweight)
 - **Given** ISO8601 timestamps with or without 'Z' and with/without fractional seconds
 - **When** ingesting records
 - **Then** the rows are inserted with valid TIMESTAMP values (no crashes; edge cases can be covered with a small parametrized test).
 
-### Commands
+---
+
+## Commands
 
 - Apply schema (make sure DC1 + DC2 statements are present):
   ```bash
@@ -181,29 +198,13 @@ Treat each sketch as a requirement. Your actual tests can combine steps, but kee
   pytest -q
   ```
 
-- (Optional) Manual smoke test in a local repo:
+- Run the collector (will clone the repo into a temporary `gitminer_...` directory in a temporary directory):
   ```bash
-  python - <<'PY'
-  from src.git_miner import mine_history, ingest_issues, ingest_pull_requests, ingest_ci
-  from datetime import datetime, timedelta
-  # Mine commits
-  mine_history('.', max_commits=5)
-
-  # Issues/PRs
-  issues=[{'number':1,'title':'Bug','author':'alice','state':'open','created_at':datetime.utcnow().isoformat()}]
-  prs=[{'number':10,'title':'Fix','author':'bob','state':'open','created_at':datetime.utcnow().isoformat()}]
-  ingest_issues('github','me/repo',issues)
-  ingest_pull_requests('github','me/repo',prs)
-
-  # CI
-  head_sha = __import__('src.db_utils', fromlist=['']).exec_get_one('SELECT commit_hash FROM commits ORDER BY id DESC LIMIT 1;')[0]
-  now = datetime.utcnow()
-  ingest_ci('github','me/repo',[{'pipeline_id':'1','status':'success','created_at':now.isoformat(),'updated_at':now.isoformat(),'sha':head_sha}],{})
-  print('OK')
-  PY
+  python main.py owner/repo --token YOUR_TOKEN --per-page 50 --max-pages 1
   ```
+---
 
-### Deliverables
+## Deliverables
 
 1. Updated `data/schema.sql` with **all** DC2 tables and required constraints.
 2. Updated `src/` code implementing the three ingestion functions above.
@@ -213,7 +214,9 @@ Treat each sketch as a requirement. Your actual tests can combine steps, but kee
    - Fields captured and normalization decisions,
    - How idempotency is enforced (keys + conflict strategy).
 
-### Grading Outline
+---
+
+## Grading Outline (no points shown)
 
 - **Schema & Constraints:** Correct DC2 tables, proper unique identities, helpful indexes.
 - **Idempotent Ingestion:** Re-runs do not duplicate; mutable fields update appropriately.
@@ -223,16 +226,13 @@ Treat each sketch as a requirement. Your actual tests can combine steps, but kee
 - **Code Quality:** Clear function boundaries, robust timestamp handling, concise helpers.
 - **Documentation:** Research Ops Notes clearly state what/why/how of your sampling.
 
-### Hints
+---
+
+## Hints
 
 - Treat the provider string and repo string as part of the **primary identity**.
 - Normalize PR state to `merged` if `merged_at` is non-null, even if provider says `closed`.
 - Favor `ON CONFLICT ... DO UPDATE` for mutable fields (titles, statuses, timestamps) and `... DO NOTHING` for immutable keys.
 - Keep tests network-free; mock or feed normalized dicts directly to ingestion functions.
 
-### Stretch Goals (Optional)
-
-- Add **labels** and **assignees** tables (many-to-many from issues/PRs).
-- Add a lightweight **pull_request_commits** table linking PRs to commit SHAs (provider API dependent).
-- Add a `run_log` analog for DC2 collection runs with `started_at`, `provider`, `repo`, and counts ingested.
-- CLI wrapper: `python -m src.cli ingest --provider github --repo owner/name --artifacts issues,prs,ci`
+---

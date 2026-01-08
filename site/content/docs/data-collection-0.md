@@ -1,3 +1,14 @@
+---
+title: 'Data Collection 0'
+date: '2025-09-29T11:24:52-04:00'
+
+weight: 2
+bookToC: true
+bookSearchExclude: false
+
+draft: true
+---
+
 # STRATA — DC0: Repository & Database Setup
 
 **STRATA (Software daTa Repository Analysis & Testing Architecture)**
