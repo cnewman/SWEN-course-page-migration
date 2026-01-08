@@ -38,7 +38,9 @@ draft: true
     * Lineage
 
 - * 4
-  * Data Integrity I: Unstructured Qualitative Data
+  * [Data Integrity I: Unstructured Qualitative Data](https://docs.google.com/presentation/d/1FtROFhaamlV7L2eB3S6pb_7pMaZMjLHvCCr04At4M_A/edit?usp=sharing)
+    * [DI1](/docs/data-integrity-i)
+    * [Paper](/papers/peruma_rename_jss.pdf)
   * Logs & free text:
     * Templating
     * Tokenization
