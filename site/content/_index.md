@@ -56,7 +56,9 @@ draft: true
     * Seeds & Reproducibility
 
 - * 6
-  * Data Analysis I: Code Structure via AST (srcML)
+  * [Data Analysis I: Code Structure via AST (srcML)](https://docs.google.com/presentation/d/1_s3wVHGwZcy4lAeMffzKgjlmdGj0vrRWlFzI7s9qpCs/edit?usp=sharing)
+    * [DA1](/docs/data-analysis-i)
+    * [Paper](https://www.cs.kent.edu/~jmaletic/papers/ICSM13-srcML.pdf)
   * * srcML XML AST
     * Traverse files/classes/methods/calls
     * Compute structural features
