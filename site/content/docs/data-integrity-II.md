@@ -43,7 +43,7 @@ A reference implementation and tests are provided in `src/di2_sampling.py` and `
 
 ## Math & formulas
 
-Students are not expected to derive these formulas from first principles, but you should understand what they mean and how to use them.
+You are not expected to derive these formulas from first principles, but you should understand what they mean and how to use them.
 
 1) Proportion sample size (baseline, infinite population):
 
@@ -107,8 +107,8 @@ Create tests that cover:
 
 ## Deliverables
 
-1. `src/di2_sampling.py` — the implementation (will be emptied before publishing to students).
-2. `test/test_di2_sampling.py` — unit tests demonstrating reproducible sampling and sample-size calculations (will be emptied before publishing to students).
+1. `src/di2_sampling.py` — the implementation.
+2. `test/test_di2_sampling.py` — unit tests demonstrating reproducible sampling and sample-size calculations.
 3. A short section in your README or assignment writeup describing which sampling strategies you used and why.
 
 ## Commands

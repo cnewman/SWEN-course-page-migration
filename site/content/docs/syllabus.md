@@ -9,9 +9,10 @@ draft: true
 
 ## Course information
 
-- **Course:** STRATA — Software/Research Tools for Data-Driven Engineering
-- **Instructor:** (TBA)
-- **Contact:** (email and office hours to be added)
+- **Course:** Research Methods
+- **Instructor:** Professor Newman
+- **Email:** cdnvse@rit.edu
+- **Office Hours**: Tuesday/Thursday @ 10:15am - 11:30am
 
 ## Course description
 

@@ -147,7 +147,3 @@ PY
 - Timestamp coercion robustness: 15%
 - Tests & edge cases coverage: 20%
 - Optional DB helpers' idempotency & safety: 10%
-
----
-
-When you finish, remove any implementation hints that would reveal the instructor solution before publishing the assignment to students; keep only the function contracts, test requirements, and acceptance criteria.
