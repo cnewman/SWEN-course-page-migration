@@ -1,6 +1,5 @@
 ---
 title: 'Data Analysis I'
-date: '2025-09-29T11:24:52-04:00'
 
 weight: 2
 bookToC: true

@@ -1,6 +1,5 @@
 ---
 title: 'Data Collection II'
-date: '2025-09-29T11:31:00-04:00'
 
 weight: 3
 bookToC: true

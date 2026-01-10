@@ -5,6 +5,9 @@ title = 'SWEN 640'
 relativeURLs = true
 cleanDestinationDir = true
 
+[frontmatter]
+date = [":fileModTime", "publishDate", "date", "lastmod"]
+
 [outputs]
 home = ["HTML", "RSS"]
 section = ["HTML", "RSS"]

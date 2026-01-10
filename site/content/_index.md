@@ -8,7 +8,7 @@ draft: true
 ---
 
 ## Schedule
-
+[Syllabus](/docs/syllabus)
 {{% flex-table advanced-cols="4em 1fr 1fr" width="100%" %}}
 - * Week
   * Theme
