@@ -1,6 +1,5 @@
 ---
 title: 'Sprint Planning'
-date: '2025-09-20T14:11:26-04:00'
 
 weight: 100
 bookToC: true

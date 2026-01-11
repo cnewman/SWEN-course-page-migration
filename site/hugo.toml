@@ -18,3 +18,8 @@ unsafe = true
 [params]
 Logo ='se-logo.png'
 LogoLink = 'https://www.rit.edu/computing/department-software-engineering'
+
+[frontmatter]
+  date = [":filename", ":fileModTime", "publishDate", "lastmod", "date"]
+  lastmod = [":git", ":fileModTime", "lastmod", "date"]
+  publishDate = [":filename", ":fileModTime", "publishDate", "date"]

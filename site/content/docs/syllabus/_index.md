@@ -1,6 +1,5 @@
 ---
 title: 'Syllabus'
-date: '2025-09-10T18:52:54-04:00'
 
 weight: 2
 bookToC: true

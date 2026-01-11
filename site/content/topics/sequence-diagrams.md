@@ -1,6 +1,5 @@
 ---
 title: 'Sequence Diagrams'
-date: '2025-09-22T19:08:38-04:00'
 
 weight: 100
 bookToC: true

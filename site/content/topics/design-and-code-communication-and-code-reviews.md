@@ -1,6 +1,5 @@
 ---
 title: 'Design and Code Communication and Code Reviews'
-date: '2025-09-22T19:02:15-04:00'
 
 weight: 100
 bookToC: true

@@ -1,6 +1,5 @@
 ---
 title: 'Trello Setup'
-date: '2025-09-21T20:55:27-04:00'
 
 weight: 100
 bookToC: true

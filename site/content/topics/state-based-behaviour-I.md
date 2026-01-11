@@ -1,6 +1,5 @@
 ---
 title: 'State Based Behaviour I'
-date: '2025-09-22T19:08:01-04:00'
 
 weight: 100
 bookToC: true

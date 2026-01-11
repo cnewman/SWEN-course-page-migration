@@ -1,6 +1,5 @@
 ---
 title: 'Defining Project Requirements'
-date: '2025-09-20T14:10:02-04:00'
 
 weight: 100
 bookToC: true

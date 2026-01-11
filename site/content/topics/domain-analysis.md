@@ -1,6 +1,5 @@
 ---
 title: "Domain Analysis"
-date: 2025-09-12T11:45:32-04:00
 
 weight: 100
 bookToC: true

@@ -1,6 +1,5 @@
 ---
 title: 'Design Documentation Exercise'
-date: '2025-09-23T21:54:06-04:00'
 
 weight: 100
 bookToC: true

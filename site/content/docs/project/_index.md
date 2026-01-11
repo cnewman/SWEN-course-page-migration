@@ -1,6 +1,5 @@
 ---
 title: 'Project'
-date: '2025-09-10T18:16:18-04:00'
 
 weight: 4
 bookToC: true

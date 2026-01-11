@@ -1,6 +1,5 @@
 ---
 title: 'Effective Team Communications'
-date: '2025-09-20T14:10:30-04:00'
 
 weight: 100
 bookToC: true

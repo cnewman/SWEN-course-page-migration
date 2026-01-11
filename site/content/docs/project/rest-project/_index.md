@@ -1,6 +1,5 @@
 ---
 title: 'Rest Project'
-date: '2025-09-16T22:26:05-04:00'
 
 weight: 50
 bookToC: true

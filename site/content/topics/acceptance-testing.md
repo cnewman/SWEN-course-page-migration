@@ -1,6 +1,5 @@
 ---
 title: 'Acceptance Testing'
-date: '2025-09-22T19:35:55-04:00'
 
 weight: 100
 bookToC: true

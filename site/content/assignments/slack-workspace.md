@@ -1,6 +1,5 @@
 ---
 title: 'Slack Workspace'
-date: '2025-09-21T21:09:27-04:00'
 
 weight: 100
 bookToC: true

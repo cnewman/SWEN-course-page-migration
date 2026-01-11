@@ -1,6 +1,5 @@
 ---
 title: 'Setup Communications'
-date: '2025-09-21T21:04:13-04:00'
 
 weight: 100
 bookToC: true

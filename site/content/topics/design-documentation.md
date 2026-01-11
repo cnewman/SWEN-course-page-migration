@@ -1,6 +1,5 @@
 ---
 title: 'Design Documentation'
-date: '2025-09-22T19:36:36-04:00'
 
 weight: 100
 bookToC: true

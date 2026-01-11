@@ -1,6 +1,5 @@
 ---
 title: 'Appreciation for Software Development Process'
-date: '2025-09-20T14:09:16-04:00'
 
 weight: 100
 bookToC: true

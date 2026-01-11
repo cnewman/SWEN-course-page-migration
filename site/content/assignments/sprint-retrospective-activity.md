@@ -1,6 +1,5 @@
 ---
 title: 'Sprint Retrospective Activity'
-date: '2025-09-23T23:28:27-04:00'
 
 weight: 100
 bookToC: true

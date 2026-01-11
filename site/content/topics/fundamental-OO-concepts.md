@@ -1,6 +1,5 @@
 ---
 title: 'Fundamental OO Concepts'
-date: '2025-09-22T19:07:28-04:00'
 
 weight: 100
 bookToC: true
