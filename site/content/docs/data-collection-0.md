@@ -131,9 +131,8 @@ pytest -q
 
 ## Deliverables
 
-- A correctly structured repo with all scaffold files.  
-- Passing GitLab CI pipeline (all pytest tests green).  
-- Local proof you can connect to Postgres, insert commits, and query them.
+- A correctly structured repo with all scaffold files.
+- Passing GitLab CI pipeline (all pytest tests green).
 
 ---
 
@@ -141,7 +140,7 @@ pytest -q
 
 - If you see `Bad git executable` in CI, ensure your `.gitlab-ci.yml` includes the `apt-get install git` step (already provided).  
 - On Windows, GitPython can hold file handles; our scaffold closes repos to avoid PermissionErrors.  
-- Keep this structure intact—future assignments (DC1, DI1, etc.) will build directly on top of it.
+- Keep this structure intact-- future assignments (DC1, DI1, etc.) will build directly on top of it.
 
 ---
 
