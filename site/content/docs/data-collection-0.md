@@ -21,12 +21,12 @@ This mirrors the setup assignment in SWEN-610 but adapted for **research methods
 
 ## Objectives
 
-By the end of DC0, you will be able to:
+By the end of DC0, you will have:
 
-- Initialize a structured project repository with required directories.  
-- Connect to a PostgreSQL database using provided utilities.  
-- Insert and retrieve records from the database.  
-- Use GitPython to mine commit metadata.  
+- Initialized a structured project repository with required directories.  
+- Connected to a PostgreSQL database using provided utilities.  
+- Inserted and retrieve records from the database.  
+- Used GitPython to mine commit metadata.  
 - Run tests automatically in GitLab CI with **pytest**.
 
 ---
@@ -83,6 +83,17 @@ password: whowatchesthewatchmen
 host: localhost
 port: 5432
 ```
+
+**GitHub Personal Access Token (PAT)**
+
+Your workflow needs access to GitHub (for cloning private repositories and calling the GitHub API, etc), create a fine-grained personal access token following the official GitHub guide: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token
+
+After creating the token, set it in your environment as `GITHUB_TOKEN` so tools and CI can read it. For local shells you can run:
+
+```shell
+export GITHUB_TOKEN=<your-token-here>
+```
+
 
 4. **Install dependencies locally.**
 
