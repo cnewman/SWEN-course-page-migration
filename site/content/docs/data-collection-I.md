@@ -170,10 +170,10 @@ Treat each sketch as an acceptance criterion. Name tests clearly and keep them s
 3. Two SQL queries saved as `queries/`:
    - `top_commits_by_churn.sql` — `insertions + deletions`, top 5.
    - `most_changed_files.sql` — files with most commits touching them, top 5.
-
+4. Tag your submission as DC1
 ---
 
-## Grading Outline (no points shown)
+## Grading Outline
 
 - **Schema & Constraints:** correct keys, uniqueness, and helpful indexes.
 - **Miner Correctness:** commits, parents, stats, files inserted as specified.
@@ -182,11 +182,12 @@ Treat each sketch as an acceptance criterion. Name tests clearly and keep them s
 - **Validation:** invariants checked programmatically.
 - **Code Quality:** function boundaries, clear names, comments where they help.
 - **Queries:** both analytics queries run and return sensible results.
+- **CI pipeline** runs successfully; all tests pass.
 
 ---
 
 ## Hints
 
-- Wrap best-effort diffs in `try/except` and still record stats.
+- Recall that you can `try/except` -- this will allow you to record stats even if you have difficulties with diffs
 - Favor small, focused tests over monoliths.
 - Use `ON CONFLICT DO NOTHING` with your UNIQUE indexes to keep re-runs clean.

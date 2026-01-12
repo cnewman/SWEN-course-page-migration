@@ -57,7 +57,21 @@ We provide you with:
 
 ## Setup Instructions
 
-1. **Clone your repo** (created for this course).
+0. **Create your GitLab repository**
+
+Now let's go and create our repository on GitLab. GitLab is a web application that allows you to have a remote Git repository, much like GitHub. RIT has its own installation of GitLab hosted on our GCCIS servers that we will be using for this course. Go to https://git.gccis.rit.edu/. Keep this link—you will NEED to use it to log in to GitLab. Do not google gitlab and try to access from there; it will not work.
+
+Sign into GitLab using your RIT (not SE) username and password.
+
+Create a new project and name it **swen-640**. Make sure the repository is private. Make sure the project name is **swen-640** exactly: same spelling, same capitalization, using a dash.
+
+Give Reporter permissions to your instructor and course assistant(s). You may need their usernames — be sure to ask if they have not provided them. To do this, open your project page; an easy way to ensure you have the right page open is to edit this link with your username: https://git.gccis.rit.edu/(YOUR_USERNAME_HERE)/swen-640. Then go to Manage -> Members on the left side of the project page and add ALL of your TAs and Instructor as members with the **Reporter** role.
+
+Make sure you completed the previous step (adding members with Reporter permission). If you are confused, ask your instructor or TAs for help.
+
+You should also set up [SSH keys](https://docs.gitlab.com/user/ssh/) if you have not done so in the past
+
+1. **Clone your repo**
 
 ```shell
 git clone <your-gitlab-repo-url>
@@ -86,7 +100,7 @@ port: 5432
 
 **GitHub Personal Access Token (PAT)**
 
-Your workflow needs access to GitHub (for cloning private repositories and calling the GitHub API, etc), create a fine-grained personal access token following the official GitHub guide: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token
+Your workflow needs access to GitHub (for cloning private repositories and calling the GitHub API, etc), create a fine-grained personal access token following the official [GitHub guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) 
 
 After creating the token, set it in your environment as `GITHUB_TOKEN` so tools and CI can read it. For local shells you can run:
 
@@ -131,8 +145,9 @@ pytest -q
 
 ## Deliverables
 
-- A correctly structured repo with all scaffold files.
-- Passing GitLab CI pipeline (all pytest tests green).
+1. A correctly structured repo with all scaffold files.
+2. Passing GitLab CI pipeline (all pytest tests green).
+3. Tag your submission as DC0
 
 ---
 
@@ -148,7 +163,8 @@ pytest -q
 
 You will be graded on:
 
-- Proper repo structure (all required files present).  
-- CI pipeline runs successfully.  
-- Tests all pass.  
-- Database schema is set up and accessible.
+- **Proper** repo structure (all required files present).  
+- **CI pipeline** runs successfully.  
+- **Tests** all pass.  
+- **Database schema** is set up and accessible.
+- Submission is **tagged** correctly

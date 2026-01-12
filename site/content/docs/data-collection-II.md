@@ -215,7 +215,7 @@ Treat each sketch as a requirement. Your actual tests can combine steps, but kee
 
 ---
 
-## Grading Outline (no points shown)
+## Grading Outline
 
 - **Schema & Constraints:** Correct DC2 tables, proper unique identities, helpful indexes.
 - **Idempotent Ingestion:** Re-runs do not duplicate; mutable fields update appropriately.
