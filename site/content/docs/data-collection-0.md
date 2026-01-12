@@ -15,7 +15,7 @@ draft: true
 Welcome to **DC0**, the very first "layer" of STRATA.  
 In this assignment, you will set up your research pipeline foundation: repository posture, database connectivity, and automated testing in CI/CD.
 
-This mirrors the setup assignment in SWEN-610 but adapted for **research methods**.
+If you took 610, some of this will be familiar. This setup mirrors the set up (DB0) assignment in SWEN-610, but adapted for **research methods**.
 
 ---
 
@@ -39,7 +39,7 @@ Your repo must follow this structure:
 src/        # implementation code (db_utils.py, git_miner.py)
 test/       # pytest tests + fixtures
 data/       # SQL schema and future data
-config/     # credentials (gitlab-credentials.yml -> copied to db.yml in CI)
+config/     # credentials
 requirements.txt
 .gitlab-ci.yml
 README.md
@@ -57,19 +57,27 @@ We provide you with:
 
 ## Setup Instructions
 
-0. **Create your GitLab repository**
+0. **Create your GitLab repository** and **install postgresql 17 or 18**
 
-Now let's go and create our repository on GitLab. GitLab is a web application that allows you to have a remote Git repository, much like GitHub. RIT has its own installation of GitLab hosted on our GCCIS servers that we will be using for this course. Go to https://git.gccis.rit.edu/. Keep this link—you will NEED to use it to log in to GitLab. Do not google gitlab and try to access from there; it will not work.
+* Now let's go and create our repository on GitLab. GitLab is a web application that allows you to have a remote Git repository, much like GitHub. RIT has its own installation of GitLab hosted on our GCCIS servers that we will be using for this course. Go to https://git.gccis.rit.edu/. Keep this link—you will NEED to use it to log in to GitLab. Do not google gitlab and try to access from there; it will not work.
 
-Sign into GitLab using your RIT (not SE) username and password.
+* Sign into GitLab using your RIT (not SE) username and password.
 
-Create a new project and name it **swen-640**. Make sure the repository is private. Make sure the project name is **swen-640** exactly: same spelling, same capitalization, using a dash.
+* Create a new project and name it **swen-640**. Make sure the repository is private. Make sure the project name is **swen-640** exactly: same spelling, same capitalization, using a dash.
 
-Give Reporter permissions to your instructor and course assistant(s). You may need their usernames — be sure to ask if they have not provided them. To do this, open your project page; an easy way to ensure you have the right page open is to edit this link with your username: https://git.gccis.rit.edu/(YOUR_USERNAME_HERE)/swen-640. Then go to Manage -> Members on the left side of the project page and add ALL of your TAs and Instructor as members with the **Reporter** role.
+* Give Reporter permissions to your instructor and course assistant(s). You may need their usernames — be sure to ask if they have not provided them. To do this, open your project page; an easy way to ensure you have the right page open is to edit this link with your username: https://git.gccis.rit.edu/(YOUR_USERNAME_HERE)/swen-640. Then go to Manage -> Members on the left side of the project page and add ALL of your TAs and Instructor as members with the **Reporter** role.
 
-Make sure you completed the previous step (adding members with Reporter permission). If you are confused, ask your instructor or TAs for help.
+* Make sure you completed the previous step (adding members with Reporter permission). If you are confused, ask your instructor or TAs for help.
 
-You should also set up [SSH keys](https://docs.gitlab.com/user/ssh/) if you have not done so in the past
+* You should also set up [SSH keys](https://docs.gitlab.com/user/ssh/) if you have not done so in the past
+
+* [Install postgresql 17 or 18](https://www.postgresql.org/download/)
+
+* Using the PostgreSQL admin console (pgAdmin), create a user called swen640 with a password of your choosing. 
+
+* Make sure you remember that password, because we’re about to put it in a file in a moment. Note: be sure to check the box for “User Can Login” on the Privileges tab. SWEN lab machines: this has been done for you. The password is salutecaptionearthyfight
+
+* Still in pgAdmin, create a database also called swen640 and make the owner of it the user swen640.
 
 1. **Clone your repo**
 
@@ -78,9 +86,9 @@ git clone <your-gitlab-repo-url>
 cd <your-repo>
 ```
 
-2. **Add provided scaffold** (from DC0 zip).  
-     
-   - Copy the contents into your repo.  
+2. **Add provided scaffold**.  
+   - [Download this file](/code/strata_starter.zip)
+   - Copy the contents into the root of your repo. To do this, open the copyme directory and copy everything out of it (except the copyme directory) into the root of your repo.
    - Commit and push.
 
    
@@ -88,7 +96,7 @@ cd <your-repo>
 3. **Database Credentials.**  
      
    - In CI, `config/gitlab-credentials.yml` is copied to `config/db.yml` automatically.  
-   - For local dev, create a `config/db.yml` with keys matching your own Postgres instance:
+   - For local dev, you have been provided a `config/db.yml`. You'll need to update this with **your password**
 
 ```
 database: swen344
@@ -119,8 +127,8 @@ pip install -r requirements.txt
    Use the helper in `db_utils.py`:
 
 ```py
-from src import db_utils
-db_utils.exec_sql_file('data/schema.sql')
+python -c "from src import db_utils; db_utils.exec_sql_file('data/schema.sql')"
+
 ```
 
 6. **Run pytest locally.**
@@ -131,9 +139,14 @@ pytest -q
 
    You should see all tests pass (including the Git miner test that creates a temporary repo and commits).
 
-   
+7. **Try it out on a real repository**
+```shell
+python main.py <user/repository_name>
+```
 
-7. **Push to GitLab.**  
+   **Note** that you need to seed the database before you run on it on a real repo (per step #5). You could resolve this by modifying the code to run your data/schema.sql before it attempts to store anything on the db.
+
+8. **Push to GitLab.**  
    On push, GitLab CI will:  
      
    - Spin up a Postgres service.  

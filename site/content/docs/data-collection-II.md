@@ -74,7 +74,7 @@ issues(
   state TEXT NOT NULL,
   created_at TIMESTAMP NOT NULL,
   closed_at TIMESTAMP,
-  UNIQUE(provider, repo, issue_number)
+  UNIQUE(provider, repo, issue_number) -- note: this is what we'd call a composite key
 )
 
 pull_requests(
@@ -116,10 +116,6 @@ ci_jobs(
   duration_seconds INT,
   UNIQUE(provider, repo, job_id)
 )
-
--- helpful indexes
-CREATE INDEX IF NOT EXISTS idx_pipeline_sha ON ci_pipelines(sha);
-CREATE INDEX IF NOT EXISTS idx_jobs_pipeline_id ON ci_jobs(provider, repo, pipeline_id);
 ```
 
 ---

@@ -26,6 +26,7 @@ draft: true
   * [Research Methods - An Overview](https://docs.google.com/presentation/d/1Ot-AWnxC1KaXiq-zxrOgVC33Ie_eOiHl_tK_wPZyGiA/edit?usp=sharing)
     * [Data Collection I: Software Artifacts](https://docs.google.com/presentation/d/1DGO9fLSewbHUI1z4ACzF7zD6Q3zcX7C2MTHJmXXuymY/edit?usp=sharing) 
     * [DC1](/docs/data-collection-i)
+    * [Paper](https://dl.acm.org/doi/10.1145/3241743)
   * * Static/dynamic data
     * Scripting/APIs
 

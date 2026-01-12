@@ -46,8 +46,12 @@ Key topics by week:
 
 ## Policies
 
-- Academic integrity and responsible use of data are mandatory.
-- Assignments must be reproducible and include data provenance.
+- [Academic integrity and responsible use of data are mandatory.](https://www.rit.edu/policies/d080)
+- **AI agents are allowed**, with the following guidelines:
+  - You may use AI agents to help you understand materials and coding assignments, including frameworks, programming languages, terminology, and other concepts you need assistance with.
+  - **Code should be written by students, not agents.** The goal is for you to develop hands-on understanding.
+  - The point of this course is for you to understand the pipeline architecture, learn about research methods and how they are applied to real problems, and implement the core pipeline of many research methodologies. This gives you a mechanical understanding of the steps you take when performing research. Using AI agents to understand the coding still serves this purpose.
+  - **The best practice** is to try coding on your own first and only fall back on agents if you get stuck.
 
 ## Resources
 

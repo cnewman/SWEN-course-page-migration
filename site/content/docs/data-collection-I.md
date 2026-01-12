@@ -43,7 +43,7 @@ Build an **idempotent** miner that walks a Git repository’s history and stores
   - Record a `run_log(repo_path, head_hash, commit_count, started_at DEFAULT now())` row.
 - `validate_invariants() -> (n_commits, n_stats, n_orphan_parents)`
 
-> **Idempotency** shoudl be enforced by a **UNIQUE** index on `commits(commit_hash)` and a **UNIQUE** index on `commit_files(commit_id, file_path)` together with `ON CONFLICT DO NOTHING` during inserts.
+> **Idempotency** should be enforced by a **UNIQUE** index on `commits(commit_hash)` and a **UNIQUE** index on `commit_files(commit_id, file_path)` together with `ON CONFLICT DO NOTHING` during inserts.
 
 ---
 

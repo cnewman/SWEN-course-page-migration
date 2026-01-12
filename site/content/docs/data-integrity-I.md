@@ -16,7 +16,7 @@ draft: true
 
 Implement a small, well-tested library that normalizes and parses qualitative artifacts (issue/pr titles, commit messages, and free-text bodies). Provide a few optional, idempotent DB helpers that apply these normalizations to existing tables. The emphasis is: robust pure functions + small, safe side-effectful updaters.
 
-This assignment will teach you how to: coerce noisy text/timestamp inputs to canonical shapes, parse Conventional Commits, canonicalize account logins (bot detection), and write idempotent DB enrichment helpers that are safe to re-run.
+This assignment will teach you how to: coerce noisy text/timestamp inputs to canonical forms, parse Conventional Commits, canonicalize account logins (simple/naive bot detection), and write idempotent DB enrichment helpers that are safe to re-run.
 
 ## Learning outcomes
 
@@ -46,7 +46,7 @@ You must implement the following functions so the autograder and tests can impor
 - canonicalize_user(login: Optional[str]) -> Tuple[str, bool]
   - Return a normalized lowercase login and a boolean `is_bot` when the login looks like an automated account (examples: contain `[bot]`, `dependabot`, `renovate`, `github-actions`, `gitlab-ci`). Return `('', False)` for falsy logins.
 
-Optional DB helpers (side-effectful; mark them as safe to run repeatedly and make them no-ops if DB helpers aren't available):
+DB helpers you may find useful (side-effectful; mark them as safe to run repeatedly and make them no-ops if DB helpers aren't available):
 
 - ensure_columns() -> None
   - Add lightweight normalized columns (e.g., `title_clean`, `author_norm`, `is_bot`) to `issues` and `pull_requests` and commit parsing columns to `commits` if they do not already exist. Use `IF NOT EXISTS` style statements so the function is idempotent.
@@ -60,7 +60,7 @@ Optional DB helpers (side-effectful; mark them as safe to run repeatedly and mak
 
 ## Test seeds you should create inside tests
 
-Create small, deterministic fixtures (temporary in-memory strings or temporary DB rows) to cover the following:
+Create small, deterministic test fixtures (temporary in-memory strings or temporary DB rows) to cover the following:
 
 1. Text normalization seeds
    - Markdown with fenced code, inline code, headings, lists, URLs, CRLF (`\r\n`), and control characters.
@@ -78,10 +78,8 @@ Create small, deterministic fixtures (temporary in-memory strings or temporary D
 4. Canonicalization seeds
    - Bot-like logins (`Dependabot`, `alice[bot]`, `github-actions`) vs normal logins. Mixed-case inputs should return lowercase.
 
-5. (Optional integration) DB enrichment seeds
+5. (Optional integration) DB seeds
    - A tiny temporary Postgres/SQLite (depending on your `db_utils`) workspace or a mocked `db_utils` that returns a few rows for `issues`, `pull_requests`, and `commits`. Run the `clean_*_db` helpers and assert that the update calls were made with normalized values and that functions are idempotent.
-
-  Reference tests: a compact example test suite is provided at `test/test_qual_clean.py`. Use it as a template for how to structure your unit tests and seeds.
 
 ## Test case sketches (acceptance criteria)
 
@@ -93,7 +91,7 @@ Create small, deterministic fixtures (temporary in-memory strings or temporary D
 
 ## Required schema notes
 
-DI1 is about light enrichment of existing DC1/DC2 tables. You do not need to redesign the schema, but include these optional normalized columns (or ensure your `ensure_columns()` function creates them if missing):
+DI1 is about light enrichment of existing DC1/DC2 tables. You do not need to redesign the schema, but include these normalized columns (or ensure your `ensure_columns()` function creates them if missing):
 
 - `issues` / `pull_requests`: `title_clean TEXT`, `author_norm TEXT`, `is_bot BOOLEAN DEFAULT FALSE`
 - `commits`: `subject TEXT`, `body TEXT`, `cc_type TEXT`, `cc_scope TEXT`, `cc_breaking BOOLEAN DEFAULT FALSE`
@@ -130,20 +128,18 @@ PY
 
 1. Tests under `test/` that exercise the required pure functions (happy paths + edge cases). Add small integration tests for DB helpers or mock `db_utils`.
 2. A short README section `Data Integrity I` describing the normalization decisions you made and any non-obvious heuristics (e.g., how you detect bots, how code blocks are tokenized).
-3. (Optional) Simple examples of how the DB enrichment helpers are idempotent and safe to re-run.
+3. Runs on the CI and all tests pass
 
 ## Hints & implementation notes
 
 - Favor pure functions that accept and return simple types (str, dict, datetime) so they are trivial to unit test.
-- Keep DB logic isolated and clearly marked `# pragma: no cover` if you don't want it executed in unit tests that lack a DB.
 - Where feasible, use `ON CONFLICT DO NOTHING` or `IF NOT EXISTS` to make schema and updates idempotent.
 - Preserve URLs when stripping Markdown. A liberal approach is OK — the goal is analyzability, not lossless conversion.
 - For timestamp parsing, try a small set of common formats first and fall back to `datetime.fromisoformat()` as a last resort.
 
 ## Grading outline
 
-- Text normalization correctness (headings, lists, code markers): 30%
-- Commit message parsing (CC extraction + sensible defaults): 25%
-- Timestamp coercion robustness: 15%
-- Tests & edge cases coverage: 20%
-- Optional DB helpers' idempotency & safety: 10%
+- Text normalization correctness (headings, lists, code markers)
+- Commit message parsing (CC extraction + sensible defaults)
+- Timestamp coercion robustness
+- Tests & edge cases coverage
