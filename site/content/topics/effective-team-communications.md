@@ -54,4 +54,4 @@ For your study of this topic, use some of these resources.
 
 ### Class Lecture
 
-* [Effective Team Communications](/slides/effective-team-communications.pptx)
+* [Effective Team Communications](/slides/Effective-Team-Communications.pptx)

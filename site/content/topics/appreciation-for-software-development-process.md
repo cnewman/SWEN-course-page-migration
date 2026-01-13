@@ -46,7 +46,7 @@ For your study of this topic, use some of these resources.
 
 ### Class Lecture
 
-* [Appreciation for Software Development Process](/slides/appreciation-for-process.pptx)
+* [Appreciation for Software Development Process](/slides/Appreciation-for-Process.pptx)
 
 ### Exercises
 

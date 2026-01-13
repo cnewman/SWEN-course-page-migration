@@ -66,4 +66,4 @@ Consider these links as reference material for deeper study.
 
 ### Class Lecture
 
-* [Defining Project Requirements](/slides/defining-project-requirements.pptx)
+* [Defining Project Requirements](/slides/Defining-Project-Requirements.pptx)
