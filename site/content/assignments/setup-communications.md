@@ -12,9 +12,7 @@ draft: true
 
 {{% hint danger %}}
 
-UNLESS OTHERWISE INDICATED by your INSTRUCTOR you are ONLY to read the instructions but NOT CREATE neither a Slack (or Discord!) for communications.
-
-A SPECIFIC Slack enterprise workspace may have already been created for you, so all you need to do for now is FAMILIARIZE but NOT execute the following [instructions](/assignments/slack-workspace) in relation to the team's Slack workspace and corresponding use of future channels for virtual standups and your team contract.
+UNLESS OTHERWISE INDICATED by your INSTRUCTOR you are ONLY to read the instructions but NOT CREATE neither a Discord for communications.
 
 {{% /hint %}}
 
