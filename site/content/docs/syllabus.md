@@ -5,7 +5,7 @@ bookToC: true
 draft: true
 ---
 
-# Syllabus — STRATA (Course)
+# Syllabus — Research Methods
 
 ## Course information
 
@@ -28,7 +28,7 @@ This course covers methods and tooling for reproducible, data-driven software en
 ## Assessments & grading
 
 - Weekly exercises and small assignments (40%)
-- Quizzes (20%)
+- Quizzes on paper readings (20%)
 - Final project write up and implementation (40%)
 
 Grading rubric and weights will be posted in the class repo and announced on the course page.
@@ -52,8 +52,3 @@ Key topics by week:
   - **Code should be written by students, not agents.** The goal is for you to develop hands-on understanding.
   - The point of this course is for you to understand the pipeline architecture, learn about research methods and how they are applied to real problems, and implement the core pipeline of many research methodologies. This gives you a mechanical understanding of the steps you take when performing research. Using AI agents to understand the coding still serves this purpose.
   - **The best practice** is to try coding on your own first and only fall back on agents if you get stuck.
-
-## Resources
-
-- Course slides and module pages are available from the course site and the `docs/` section.
-- Papers and readings will be linked from individual module pages (see the `docs` section).
