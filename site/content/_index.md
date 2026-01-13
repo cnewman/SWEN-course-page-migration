@@ -34,8 +34,8 @@ draft: true
   * [Research Methods - An Overview - Cont'd](https://docs.google.com/presentation/d/1Ot-AWnxC1KaXiq-zxrOgVC33Ie_eOiHl_tK_wPZyGiA/edit?usp=sharing)
     * [Data Collection II: Ecosystem Artifacts](https://docs.google.com/presentation/d/1vxvo3Ejj-FpEMpB8NBn573q3jHMdumTgKbMKBPhTHGA/edit?usp=sharing)
     * [DC2](/docs/data-collection-ii)
-    * Quiz 1 (Thursday)
     * [Paper](/papers/peruma_rename_jss.pdf)
+    * Quiz 1 (Thursday)
   * * Issues/PRs, CI logs, releases
     * Idempotency
     * Lineage
