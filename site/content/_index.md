@@ -8,7 +8,7 @@ draft: true
 ---
 
 ## Schedule
-[Syllabus](/docs/syllabus)
+Click this link for the [Syllabus](/docs/syllabus). For this class, assignments are always **due on Tuesday @11:59pm** the week following their assignment. So DC0 is due 1/20, DC1 is due 1/27, etc.
 {{% flex-table advanced-cols="4em 1fr 1fr" width="100%" %}}
 - * Week
   * Theme
