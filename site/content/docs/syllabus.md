@@ -12,7 +12,11 @@ draft: true
 - **Course:** Research Methods
 - **Instructor:** Professor Newman
 - **Email:** cdnvse@rit.edu
-- **Office Hours**: Tuesday/Thursday @ 10:15am - 11:30am
+- **Newman Office Hours**: Tuesday/Thursday @ 10:15am - 11:30am in GOL-1690
+
+- **TA:** Christian Ashley
+- **Email**: ca5138@rit.edu
+- **Ashley Office Hours**: TBD
 
 ## Course description
 
@@ -30,6 +34,9 @@ This course covers methods and tooling for reproducible, data-driven software en
 - Weekly exercises and small assignments (40%)
 - Quizzes on paper readings (20%)
 - Final project write up and implementation (40%)
+
+## Late Policy
+- 10% penalty per week late
 
 Grading rubric and weights will be posted in the class repo and announced on the course page.
 
