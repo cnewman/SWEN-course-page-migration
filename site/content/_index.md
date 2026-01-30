@@ -27,6 +27,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
   * [Research Methods - An Overview](https://docs.google.com/presentation/d/1Ot-AWnxC1KaXiq-zxrOgVC33Ie_eOiHl_tK_wPZyGiA/edit?usp=sharing)
     * [Data Collection I: Software Artifacts](https://docs.google.com/presentation/d/1DGO9fLSewbHUI1z4ACzF7zD6Q3zcX7C2MTHJmXXuymY/edit?usp=sharing) 
     * [DC1](/docs/data-collection-i)
+    * DC0 DUE
   * * Static/dynamic data
     * Scripting/APIs
 
@@ -36,6 +37,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
     * [DC2](/docs/data-collection-ii)
     * [Paper](/papers/peruma_rename_jss.pdf)
     * Quiz 1 (Thursday)
+    * DC1 DUE
   * * Issues/PRs, CI logs, releases
     * Idempotency
     * Lineage
@@ -44,7 +46,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
   * [Data Integrity I: Unstructured Qualitative Data](https://docs.google.com/presentation/d/1FtROFhaamlV7L2eB3S6pb_7pMaZMjLHvCCr04At4M_A/edit?usp=sharing)
     * [DI1](/docs/data-integrity-i)
     * [Paper](/papers/newman_closed_category.pdf)
-    * Quiz 2 (Thursday)
+    * DC2 DUE
   * Logs & free text:
     * Templating
     * Tokenization
@@ -54,7 +56,8 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
   * [Data Integrity II: Sampling & Bias](https://docs.google.com/presentation/d/13lwwVIbB0t-3j4q9yj2Rtfv60--E0m50IrBskZ4HzzM/edit?usp=sharing)
     * [DI2](/docs/data-integrity-ii)
     * [Paper](https://www.cs.kent.edu/~jmaletic/papers/ICSM13-srcML.pdf)
-    * Quiz 3 (Thursday)
+    * Quiz 2 (Thursday)
+    * DI1 DUE
   * * Sampling frames
     * Representativeness
     * Leakage checks
@@ -63,7 +66,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 - * 6
   * [Data Analysis I: Code Structure via AST (srcML)](https://docs.google.com/presentation/d/1_s3wVHGwZcy4lAeMffzKgjlmdGj0vrRWlFzI7s9qpCs/edit?usp=sharing)
     * [DA1](/docs/data-analysis-i)
-    * Quiz 4 (Thursday)
+    * DI2 DUE
   * * srcML XML AST
     * Traverse files/classes/methods/calls
     * Compute structural features
@@ -71,17 +74,21 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 
 - * 7
   * Data Analysis II: Exploratory Data Analysis
+    * Quiz 3 (Thursday)
   * * Correlation
     * Clustering previews
     * Visualization
+    * DA1 DUE
 
 - * 8
   * Modeling: Prediction
   * * Regression/classification
     * Feature engineering
+    * DA2 DUE
 
 - * 9
   * Evaluation
+    * Quiz 4 (Thursday)
   * * Precision/Recall/F1
     * Overfitting/Underfitting
 
@@ -93,6 +100,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 
 - * 11
   * Experimental Design & Causality
+    * Quiz 5 (Thursday)
   * * Controlled experiments
     * A/B tests
     * quasi-experiments
@@ -104,6 +112,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 
 - * 13
   * Operationalizing Research
+    * Quiz 6 (Thursday)
   * * Reproducibility
     * Automation
     * DevOps for research
