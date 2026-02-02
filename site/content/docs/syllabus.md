@@ -16,7 +16,7 @@ draft: true
 
 - **TA:** Christian Ashley
 - **Email**: ca5138@rit.edu
-- **Ashley Office Hours**: TBD
+- **Ashley Office Hours**: Tuesday/Thursday @ 2:30pm - 3:30pm in Team Rooms (ping on Discord if you can't find him)
 
 ## Course description
 
