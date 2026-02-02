@@ -9,12 +9,11 @@ draft: true
 
 ## Course information
 
-- **Course:** Research Methods
-- **Instructor:** Professor Newman
+**Instructor:** Professor Newman
 - **Email:** cdnvse@rit.edu
 - **Newman Office Hours**: Tuesday/Thursday @ 10:15am - 11:30am in GOL-1690
 
-- **TA:** Christian Ashley
+**TA:** Christian Ashley
 - **Email**: ca5138@rit.edu
 - **Ashley Office Hours**: Tuesday/Thursday @ 2:30pm - 3:30pm in Team Rooms (ping on Discord if you can't find him)
 

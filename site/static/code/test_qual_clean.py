@@ -1,5 +1,5 @@
 """
-Tests for qual_clean.py — DI1: Qualitative Text Normalization
+Tests for qual_clean.py - DI1: Qualitative Text Normalization
 
 These tests define the expected behavior for the three functions you must implement.
 Run with: pytest test/test_qual_clean.py -v
