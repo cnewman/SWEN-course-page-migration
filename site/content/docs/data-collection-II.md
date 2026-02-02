@@ -371,6 +371,7 @@ CREATE TABLE IF NOT EXISTS ci_jobs (
     duration_seconds INTEGER
 );
 CREATE UNIQUE INDEX IF NOT EXISTS uq_job_identity ON ci_jobs(provider, repo, job_id);
+```
 ---
 
 ## Test Data Seeds (You Create These Inside Tests)
