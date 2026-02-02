@@ -36,7 +36,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
     * [Data Collection II: Ecosystem Artifacts](https://docs.google.com/presentation/d/1vxvo3Ejj-FpEMpB8NBn573q3jHMdumTgKbMKBPhTHGA/edit?usp=sharing)
     * [DC2](/docs/data-collection-ii)
     * [Paper](/papers/peruma_rename_jss.pdf)
-    * Quiz 1 (Thursday)
+    * Quiz 1 (Thursday) - Research Methodology Definition
     * DC1 DUE
   * * Issues/PRs, CI logs, releases
     * Idempotency
@@ -47,8 +47,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
     * [DI1](/docs/data-integrity-i)
     * [Paper](/papers/newman_closed_category.pdf)
     * DC2 DUE
-  * Logs & free text:
-    * Templating
+  * * Templating
     * Tokenization
     * Normalization
 
@@ -56,11 +55,10 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
   * [Data Integrity II: Sampling & Bias](https://docs.google.com/presentation/d/13lwwVIbB0t-3j4q9yj2Rtfv60--E0m50IrBskZ4HzzM/edit?usp=sharing)
     * [DI2](/docs/data-integrity-ii)
     * [Paper](https://www.cs.kent.edu/~jmaletic/papers/ICSM13-srcML.pdf)
-    * Quiz 2 (Thursday)
+    * Quiz 2 (Thursday) - Data Integrity & sample studies
     * DI1 DUE
-  * * Sampling frames
+  * * Sampling
     * Representativeness
-    * Leakage checks
     * Seeds & Reproducibility
 
 - * 6
@@ -68,27 +66,26 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
     * [DA1](/docs/data-analysis-i)
     * DI2 DUE
   * * srcML XML AST
-    * Traverse files/classes/methods/calls
-    * Compute structural features
-    * Join to text/log tables
+    * Static code analysis
+    * Fact Extraction
 
 - * 7
   * Data Analysis II: Exploratory Data Analysis
-    * Quiz 3 (Thursday)
-  * * Correlation
-    * Clustering previews
-    * Visualization
+    * Quiz 3 (Thursday) - Static Data Analysis & Clustering; 
     * DA1 DUE
+  * * Correlation
+    * Clustering
+    * Visualization
 
 - * 8
   * Modeling: Prediction
+    * DA2 DUE
   * * Regression/classification
     * Feature engineering
-    * DA2 DUE
 
 - * 9
   * Evaluation
-    * Quiz 4 (Thursday)
+    * Quiz 4 (Thursday) - Modeling & Prediction
   * * Precision/Recall/F1
     * Overfitting/Underfitting
 
