@@ -364,7 +364,7 @@ def clean_commits_db(limit: Optional[int] = None) -> int:
 | Component | Weight |
 |-----------|--------|
 | `canonicalize_user` — all tests pass | 30% |
-| `normalize_text` — all tests pass | 35% |
-| `split_commit_message` — all tests pass | 35% |
-
+| `normalize_text` — all tests pass | 30% |
+| `split_commit_message` — all tests pass | 30% |
+| `main.py updated` - runs normalization without issue | 10% |
 ---
