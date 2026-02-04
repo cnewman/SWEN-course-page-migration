@@ -355,7 +355,9 @@ def clean_commits_db(limit: Optional[int] = None) -> int:
 
 1. **Implementation** of the three functions in `src/qual_clean.py`
 2. All **64 tests passing** in `test_qual_clean.py`
-3. A brief section below documenting your implementation decisions
+3. main.py updated to be able to use your new features on real repositories
+4. Update the README with information about running the miner with your new features
+
 
 ---
 
@@ -366,5 +368,5 @@ def clean_commits_db(limit: Optional[int] = None) -> int:
 | `canonicalize_user` — all tests pass | 30% |
 | `normalize_text` — all tests pass | 30% |
 | `split_commit_message` — all tests pass | 30% |
-| `main.py updated` - runs normalization without issue | 10% |
+| `main.py` updated - runs normalization without issue | 10% |
 ---
