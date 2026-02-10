@@ -258,7 +258,7 @@ You are not expected to derive these formulas, so we're giving them to you-- but
 
    To estimate a proportion **p** with margin of error **E** at z-score **z** (e.g., **z=1.96** for 95% confidence), the basic sample-size formula is
 
-   $$n_0 = \frac{z^2 \; p (1-p)}{E^2}$$
+   $$n_0 = \frac{z^2 \ p (1-p)}{E^2}$$
 
    - **p**: a guess for the population proportion (when unknown, use **p=0.5** for the most conservative / largest **n**).
    - **E**: desired margin of error (e.g., **0.05** for ±5 percentage points).
@@ -276,7 +276,7 @@ You are not expected to derive these formulas, so we're giving them to you-- but
 
    To estimate a population mean with known/assumed standard deviation **σ** the analogous formula is:
 
-   $$n_0 = \frac{z^2 \; σ^2}{E^2}$$
+   $$n_0 = \frac{z^2 \ σ^2}{E^2}$$
 
    Apply the same FPC as above when **N** is provided.
 
