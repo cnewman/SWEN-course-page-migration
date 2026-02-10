@@ -276,7 +276,7 @@ You are not expected to derive these formulas, so we're giving them to you-- but
 
    To estimate a population mean with known/assumed standard deviation **σ** the analogous formula is:
 
-   $$n_0 = \frac{z^2 \; σ^2}{E^2}$$
+   $$n_0 = \frac{z^2 \ σ^2}{E^2}$$
 
    Apply the same FPC as above when **N** is provided.
 
