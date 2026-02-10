@@ -89,8 +89,7 @@ draft: true
 
 - * 5
   * 2/8
-  * * [FLASK Intro](/slides/Client-Server-and-Flask.pptx)
-    * [REST Intro](/slides/REST-APIs-v2.pptx)
+  * * [REST HTTP and FastAPI](slides/HTTP-REST-FastApi.pptx)
     * [Backlog Refinement and Estimation](/topics/backlog-refinement-and-estimation)
   * * [Backlog Refinement and Estimation Homework](/topics/backlog-refinement-and-estimation#exercises)
     * **Rest 1**
