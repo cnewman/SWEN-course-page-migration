@@ -90,7 +90,7 @@ draft: true
 - * 5
   * 2/8
   * * [REST HTTP and FastAPI](slides/HTTP-REST-FastApi.pptx)
-    * [Backlog Refinement and Estimation](/topics/backlog-refinement-and-estimation)
+    * [Backlog Refinement and Estimation](/slides/Backlog_Refinement_and_Estimation.pptx)
   * * [Backlog Refinement and Estimation Homework](/topics/backlog-refinement-and-estimation#exercises)
     * **Rest 1**
       * [Chat](/docs/project/rest-project/chat#rest1-basic-resources-and-resource-methods)
