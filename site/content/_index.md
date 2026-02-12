@@ -18,7 +18,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
   * [Thinking Like a Data-Driven Engineer](https://docs.google.com/presentation/d/1hMmxhHkxHohHJmhwL3hTnIEKw8agXITUM0763P1BxoY/edit?usp=sharing)
     * [Starting your pipeline](https://docs.google.com/presentation/d/1eTuxdrZeJEhWc-Dn7quoemPpFj5OHiUCLrcAJ5b6trg/edit?usp=sharing)
     * [DC0](/docs/data-collection-0)
-    * [Paper](https://dl.acm.org/doi/10.1145/3241743)
+    * [Paper - Research Methods](https://dl.acm.org/doi/10.1145/3241743)
   * * Scientific thinking
     * Research vs. development
     * Pipelines as our architecture
@@ -35,7 +35,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
   * [Research Methods - An Overview - Cont'd](https://docs.google.com/presentation/d/1Ot-AWnxC1KaXiq-zxrOgVC33Ie_eOiHl_tK_wPZyGiA/edit?usp=sharing)
     * [Data Collection II: Ecosystem Artifacts](https://docs.google.com/presentation/d/1vxvo3Ejj-FpEMpB8NBn573q3jHMdumTgKbMKBPhTHGA/edit?usp=sharing)
     * [DC2](/docs/data-collection-ii)
-    * [Paper](/papers/peruma_rename_jss.pdf)
+    * [Paper - renames](/papers/peruma_rename_jss.pdf)
     * Quiz 1 (Thursday) - Research Methodology Definition
     * DC1 DUE
   * * Issues/PRs, CI logs, releases
@@ -45,7 +45,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 - * 4
   * [Data Integrity I: Unstructured Qualitative Data](https://docs.google.com/presentation/d/1FtROFhaamlV7L2eB3S6pb_7pMaZMjLHvCCr04At4M_A/edit?usp=sharing)
     * [DI1](/docs/data-integrity-i)
-    * [Paper](/papers/newman_closed_category.pdf)
+    * [Paper - srcML](https://www.cs.kent.edu/~jmaletic/papers/ICSM13-srcML.pdf)
     * DC2 DUE
   * * Templating
     * Tokenization
@@ -54,7 +54,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 - * 5
   * [Data Integrity II: Sampling & Bias](https://docs.google.com/presentation/d/13lwwVIbB0t-3j4q9yj2Rtfv60--E0m50IrBskZ4HzzM/edit?usp=sharing)
     * [DI2](/docs/data-integrity-ii)
-    * [Paper](https://www.cs.kent.edu/~jmaletic/papers/ICSM13-srcML.pdf)
+    * [Paper - Closed Category Terms](/papers/newman_closed_category.pdf)
     * Quiz 2 (Thursday) - Data Integrity & sample studies
     * DI1 DUE
   * * Sampling

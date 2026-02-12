@@ -297,7 +297,7 @@ You are not expected to derive these formulas, so we're giving them to you-- but
 
 ## Provided Tests
 
-Tests are provided in `test_sampling_algorithms.py`. These tests define the expected behavior for each function. Run them frequently as you implement:
+Tests are provided in [test_sampling_algorithms](/code/test_sampling_algorithms.py). These tests define the expected behavior for each function. Run them frequently as you implement:
 
 The tests cover:
 - **Uniform sampling** — reproducibility with seeds, handling k >= len(items)
