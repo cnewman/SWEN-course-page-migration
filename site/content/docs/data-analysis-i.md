@@ -29,7 +29,6 @@ You can install srcml [from here](https://www.srcml.org/)
 You must implement these functions in `src/da1_identifiers.py`:
 
 **Required for all:**
-- `xml_from_file()` — read XML from disk
 - `aggregate_identifier_features()` — compute file-level metrics
 - `build_file_identifier_dataset()` — build dataset from multiple files
 
@@ -46,28 +45,6 @@ You may implement more than one if you would like, but only one is required. You
 
 ```python
 from typing import Any, Dict, List
-
-def xml_from_file(path: str) -> str:
-    """Read srcML XML content from disk.
-    
-    Parameters:
-    - path: absolute or relative path to XML file
-    
-    Returns:
-    - XML content as string
-    
-    Example:
-    >>> xml = xml_from_file('output/file.py.srcml')
-    >>> '<unit' in xml
-    True
-    
-    Implementation hints:
-    - Use UTF-8 encoding
-    - Simple file read operation
-    """
-    # TODO: Implement
-    pass
-
 
 def extract_identifiers_dom(xml_str: str) -> List[Dict[str, Any]]:
     """Extract identifier rows using a DOM-style approach (ElementTree/XPath-style finds).
@@ -411,7 +388,7 @@ pytest test/test_DA1_identifiers.py -v
 
 1. **Implementation** of all required functions in `src/da1_identifiers.py`
    - You only need to implement **ONE** of: `extract_identifiers_dom()`, `extract_identifiers_sax()`, or `extract_identifiers_dom_xpath()`
-   - You must implement: `xml_from_file()`, `aggregate_identifier_features()`, and `build_file_identifier_dataset()`
+   - You must implement: `aggregate_identifier_features()`, and `build_file_identifier_dataset()`
 2. **All tests passing** in `test/test_da1_identifiers.py`
    - Delete the test classes (TestDOM, TestSAX, or TestXPath) for parsers you did NOT implement
    - Keep TestCommon — it applies to all parser choices

@@ -42,7 +42,7 @@ def _by_name(rows):
 # ============================================================================
 
 class TestCommon:
-    """Tests for parser-agnostic functions (xml_from_file, aggregate_*, etc)."""
+    """Tests for parser-agnostic functions (aggregate_*, build_file_identifier_dataset, etc)."""
     
     def test_aggregate_identifier_features_empty(self):
         """Aggregate should handle empty list."""
