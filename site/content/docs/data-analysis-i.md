@@ -8,13 +8,7 @@
 
 ## Goal
 
-Implement a small static-analysis extractor that mines **identifiers** from srcML XML and produces a compact dataset for analysis.
-
-This week reinforces research methods through implementation:
-- define what you measure (identifier naming behavior)
-- implement extraction reproducibly
-- aggregate into file-level features suitable for EDA/modeling later
-
+Implement a small static-analysis extractor that mines **identifiers** from srcML and produces a compact dataset for analysis.
 ---
 
 ## Learning Outcomes
