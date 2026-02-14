@@ -8,7 +8,8 @@
 
 ## Goal
 
-Implement a small static-analysis extractor that mines **identifiers** from srcML and produces a compact dataset for analysis.
+Implement a small static-analysis extractor that mines **identifiers** from srcML XML and produces a compact dataset for analysis.
+
 ---
 
 ## Learning Outcomes
