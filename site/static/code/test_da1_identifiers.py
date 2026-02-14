@@ -14,7 +14,8 @@ import pytest
 from src import da1_identifiers
 
 
-XML_SAMPLE = """<unit>
+XML_SAMPLE = """<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Python">
   <decl_stmt><decl><type>int</type><name>GLOBAL_CONST</name></decl></decl_stmt>
   <class>
     <name>DataMiner</name>
@@ -116,7 +117,7 @@ class TestDOM:
         dataset = da1_identifiers.build_file_identifier_dataset(
             {
                 "a.py": XML_SAMPLE,
-                "b.py": "<unit><function><name>process_data</name></function></unit>",
+                "b.py": "<unit xmlns=\"http://www.srcML.org/srcML/src\" revision=\"1.0.0\" language=\"Python\"><function><name>process_data</name></function></unit>",
             },
             parser="dom",
         )
@@ -171,7 +172,7 @@ class TestSAX:
         dataset = da1_identifiers.build_file_identifier_dataset(
             {
                 "a.py": XML_SAMPLE,
-                "b.py": "<unit><function><name>ProcessData</name></function></unit>",
+                "b.py": "<unit xmlns=\"http://www.srcML.org/srcML/src\" revision=\"1.0.0\" language=\"Python\"><function><name>ProcessData</name></function></unit>",
             },
             parser="sax",
         )
@@ -245,7 +246,7 @@ class TestXPath:
             dataset = da1_identifiers.build_file_identifier_dataset(
                 {
                     "a.py": XML_SAMPLE,
-                    "b.py": "<unit><function><name>process_data</name></function></unit>",
+                    "b.py": "<unit xmlns=\"http://www.srcML.org/srcML/src\" revision=\"1.0.0\" language=\"Python\"><function><name>process_data</name></function></unit>",
                 },
                 parser="dom",
             )
