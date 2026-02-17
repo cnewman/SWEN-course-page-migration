@@ -112,8 +112,7 @@ draft: true
   * 2/15
   * * [Introduction to Construction](/topics/openup-process-phases)
     * [Client-Server](/slides/RESTful-APIs.pptx)
-    * [Authentication](/slides/Authentication.pptx)
-    * [Unit Testing](/slides/basic-unit-testing-theory.pdf)
+    * [Authentication](https://docs.google.com/presentation/d/1FBpm-hgr6hPQMMVKtmAKaMHTvZiBP2Qr)
   * * [Complete Sprint 1](/docs/project#elaboration-phase--sprint-1)
     * **Rest 2**
       * [Chat](/docs/project/rest-project/chat#rest2-crud-and-authentication)
@@ -131,14 +130,8 @@ draft: true
       * [Nutrikit](/docs/project/client-project/nutri-kit#client-0-startup-your-first-web-page)
   * Sprint 1 due Tuesday this week
 
-- * Break
-  * 3/8
-  * {{% cell-color color="#f59e42" %}}NO CLASS between 3/8 and 3/14{{% /cell-color %}}
-  * None
-  * {{% cell-color color="#d84747" %}}Rest 2 due Tuesday this week{{% /cell-color %}}
-
 - * 8
-  * 3/15
+  * 3/1
   * * [Web Frontends 2 - css boogaloo](/slides/02-Intro-to-Web-Front-Ends-part1.pptx)
     * [Javascript](/slides/Javascript.pptx)
   * * [Design Documentation - team](/topics/design-documentation#exercises)
@@ -147,8 +140,15 @@ draft: true
       * [Nutrikit](/docs/project/client-project/nutri-kit#client-1)
   * Client 0 due Tuesday this week
 
+- * Break
+  * 3/8
+  * {{% cell-color color="#f59e42" %}}NO CLASS between 3/8 and 3/14{{% /cell-color %}}
+  * None
+  * {{% cell-color color="#d84747" %}}Rest 2 due Tuesday this week{{% /cell-color %}}
+
+
 - * 9
-  * 3/22
+  * 3/15
   * [ReactJS](/slides/React.js.pptx)
   * * **Client 2**
       * [Nightclub](/docs/project/client-project/nightclub#client-2-port-to-react)
@@ -156,7 +156,7 @@ draft: true
   * Client 1 due Tuesday this week
 
 - * 10
-  * 3/29
+  * 3/22
   * * [Bootstrap](/slides/Bootstrap.pptx)
     * [Fetch](/slides/Fetch.pptx)
   * * [Sprint 2 due](/docs/project#construction-phase--sprint-2)
@@ -167,7 +167,7 @@ draft: true
   * Client 2, Sprint 2 due Tuesday this week
 
 - * 11
-  * 4/5
+  * 3/29
   * * [Software Metrics and Measurement](/slides/Code-Metrics.pptx)
     * [Defensive Coding](https://docs.google.com/presentation/d/1U9AllDBa26GKRb_wVbkMZ-c_OA09m1_SNVoznbLmAl4/edit#slide=id.p1)
   * **Client 4**
@@ -176,7 +176,7 @@ draft: true
   * Client 3 due this week
 
 - * 12
-  * 4/12
+  * 4/5
   * * [Software Architecture and Patterns](/slides/MVC.pptx)
     * [the end is near](https://docs.google.com/presentation/d/1LLJAdbT7wzkRcTbTeGipB8t5fTXUDcOfIo3gtS--dM8/edit#slide=id.p)
   * None
@@ -193,14 +193,14 @@ draft: true
   * Due
 
 - * 13
-  * 4/19
+  * 4/12
   * [Introduction to Transition](/topics/openup-process-phases)
   * None
   * [Sprint 3 due](/docs/project#construction-phase--sprint-3)
 
 - * 14
-  * 4/26
-  * {{% cell-color color="#f59e42" %}}NO CLASS!!{{% /cell-color %}}
+  * 4/19
+  * {{% cell-color color="#f59e42" %}}TBD{{% /cell-color %}}
   * None
   * {{% cell-color color="#d84747" %}}[Sprint 4 due on the 4th of May](/docs/project#transition-phase--sprint-4){{% /cell-color %}}
 {{% /flex-table %}}
