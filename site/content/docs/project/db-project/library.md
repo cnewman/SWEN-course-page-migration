@@ -115,7 +115,7 @@ In this iteration, you will add:
 * We can already checkout a book, but now we can also return a book (so it will no longer show as **currently** checked out, but will have a history, and include the checked out date and the returned date)
 * **Reserving books**
     * A book should be able to be reserved. This can only be done if all copies of the book are currently checked out.
-* We will add the ability to load data from a file. You will load test data from the provided [csv file](/data/library.csv) and add to the database.
+* We will add the ability to load data from a file. You will load test data from the provided [csv file](/data/Library.csv) and add to the database.
     * This file contains a set of information on books, but will (obviously) not match your own schema.
     * NOTE: You will need to read in the data and figure out a way to make it fit according to your DB schema (or do you need to modify your schema?). There can be inconsistencies in data format, some stray characters etc. Think through how to import this data using code, in a consistent, logical and efficient way.
 

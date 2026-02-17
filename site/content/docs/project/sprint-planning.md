@@ -24,7 +24,7 @@ Previously, you may have been required to add, as best you could user stories, t
 
 In this **Elaboration phase**, the project planning starter Trello board which provided you with initial Sprint Backlog needs to be improved upon by adding/expanding on the remaining user and spike stories that you identified for the rest of the project and any enhancements that your team is considering implementing. Although the enhancements are **not to be** your focus until further sprints. **Seek clarification from your instructor as to when these are to be polished and delivered.**
 
-Again, you needed to make sure to add any missing elements in the provided stories which were not fully defined and get your Trello board in the best shape possible.
+Again, you need to make sure to add any missing elements in the provided stories which were not fully defined and get your Trello board in the best shape possible. This includes acceptance criteria, acceptance tests, and solution tasks
 
 As a team review the [Sprint 1 Grading Rubric](/docs/project/#elaboration-phase--sprint-1) and deliverables.
 
