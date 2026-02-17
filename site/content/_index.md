@@ -90,9 +90,11 @@ draft: true
 - * 5
   * 2/8
   * * [REST HTTP and FastAPI](slides/HTTP-REST-FastApi.pptx)
+    * [Unit Testing](/slides/basic-unit-testing-theory.pdf)
     * [Backlog Refinement and Estimation](/slides/Backlog_Refinement_and_Estimation.pptx)
   * * [Backlog Refinement and Estimation Homework](/topics/backlog-refinement-and-estimation#exercises)
     * **Rest 1**
+      * [RESTful setup instructions](/docs/project/rest-project/restful-setup)
       * [Chat](/docs/project/rest-project/chat#rest1-basic-resources-and-resource-methods)
       * [Rideshare](/docs/project/rest-project/rideshare#rest1-basic-resources-and-resource-methods)
   * DB3 due Tuesday this week
