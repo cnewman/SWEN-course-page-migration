@@ -64,7 +64,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 - * 6
   * [Data Analysis I: Code Structure via AST (srcML)](https://docs.google.com/presentation/d/1_s3wVHGwZcy4lAeMffzKgjlmdGj0vrRWlFzI7s9qpCs/edit?usp=sharing)
     * [DA1](/docs/data-analysis-i)
-    * [Qualitative analysis - Grounded Theory] (https://docs.google.com/presentation/d/1ELhPhaL1CDYbNYWZp90vmoi-GV9tAi0TvFr25goUkbQ/edit?usp=sharing)
+    * [Qualitative analysis - Grounded Theory](https://docs.google.com/presentation/d/1ELhPhaL1CDYbNYWZp90vmoi-GV9tAi0TvFr25goUkbQ/edit?usp=sharing)
     * DI2 DUE
   * * srcML XML AST
     * Static code analysis
