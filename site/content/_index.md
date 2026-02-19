@@ -114,6 +114,7 @@ draft: true
   * * [Introduction to Construction](/topics/openup-process-phases)
     * [Client-Server](/slides/RESTful-APIs.pptx)
     * [Authentication](https://docs.google.com/presentation/d/1FBpm-hgr6hPQMMVKtmAKaMHTvZiBP2Qr)
+    * [Usability & Security](https://docs.google.com/presentation/d/1i8Nroxpzx1AEVWTYu-oSYzJb-5x5rHVdivXk4NPk_rY)
   * * [Complete Sprint 1](/docs/project#elaboration-phase--sprint-1)
     * **Rest 2**
       * [Chat](/docs/project/rest-project/chat#rest2-crud-and-authentication)
