@@ -64,6 +64,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 - * 6
   * [Data Analysis I: Code Structure via AST (srcML)](https://docs.google.com/presentation/d/1_s3wVHGwZcy4lAeMffzKgjlmdGj0vrRWlFzI7s9qpCs/edit?usp=sharing)
     * [DA1](/docs/data-analysis-i)
+    * [Qualitative analysis - Grounded Theory] (https://docs.google.com/presentation/d/1ELhPhaL1CDYbNYWZp90vmoi-GV9tAi0TvFr25goUkbQ/edit?usp=sharing)
     * DI2 DUE
   * * srcML XML AST
     * Static code analysis
@@ -71,8 +72,9 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 
 - * 7
   * Data Analysis II: Exploratory Data Analysis
-    * Quiz 3 (Thursday) - Static Data Analysis & Clustering;
+    * DA2 - coming soon!
     * [Paper - Shorter Names Take Longer](https://www.se.cs.uni-saarland.de/publications/docs/HoSeHo17.pdf)
+    * Quiz 3 (Thursday) - Static Data Analysis & Clustering;
     * DA1 DUE
   * * Correlation
     * Clustering
