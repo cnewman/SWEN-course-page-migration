@@ -995,11 +995,11 @@ Your alignment report should address:
 
 Once your implementation is complete, use one (or more) of these to generate real data.  Each is small enough to mine in a few minutes with a shallow clone, but has enough commit history and source code to produce meaningful vocabulary clusters.
 
-| Repo | Language | Domain | Why it's interesting |
-|------|----------|--------|----------------------|
-| `junit-team/junit4` | Java | Testing framework | Strong vocabulary split: test/assert/expect cluster vs. runner/lifecycle cluster |
-| `nlohmann/json` | C++ | JSON library | Tight token domain (parse, serialize, token, value) - good for watching clusters converge |
-| `libuv/libuv` | C | Async I/O (Node.js backend) | Systems vocabulary (handle, loop, stream, callback) clearly distinct from commit-message language |
+| Repo | Language | Domain |
+|------|----------|--------|
+| `junit-team/junit4` | Java
+| `nlohmann/json` | C++ | JSON library
+| `libuv/libuv` | C | Async I/O (Node.js backend)
 
 Mine with a shallow clone to keep it fast. Replace `--ingest` `--depth` `--file-limit` with your own cli arguments, assuming you have them. If you don't, you might not need them-- these are small repositories. The text in this readme shows you how they are implemented, so search for them if you're confused!
 
