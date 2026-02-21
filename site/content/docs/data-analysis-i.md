@@ -1,3 +1,13 @@
+---
+title: 'Data Analysis I'
+
+weight: 2
+bookToC: true
+bookSearchExclude: false
+
+draft: true
+---
+
 # STRATA — DA1: Data Analysis I
 
 **Mode:** Test-driven assignment — **tests are provided** to define expected behavior.

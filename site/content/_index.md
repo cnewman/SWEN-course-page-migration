@@ -72,9 +72,8 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 
 - * 7
   * Data Analysis II: Exploratory Data Analysis
-    * DA2 - coming soon!
+    * [DA2](/docs/data-analysis-ii)
     * [Paper - Shorter Names Take Longer](https://www.se.cs.uni-saarland.de/publications/docs/HoSeHo17.pdf)
-    * Quiz 3 (Thursday) - Static Data Analysis & Clustering;
     * DA1 DUE
   * * Correlation
     * Clustering
@@ -83,6 +82,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 - * 8
   * Modeling: Prediction
     * DA2 DUE
+    * Quiz 3 (Thursday) - Static Data Analysis & Clustering;
   * * Regression/classification
     * Feature engineering
 
