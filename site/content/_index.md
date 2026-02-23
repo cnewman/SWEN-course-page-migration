@@ -15,8 +15,8 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
   * Topics
 
 - * 1
-  * [Thinking Like a Data-Driven Engineer](https://docs.google.com/presentation/d/1hMmxhHkxHohHJmhwL3hTnIEKw8agXITUM0763P1BxoY/edit?usp=sharing)
-    * [Starting your pipeline](https://docs.google.com/presentation/d/1eTuxdrZeJEhWc-Dn7quoemPpFj5OHiUCLrcAJ5b6trg/edit?usp=sharing)
+  * [Thinking Like a Data-Driven Engineer](https://docs.google.com/presentation/d/1hMmxhHkxHohHJmhwL3hTnIEKw8agXITUM0763P1BxoY)
+    * [Starting your pipeline](https://docs.google.com/presentation/d/1eTuxdrZeJEhWc-Dn7quoemPpFj5OHiUCLrcAJ5b6trg)
     * [DC0](/docs/data-collection-0)
     * [Paper - Research Methods](https://dl.acm.org/doi/10.1145/3241743)
   * * Scientific thinking
@@ -24,16 +24,16 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
     * Pipelines as our architecture
 
 - * 2
-  * [Research Methods - An Overview](https://docs.google.com/presentation/d/1Ot-AWnxC1KaXiq-zxrOgVC33Ie_eOiHl_tK_wPZyGiA/edit?usp=sharing)
-    * [Data Collection I: Software Artifacts](https://docs.google.com/presentation/d/1DGO9fLSewbHUI1z4ACzF7zD6Q3zcX7C2MTHJmXXuymY/edit?usp=sharing) 
+  * [Research Methods - An Overview](https://docs.google.com/presentation/d/1Ot-AWnxC1KaXiq-zxrOgVC33Ie_eOiHl_tK_wPZyGiA)
+    * [Data Collection I: Software Artifacts](https://docs.google.com/presentation/d/1DGO9fLSewbHUI1z4ACzF7zD6Q3zcX7C2MTHJmXXuymY) 
     * [DC1](/docs/data-collection-i)
     * DC0 DUE
   * * Static/dynamic data
     * Scripting/APIs
 
 - * 3
-  * [Research Methods - An Overview - Cont'd](https://docs.google.com/presentation/d/1Ot-AWnxC1KaXiq-zxrOgVC33Ie_eOiHl_tK_wPZyGiA/edit?usp=sharing)
-    * [Data Collection II: Ecosystem Artifacts](https://docs.google.com/presentation/d/1vxvo3Ejj-FpEMpB8NBn573q3jHMdumTgKbMKBPhTHGA/edit?usp=sharing)
+  * [Research Methods - An Overview - Cont'd](https://docs.google.com/presentation/d/1Ot-AWnxC1KaXiq-zxrOgVC33Ie_eOiHl_tK_wPZyGiA)
+    * [Data Collection II: Ecosystem Artifacts](https://docs.google.com/presentation/d/1vxvo3Ejj-FpEMpB8NBn573q3jHMdumTgKbMKBPhTHGA)
     * [DC2](/docs/data-collection-ii)
     * [Paper - renames](/papers/peruma_rename_jss.pdf)
     * Quiz 1 (Thursday) - Research Methodology Definition
@@ -43,7 +43,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
     * Lineage
 
 - * 4
-  * [Data Integrity I: Unstructured Qualitative Data](https://docs.google.com/presentation/d/1FtROFhaamlV7L2eB3S6pb_7pMaZMjLHvCCr04At4M_A/edit?usp=sharing)
+  * [Data Integrity I: Unstructured Qualitative Data](https://docs.google.com/presentation/d/1FtROFhaamlV7L2eB3S6pb_7pMaZMjLHvCCr04At4M_A)
     * [DI1](/docs/data-integrity-i)
     * [Paper - srcML](https://www.cs.kent.edu/~jmaletic/papers/ICSM13-srcML.pdf)
     * DC2 DUE
@@ -52,7 +52,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
     * Normalization
 
 - * 5
-  * [Data Integrity II: Sampling & Bias](https://docs.google.com/presentation/d/13lwwVIbB0t-3j4q9yj2Rtfv60--E0m50IrBskZ4HzzM/edit?usp=sharing)
+  * [Data Integrity II: Sampling & Bias](https://docs.google.com/presentation/d/13lwwVIbB0t-3j4q9yj2Rtfv60--E0m50IrBskZ4HzzM)
     * [DI2](/docs/data-integrity-ii)
     * [Paper - Closed Category Terms](/papers/newman_closed_category.pdf)
     * Quiz 2 (Thursday) - Data Integrity & sample studies
@@ -62,22 +62,22 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
     * Seeds & Reproducibility
 
 - * 6
-  * [Data Analysis I: Code Structure via AST (srcML)](https://docs.google.com/presentation/d/1_s3wVHGwZcy4lAeMffzKgjlmdGj0vrRWlFzI7s9qpCs/edit?usp=sharing)
+  * [Data Analysis I: Code Structure via AST (srcML)](https://docs.google.com/presentation/d/1_s3wVHGwZcy4lAeMffzKgjlmdGj0vrRWlFzI7s9qpCs)
     * [DA1](/docs/data-analysis-i)
-    * [Qualitative analysis - Grounded Theory](https://docs.google.com/presentation/d/1ELhPhaL1CDYbNYWZp90vmoi-GV9tAi0TvFr25goUkbQ/edit?usp=sharing)
+    * [Qualitative analysis - Grounded Theory](https://docs.google.com/presentation/d/1ELhPhaL1CDYbNYWZp90vmoi-GV9tAi0TvFr25goUkbQ)
     * DI2 DUE
   * * srcML XML AST
     * Static code analysis
     * Fact Extraction
 
 - * 7
-  * Data Analysis II: Exploratory Data Analysis
+  * [Data Analysis II: Vocabulary Clustering, Alignment & Feature Engineering](https://docs.google.com/presentation/d/1MSqtmqf8GJb3RkPAbNrJXG7aHmYjw3dKlYyhRuhkNwE)
     * [DA2](/docs/data-analysis-ii)
     * [Paper - Shorter Names Take Longer](https://www.se.cs.uni-saarland.de/publications/docs/HoSeHo17.pdf)
     * DA1 DUE
-  * * Correlation
-    * Clustering
+  * * Clustering
     * Visualization
+    * Dimensionality Reduction
 
 - * 8
   * Modeling: Prediction
