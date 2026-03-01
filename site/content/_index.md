@@ -81,19 +81,20 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 
 - * 8
   * Modeling: Prediction
-    * DA2 DUE
+    * [M1](/docs/modeling-i)
     * Quiz 3 (Thursday) - Static Data Analysis & Clustering;
   * * Regression/classification
     * Feature engineering
 
 - * 9
   * Evaluation
-    * Quiz 4 (Thursday) - Modeling & Prediction
+    * DA2 and M1 DUE
   * * Precision/Recall/F1
     * Overfitting/Underfitting
 
 - * 10
   * Choose a Project
+  * Quiz 4 (Thursday) - Modeling & Prediction
   * * Human Subjects Research
     * Empirical Studies
     * Sample Studies
