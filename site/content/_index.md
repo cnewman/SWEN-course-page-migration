@@ -80,7 +80,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
     * Dimensionality Reduction
 
 - * 8
-  * Modeling: Prediction
+  * [Modeling: Prediction](https://docs.google.com/presentation/d/12L5ZPnhNEk32YyYuaRecQKEAED4bNKU2D9bOgSEOZ5E)
     * [M1](/docs/modeling-i)
     * Quiz 3 (Thursday) - Static Data Analysis & Clustering;
   * * Regression/classification
@@ -94,7 +94,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 
 - * 10
   * Choose a Project
-  * Quiz 4 (Thursday) - Modeling & Prediction
+    * Quiz 4 (Thursday) - Modeling & Prediction
   * * Human Subjects Research
     * Empirical Studies
     * Sample Studies
