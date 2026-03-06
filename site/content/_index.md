@@ -87,46 +87,50 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
     * Feature engineering
 
 - * 9
-  * Evaluation
-    * DA2 and M1 DUE
-  * * Precision/Recall/F1
-    * Overfitting/Underfitting
+  * [Research Proposal & Lit Review](https://docs.google.com/presentation/d/15JaEfRtYENaoDgm8mEMeegmTA7vlnbZ28WlkMka447w)
+    * **RP1 DUE**
+    * DA2/M1 DUE
+  * * Literature Reviews
+    * Finding "The Gap"
+    * Formulating RQs
+    * Related Work
 
 - * 10
-  * Choose a Project
-    * Quiz 4 (Thursday) - Modeling & Prediction
-  * * Human Subjects Research
-    * Empirical Studies
-    * Sample Studies
+  * [Experimental Design & Evaluation]
+    * Quiz 4 (Thursday)
+  * * Cross-validation (Quant)
+    * Grounded Theory/Manual Labeling (Qual)
+    * Statistical Significance (p-values)
 
 - * 11
-  * Experimental Design & Causality
+  * [Replication & Validity]
     * Quiz 5 (Thursday)
-  * * Controlled experiments
-    * A/B tests
-    * quasi-experiments
+  * * Threats to Validity (Internal/External)
+    * Technical Reproducibility (Docker/Seeds)
+    * The Reproducibility Crisis
 
 - * 12
-  * Evaluating Tools & Techniques
-  * * Benchmarks
-    * Types of Validity
+  * [Communicating Evidence]
+  * * Research Paper Anatomy
+    * Data Visualization (Heatmaps/Boxplots)
+    * Storytelling with Data
 
 - * 13
-  * Operationalizing Research
+  * [Human Subjects & Ethics]
     * Quiz 6 (Thursday)
-  * * Reproducibility
-    * Automation
-    * DevOps for research
+  * * HSR & IRB Process
+    * MSR Ethics (Public data vs. Privacy)
+    * Responsible Automation
 
 - * 14
-  * Communicating Evidence
-  * * Visualization
-    * storytelling
-    * stakeholder tailoring
+  * [Peer Review & Lightning Talks]
+  * * The Peer Review Process
+    * Constructive Critique
+    * Presenting Preliminary Results
 
 - * 15
-  * Final Integration + Ethics & Reflection
-  * * End-to-end run
-    * artifact checks
-    * data ethics & responsible automation
+  * [Final Integration & Reflection]
+  * * **FINAL PAPER DUE**
+    * End-to-end pipeline run
+    * Artifact checks
 {{% /flex-table %}}
