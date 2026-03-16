@@ -88,7 +88,8 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 
 - * 9
   * [Research Proposal & Lit Review](https://docs.google.com/presentation/d/15JaEfRtYENaoDgm8mEMeegmTA7vlnbZ28WlkMka447w)
-    * **RP1 DUE**
+    * [RP](/docs/research-proposal-i)
+    * [Paper - Refactoring Classification](/papers/eman_refactoring_classification.pdf)
     * DA2/M1 DUE
   * * Literature Reviews
     * Finding "The Gap"
@@ -104,13 +105,14 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 
 - * 11
   * [Replication & Validity]
-    * Quiz 5 (Thursday)
+    * TBD
   * * Threats to Validity (Internal/External)
     * Technical Reproducibility (Docker/Seeds)
     * The Reproducibility Crisis
 
 - * 12
   * [Communicating Evidence]
+    * Quiz 5 (Thursday)
   * * Research Paper Anatomy
     * Data Visualization (Heatmaps/Boxplots)
     * Storytelling with Data
