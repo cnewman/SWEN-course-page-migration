@@ -99,6 +99,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 - * 10
   * [Experimental Design & Evaluation]
     * Quiz 4 (Thursday)
+    * RP DUE
   * * Cross-validation (Quant)
     * Grounded Theory/Manual Labeling (Qual)
     * Statistical Significance (p-values)
@@ -119,13 +120,14 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 
 - * 13
   * [Human Subjects & Ethics]
-    * Quiz 6 (Thursday)
+    * TBD
   * * HSR & IRB Process
     * MSR Ethics (Public data vs. Privacy)
     * Responsible Automation
 
 - * 14
-  * [Peer Review & Lightning Talks]
+  * [Peer Review]
+    * Quiz 6 (Thursday)
   * * The Peer Review Process
     * Constructive Critique
     * Presenting Preliminary Results
