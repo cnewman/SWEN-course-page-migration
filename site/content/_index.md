@@ -123,7 +123,7 @@ draft: true
 
 - * 7
   * 2/22
-  * * [Design and Code Communication & Code Reviews](/topics/design-and-code-communication-and-code-reviews)
+  * * [Design and Code Communication & Code Reviews](https://docs.google.com/presentation/d/1ncNLwfB5tiJ21egzeq9TkT78ymtVl-dM)
     * [Code Coverage](/topics/code-coverage)
     * [Web Frontends 1](/slides/01-Intro-to-Web-Front-Ends-part0.pptx)
   * * [Sprint 2 plan - team](/docs/project/sprint-planning#sprint-2-and-3-planning)
