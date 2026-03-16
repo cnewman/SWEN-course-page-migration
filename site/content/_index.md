@@ -135,7 +135,7 @@ draft: true
 - * 8
   * 3/1
   * * [Web Frontends 2 - css boogaloo](/slides/02-Intro-to-Web-Front-Ends-part1.pptx)
-    * [Javascript](/slides/Javascript.pptx)
+    * [Javascript](https://docs.google.com/presentation/d/1NuU5X-grd-hxddeNHtX6-lU5RF7j3Hob)
   * * [Design Documentation - team](/topics/design-documentation#exercises)
     * **Client 1**
       * [Nightclub](/docs/project/client-project/nightclub#client-1)
@@ -151,16 +151,17 @@ draft: true
 
 - * 9
   * 3/15
-  * [ReactJS](/slides/React.js.pptx)
+  * [ReactJS](https://docs.google.com/presentation/d/1w24iPC6ZduIeGchZoUtl7AHTSS1Kao5b)
+  * [Javascript - moved back a week](https://docs.google.com/presentation/d/1NuU5X-grd-hxddeNHtX6-lU5RF7j3Hob)
   * * **Client 2**
       * [Nightclub](/docs/project/client-project/nightclub#client-2-port-to-react)
       * [Nutrikit](/docs/project/client-project/nutri-kit#client-2-port-to-react)
-  * Client 1 due Tuesday this week
+  * Client 1 due Tuesday this week (small extension if required)
 
 - * 10
   * 3/22
   * * [Bootstrap](/slides/Bootstrap.pptx)
-    * [Fetch](/slides/Fetch.pptx)
+    * [Fetch](https://docs.google.com/presentation/d/1gSVg5rMOK4yze3aCeb_TghjLBxaoVp-e)
   * * [Sprint 2 due](/docs/project#construction-phase--sprint-2)
     * [Sprint 3 plan - team](/docs/project/sprint-planning#sprint-2-and-3-planning)
     * **Client 3**
