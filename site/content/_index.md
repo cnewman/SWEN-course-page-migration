@@ -151,8 +151,8 @@ draft: true
 
 - * 9
   * 3/15
-  * [ReactJS](https://docs.google.com/presentation/d/1w24iPC6ZduIeGchZoUtl7AHTSS1Kao5b)
-  * [Javascript - moved back a week](https://docs.google.com/presentation/d/1NuU5X-grd-hxddeNHtX6-lU5RF7j3Hob)
+  * * [ReactJS](https://docs.google.com/presentation/d/1w24iPC6ZduIeGchZoUtl7AHTSS1Kao5b)
+    * [Javascript - moved back a week](https://docs.google.com/presentation/d/1NuU5X-grd-hxddeNHtX6-lU5RF7j3Hob)
   * * **Client 2**
       * [Nightclub](/docs/project/client-project/nightclub#client-2-port-to-react)
       * [Nutrikit](/docs/project/client-project/nutri-kit#client-2-port-to-react)
