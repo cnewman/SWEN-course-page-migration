@@ -90,6 +90,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
   * [Research Proposal & Lit Review](https://docs.google.com/presentation/d/15JaEfRtYENaoDgm8mEMeegmTA7vlnbZ28WlkMka447w)
     * [RP](/docs/research-proposal-i)
     * [Paper - Refactoring Classification](/papers/eman_refactoring_classification.pdf)
+    * [Anatomy of a Conrolled Experiment](https://docs.google.com/presentation/d/1kMlVbhQbmC8bl3qQGMwY7Tt5cVpLr2Xl-8qkXLYdDqc)
     * DA2/M1 DUE
   * * Literature Reviews
     * Finding "The Gap"
@@ -98,7 +99,6 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 
 - * 10
   * [Experimental Design & Evaluation]
-    * Quiz 4 (Thursday)
     * RP DUE
   * * Cross-validation (Quant)
     * Grounded Theory/Manual Labeling (Qual)
@@ -107,13 +107,14 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 - * 11
   * [Replication & Validity]
     * TBD
+    * Quiz 4 - Predictive Modeling, Research (Thursday)
   * * Threats to Validity (Internal/External)
     * Technical Reproducibility (Docker/Seeds)
     * The Reproducibility Crisis
 
 - * 12
   * [Communicating Evidence]
-    * Quiz 5 (Thursday)
+    * TBD
   * * Research Paper Anatomy
     * Data Visualization (Heatmaps/Boxplots)
     * Storytelling with Data
@@ -121,13 +122,14 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 - * 13
   * [Human Subjects & Ethics]
     * TBD
+    * Quiz 5 (Thursday)
   * * HSR & IRB Process
     * MSR Ethics (Public data vs. Privacy)
     * Responsible Automation
 
 - * 14
   * [Peer Review]
-    * Quiz 6 (Thursday)
+    * TBD
   * * The Peer Review Process
     * Constructive Critique
     * Presenting Preliminary Results
