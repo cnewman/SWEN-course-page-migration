@@ -98,11 +98,10 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
     * Related Work
 
 - * 10
-  * [Experimental Design & Evaluation]
+  * [Experimental Design & Evaluation](https://docs.google.com/presentation/d/1VUAZczW0-sKCwHSGs-TShA8IO7q9AARmGz8yfOUwc_g)
     * RP DUE
-  * * Cross-validation (Quant)
-    * Grounded Theory/Manual Labeling (Qual)
-    * Statistical Significance (p-values)
+  * * Quantitative Evaluation
+    * Qualitative Evaluation
 
 - * 11
   * [Replication & Validity]
