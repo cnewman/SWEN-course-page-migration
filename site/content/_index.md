@@ -160,7 +160,7 @@ draft: true
 
 - * 10
   * 3/22
-  * * [Bootstrap](/slides/Bootstrap.pptx)
+  * * [Bootstrap](https://docs.google.com/presentation/d/1yVbjqNXP91b1n2nZ41xaTAm8vCRa18e6)
     * [Fetch](https://docs.google.com/presentation/d/1gSVg5rMOK4yze3aCeb_TghjLBxaoVp-e)
   * * [Sprint 2 due](/docs/project#construction-phase--sprint-2)
     * [Sprint 3 plan - team](/docs/project/sprint-planning#sprint-2-and-3-planning)
