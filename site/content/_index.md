@@ -100,12 +100,13 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 - * 10
   * [Experimental Design & Evaluation](https://docs.google.com/presentation/d/1VUAZczW0-sKCwHSGs-TShA8IO7q9AARmGz8yfOUwc_g)
     * RP DUE
+    * [How we refactor and how we document it](https://docs.google.com/presentation/d/1NSIjmPbOyBZia0iRd7qmN3NIzUCbTu74ZVkk6Djj3-M)
   * * Quantitative Evaluation
     * Qualitative Evaluation
 
 - * 11
   * [Replication & Validity]
-    * TBD
+    * [Paper](https://dl.acm.org/doi/abs/10.1145/3649165.3690115)
     * Quiz 4 - Predictive Modeling, Research (Thursday)
   * * Threats to Validity (Internal/External)
     * Technical Reproducibility (Docker/Seeds)
