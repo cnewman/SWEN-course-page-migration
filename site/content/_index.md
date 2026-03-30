@@ -105,27 +105,27 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
     * Qualitative Evaluation
 
 - * 11
-  * [Replication & Validity]
+  * [Human Subjects & Ethics](https://docs.google.com/presentation/d/1j3vScmt_xruBn_Pd7fCbQeoq73HG_q9PHjOSvRNCfB8)
     * [Paper](https://dl.acm.org/doi/abs/10.1145/3649165.3690115)
     * Quiz 4 - Predictive Modeling, Research (Thursday)
-  * * Threats to Validity (Internal/External)
-    * Technical Reproducibility (Docker/Seeds)
-    * The Reproducibility Crisis
-
-- * 12
-  * [Communicating Evidence]
-    * TBD
-  * * Research Paper Anatomy
-    * Data Visualization (Heatmaps/Boxplots)
-    * Storytelling with Data
-
-- * 13
-  * [Human Subjects & Ethics]
-    * TBD
-    * Quiz 5 (Thursday)
   * * HSR & IRB Process
     * MSR Ethics (Public data vs. Privacy)
     * Responsible Automation
+
+- * 12
+  * [Inferential Statistics]
+    * TBD
+  * * Hypothesis Testing
+    * Typical Statistical Visualizations
+    * Storytelling with Data
+
+- * 13
+  * [Replication & Validity]
+    * TBD
+    * Quiz 5 (Thursday)
+  * * Threats to Validity (Internal/External)
+    * Technical Reproducibility (Docker/Seeds)
+    * The Reproducibility Crisis
 
 - * 14
   * [Peer Review]
