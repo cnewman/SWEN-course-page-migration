@@ -109,8 +109,8 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
     * [Paper](https://dl.acm.org/doi/abs/10.1145/3649165.3690115)
     * Quiz 4 - Predictive Modeling, Research (Thursday)
   * * HSR & IRB Process
-    * MSR Ethics (Public data vs. Privacy)
-    * Responsible Automation
+    * Ethics in SE
+    * Running HSR Projects
 
 - * 12
   * [Inferential Statistics]
