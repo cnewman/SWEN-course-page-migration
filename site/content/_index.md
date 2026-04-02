@@ -173,6 +173,7 @@ draft: true
   * 3/29
   * * [Software Metrics and Measurement](/slides/Code-Metrics.pptx)
     * [Defensive Coding](https://docs.google.com/presentation/d/1U9AllDBa26GKRb_wVbkMZ-c_OA09m1_SNVoznbLmAl4/edit#slide=id.p1)
+    * [Security in Web Applications](https://docs.google.com/presentation/d/1fqLSiBuwpb8hfiRKtwGit0DSmjOvu7kyNgxlN_x7Oig)
   * **Client 4**
     * [Nightclub](/docs/project/client-project/nightclub#client-4-full-stack)
     * [Nutrikit](/docs/project/client-project/nutri-kit#client-4-full-stack)
@@ -181,8 +182,7 @@ draft: true
 - * 12
   * 4/5
   * * [Software Architecture and Patterns](/slides/MVC.pptx)
-    * [the end is near](https://docs.google.com/presentation/d/1LLJAdbT7wzkRcTbTeGipB8t5fTXUDcOfIo3gtS--dM8/edit#slide=id.p)
-  * None
+  * [DVWA](https://www.se.rit.edu/~swen-331/activities/webapps/)
   * Client 4 due this week
 {{% /flex-table %}}
 
@@ -198,12 +198,13 @@ draft: true
 - * 13
   * 4/12
   * [Introduction to Transition](/topics/openup-process-phases)
-  * None
+  * [The end is near](https://docs.google.com/presentation/d/1LLJAdbT7wzkRcTbTeGipB8t5fTXUDcOfIo3gtS--dM8/edit#slide=id.p)
+  * Project Presentations
   * [Sprint 3 due](/docs/project#construction-phase--sprint-3)
 
 - * 14
   * 4/19
   * {{% cell-color color="#f59e42" %}}TBD{{% /cell-color %}}
-  * None
+  * Project Presentations
   * {{% cell-color color="#d84747" %}}[Sprint 4 due on the 4th of May](/docs/project#transition-phase--sprint-4){{% /cell-color %}}
 {{% /flex-table %}}
