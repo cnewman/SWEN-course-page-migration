@@ -107,6 +107,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 - * 11
   * [Human Subjects & Ethics](https://docs.google.com/presentation/d/1j3vScmt_xruBn_Pd7fCbQeoq73HG_q9PHjOSvRNCfB8)
     * [Paper](https://dl.acm.org/doi/abs/10.1145/3649165.3690115)
+    * [Promoting Deliberate Naming](https://docs.google.com/presentation/d/1W-EmVAL5FePPLGNbOsQ4tIiNhAHxByjC72TVdluIVXY)
     * Quiz 4 - Predictive Modeling, Research (Thursday)
   * * HSR & IRB Process
     * Ethics in SE
@@ -114,6 +115,7 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 
 - * 12
   * [Inferential Statistics]
+    * [Paper](https://dl.acm.org/doi/abs/10.1145/3639474.3640069)
     * TBD
   * * Hypothesis Testing
     * Typical Statistical Visualizations
