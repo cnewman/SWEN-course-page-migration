@@ -182,7 +182,8 @@ draft: true
 - * 12
   * 4/5
   * * [Software Architecture and Patterns](/slides/MVC.pptx)
-  * [DVWA](/assignments/dvwa)
+  * **Software Security**
+    * [DVWA](/assignments/dvwa)
   * Client 4 due this week
 {{% /flex-table %}}
 
@@ -206,5 +207,7 @@ draft: true
   * 4/19
   * {{% cell-color color="#f59e42" %}}TBD{{% /cell-color %}}
   * [Project Presentations](/assignments/project-presentations)
-  * {{% cell-color color="#d84747" %}}[Sprint 4 due on the 4th of May](/docs/project#transition-phase--sprint-4){{% /cell-color %}}
+  * * DVWA Due on Tuesday this week
+    * [Sprint 4 due on the 4th of May](/docs/project#transition-phase--sprint-4)
+
 {{% /flex-table %}}
