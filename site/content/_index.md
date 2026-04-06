@@ -199,12 +199,12 @@ draft: true
   * 4/12
   * * [Introduction to Transition](/topics/openup-process-phases)
     * [The end is near](https://docs.google.com/presentation/d/1LLJAdbT7wzkRcTbTeGipB8t5fTXUDcOfIo3gtS--dM8/edit#slide=id.p)
-  * Project Presentations
+  * [Project Presentations](/assignments/project-presentations)
   * [Sprint 3 due](/docs/project#construction-phase--sprint-3)
 
 - * 14
   * 4/19
   * {{% cell-color color="#f59e42" %}}TBD{{% /cell-color %}}
-  * Project Presentations
+  * [Project Presentations](/assignments/project-presentations)
   * {{% cell-color color="#d84747" %}}[Sprint 4 due on the 4th of May](/docs/project#transition-phase--sprint-4){{% /cell-color %}}
 {{% /flex-table %}}

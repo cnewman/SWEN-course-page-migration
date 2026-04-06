@@ -108,12 +108,6 @@ Answer the following questions in your document:
 
 ---
 
-### Bonus: bWAPP
-
-If you finish early, explore [bWAPP](http://www.itsecgames.com/), another intentionally vulnerable web application with additional vulnerability types to practice.
-
----
-
 ## Submission
 
 Convert your Google Document to MS Office or PDF format and submit to myCourses under the "Security" assignment.
