@@ -114,9 +114,9 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
     * Running HSR Projects
 
 - * 12
-  * [Inferential Statistics]
+  * [Statistical testing](https://docs.google.com/presentation/d/1D_0y1F5Wb5jSNpkuid28IfGzBLX_GTp-ZR-ddX0R-Fg)
     * [Paper](https://dl.acm.org/doi/abs/10.1145/3639474.3640069)
-    * TBD
+    * [Teachers' Beliefs and PRactices on Naming of Variables](https://docs.google.com/presentation/d/1lUeYAPGfOQVGTpPO4kinT4FbrLmEyrpXteaHArIqDPk)
   * * Hypothesis Testing
     * Typical Statistical Visualizations
     * Storytelling with Data
