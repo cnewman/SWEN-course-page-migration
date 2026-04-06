@@ -131,14 +131,16 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
 
 - * 14
   * [Peer Review]
+    * [FP](/docs/final-paper)
     * TBD
   * * The Peer Review Process
     * Constructive Critique
     * Presenting Preliminary Results
+    * **Start writing your final paper**
 
 - * 15
   * [Final Integration & Reflection]
-  * * **FINAL PAPER DUE**
+  * * **[FINAL PAPER](/docs/final-paper) DUE MAY 4th**
     * End-to-end pipeline run
     * Artifact checks
 {{% /flex-table %}}
