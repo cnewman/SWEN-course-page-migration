@@ -182,7 +182,7 @@ draft: true
 - * 12
   * 4/5
   * * [Software Architecture and Patterns](/slides/MVC.pptx)
-  * [DVWA](https://www.se.rit.edu/~swen-331/activities/webapps/)
+  * [DVWA](/assignments/dvwa)
   * Client 4 due this week
 {{% /flex-table %}}
 
@@ -197,8 +197,8 @@ draft: true
 
 - * 13
   * 4/12
-  * [Introduction to Transition](/topics/openup-process-phases)
-  * [The end is near](https://docs.google.com/presentation/d/1LLJAdbT7wzkRcTbTeGipB8t5fTXUDcOfIo3gtS--dM8/edit#slide=id.p)
+  * * [Introduction to Transition](/topics/openup-process-phases)
+    * [The end is near](https://docs.google.com/presentation/d/1LLJAdbT7wzkRcTbTeGipB8t5fTXUDcOfIo3gtS--dM8/edit#slide=id.p)
   * Project Presentations
   * [Sprint 3 due](/docs/project#construction-phase--sprint-3)
 
