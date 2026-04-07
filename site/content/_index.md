@@ -181,7 +181,7 @@ draft: true
 
 - * 12
   * 4/5
-  * * [Software Architecture and Patterns](/slides/MVC.pptx)
+  * * [Software Architecture and Patterns](https://docs.google.com/presentation/d/1f4wF207XjxzEqv23zyv8cPsT9NwA6sau)
   * [DVWA](https://www.se.rit.edu/~swen-331/activities/webapps/)
   * Client 4 due this week
 {{% /flex-table %}}
