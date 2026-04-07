@@ -12,7 +12,9 @@ draft: true
 
 At the end of the semester, each team will present their TaskMaster project to the class. This is an opportunity to demonstrate what you built, reflect honestly on how the project went, and hear from your peers.
 
-Presentations are spread across Sessions 13 and 14. Your team's slot will be assigned by the instructor.
+Presentations are spread across Sessions 13 and 14.
+
+Pick a slot for your team [here](https://docs.google.com/spreadsheets/d/1MLA9-Oqk6t0oM_Qog4ffheRA56Ddwmj7opMAGWFF9E8) -- we can do up to 3 groups in a single day. Groups may trade slots, but they must do so more than 24 hours before presentation time.
 
 ---
 
