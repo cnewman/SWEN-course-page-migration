@@ -122,11 +122,11 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
     * Storytelling with Data
 
 - * 13
-  * [Replication & Validity]
-    * TBD
-    * Quiz 5 (Thursday)
-  * * Threats to Validity (Internal/External)
-    * Technical Reproducibility (Docker/Seeds)
+  * [Replication, Validity, & Visualization](https://docs.google.com/presentation/d/1vB5t3dR55zm95t_mDA3GsI9o5G1AK4g8N-Coq44nRfI)
+    * [Paper](https://www.sciencedirect.com/science/article/pii/S0950584923001738)
+    * Quiz 5 (Thursday) - You won't need to study for this one!
+  * * Visualizing data for research
+    * Technical Reproducibility
     * The Reproducibility Crisis
 
 - * 14
