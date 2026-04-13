@@ -182,7 +182,7 @@ draft: true
 - * 12
   * 4/5
   * * [Software Architecture and Patterns](https://docs.google.com/presentation/d/1f4wF207XjxzEqv23zyv8cPsT9NwA6sau)
-  * [DVWA](https://www.se.rit.edu/~swen-331/activities/webapps/)
+  * [DVWA](/assignments/dvwa)
   * Client 4 due this week
 {{% /flex-table %}}
 
@@ -204,7 +204,7 @@ draft: true
 
 - * 14
   * 4/19
-  * {{% cell-color color="#f59e42" %}}TBD{{% /cell-color %}}
+  * Project Presentations
   * [Project Presentations](/assignments/project-presentations)
   * * DVWA Due on Tuesday this week
     * [Sprint 4 due on the 4th of May](/docs/project#transition-phase--sprint-4)
