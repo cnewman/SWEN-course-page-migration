@@ -130,16 +130,16 @@ Click this link for the [Syllabus](/docs/syllabus). For this class, assignments 
     * The Reproducibility Crisis
 
 - * 14
-  * [Peer Review]
+  * [Thesis & Capstone](https://docs.google.com/presentation/d/1AVkVTY1fsJZjugUK6NvqCInnUnTfF_f4_cr2BRY3A9Q)
+    * [The Future of SE Research](https://docs.google.com/presentation/d/1H-AwWLl54uDC3wB1wYfmXkvR3Mz3XGpBWaCB3NKmvsU)
     * [FP](/docs/final-paper)
-    * TBD
-  * * The Peer Review Process
-    * Constructive Critique
+    * **Start writing your final paper if you have not begun!**
+  * * Picking a Thesis
+    * The future of SE Research
     * Presenting Preliminary Results
-    * **Start writing your final paper**
 
 - * 15
-  * [Final Integration & Reflection]
+  * NO CLASS THIS WEEK (due to Tues/Thursday university scheduling)
   * * **[FINAL PAPER](/docs/final-paper) DUE MAY 4th**
     * End-to-end pipeline run
     * Artifact checks
