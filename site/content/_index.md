@@ -27,7 +27,7 @@ draft: true
   * Due
 
 - * 1
-  * 1/11
+  * 8/23
   * * [Appreciation for Software Development Process](/topics/appreciation-for-software-development-process)
     * [Introduction to Inception](/topics/openup-process-phases)
     * [Relational Databases](/slides/01-Intro-to-Relational-Databases.pptx)
@@ -38,7 +38,7 @@ draft: true
   * None
 
 - * 2
-  * 1/18
+  * 8/30
   * * [Domain Analysis](/topics/domain-analysis)
     * [Git Repositories](/slides/version-control.pptx)
     * [Relationships and Joins](/slides/02-Relationships-and-Joins.pptx)
@@ -52,7 +52,7 @@ draft: true
   * DB0, Slack/Discord, and Trello setup due Tuesday this week
 
 - * 3
-  * 1/25
+  * 9/6
   * * [CRUD](/slides/03-CRUD-Operations.pptx)
     * [Defining Project Requirements](/topics/defining-project-requirements)
     * [Effective Team Communications](/topics/effective-team-communications)
@@ -75,7 +75,7 @@ draft: true
   * Due
 
 - * 4
-  * 2/1
+  * 9/13
   * * [Introduction to Elaboration](/topics/openup-process-phases)
     * [Sprint Planning](/topics/sprint-planning)
     * [Aggregation](/slides/04-Aggregation-in-Relational-DBs.pptx)
@@ -88,7 +88,7 @@ draft: true
   * DB2, Project Requirements, and Sprint 0 (includes Team domain model, and Trello Backlog) due Tuesday this week
 
 - * 5
-  * 2/8
+  * 9/20
   * * [REST HTTP and FastAPI](slides/HTTP-REST-FastApi.pptx)
     * [Unit Testing](/slides/basic-unit-testing-theory.pdf)
     * [Backlog Refinement and Estimation](/slides/Backlog_Refinement_and_Estimation.pptx)
@@ -110,7 +110,7 @@ draft: true
   * Due
 
 - * 6
-  * 2/15
+  * 9/27
   * * [Introduction to Construction](/topics/openup-process-phases)
     * [Client-Server](/slides/RESTful-APIs.pptx)
     * [Authentication](https://docs.google.com/presentation/d/1FBpm-hgr6hPQMMVKtmAKaMHTvZiBP2Qr)
@@ -122,7 +122,7 @@ draft: true
   * Rest 1 due Tuesday this week
 
 - * 7
-  * 2/22
+  * 10/4
   * * [Design and Code Communication & Code Reviews](https://docs.google.com/presentation/d/1ncNLwfB5tiJ21egzeq9TkT78ymtVl-dM)
     * [Code Coverage](/topics/code-coverage)
     * [Web Frontends 1](/slides/01-Intro-to-Web-Front-Ends-part0.pptx)
@@ -132,8 +132,14 @@ draft: true
       * [Nutrikit](/docs/project/client-project/nutri-kit#client-0-startup-your-first-web-page)
   * Sprint 1 due Tuesday this week
 
+- * Break
+  * 10/11
+  * {{% cell-color color="#f59e42" %}}NO CLASS between 10/11 and 10/17{{% /cell-color %}}
+  * None
+  * {{% cell-color color="#d84747" %}}Rest 2 due Tuesday this week{{% /cell-color %}}
+
 - * 8
-  * 3/1
+  * 10/18
   * * [Web Frontends 2 - css boogaloo](/slides/02-Intro-to-Web-Front-Ends-part1.pptx)
     * [Javascript](https://docs.google.com/presentation/d/1NuU5X-grd-hxddeNHtX6-lU5RF7j3Hob)
   * * [Design Documentation - team](/topics/design-documentation#exercises)
@@ -142,15 +148,8 @@ draft: true
       * [Nutrikit](/docs/project/client-project/nutri-kit#client-1)
   * Client 0 due Tuesday this week
 
-- * Break
-  * 3/8
-  * {{% cell-color color="#f59e42" %}}NO CLASS between 3/8 and 3/14{{% /cell-color %}}
-  * None
-  * {{% cell-color color="#d84747" %}}Rest 2 due Tuesday this week{{% /cell-color %}}
-
-
 - * 9
-  * 3/15
+  * 10/25
   * * [ReactJS](https://docs.google.com/presentation/d/1w24iPC6ZduIeGchZoUtl7AHTSS1Kao5b)
     * [Javascript - moved back a week](https://docs.google.com/presentation/d/1NuU5X-grd-hxddeNHtX6-lU5RF7j3Hob)
   * * **Client 2**
@@ -159,7 +158,7 @@ draft: true
   * Client 1 due Tuesday this week (small extension if required)
 
 - * 10
-  * 3/22
+  * 11/1
   * * [Bootstrap](https://docs.google.com/presentation/d/1yVbjqNXP91b1n2nZ41xaTAm8vCRa18e6)
     * [Fetch](https://docs.google.com/presentation/d/1gSVg5rMOK4yze3aCeb_TghjLBxaoVp-e)
   * * [Sprint 2 due](/docs/project#construction-phase--sprint-2)
@@ -170,7 +169,7 @@ draft: true
   * Client 2, Sprint 2 due Tuesday this week
 
 - * 11
-  * 3/29
+  * 11/8
   * * [Software Metrics and Measurement](/slides/Code-Metrics.pptx)
     * [Defensive Coding](https://docs.google.com/presentation/d/1U9AllDBa26GKRb_wVbkMZ-c_OA09m1_SNVoznbLmAl4/edit#slide=id.p1)
     * [Security in Web Applications](https://docs.google.com/presentation/d/1fqLSiBuwpb8hfiRKtwGit0DSmjOvu7kyNgxlN_x7Oig)
@@ -180,7 +179,7 @@ draft: true
   * Client 3 due this week
 
 - * 12
-  * 4/5
+  * 11/15
   * * [Software Architecture and Patterns](https://docs.google.com/presentation/d/1f4wF207XjxzEqv23zyv8cPsT9NwA6sau)
   * [DVWA](/assignments/dvwa)
   * Client 4 due this week
@@ -196,14 +195,14 @@ draft: true
   * Due
 
 - * 13
-  * 4/12
+  * 11/22
   * * [Introduction to Transition](/topics/openup-process-phases)
     * [The end is near](https://docs.google.com/presentation/d/1LLJAdbT7wzkRcTbTeGipB8t5fTXUDcOfIo3gtS--dM8/edit#slide=id.p)
   * [Project Presentations](/assignments/project-presentations)
   * [Sprint 3 due](/docs/project#construction-phase--sprint-3)
 
 - * 14
-  * 4/19
+  * 11/29
   * Project Presentations
   * [Project Presentations](/assignments/project-presentations)
   * * DVWA Due on Tuesday this week
