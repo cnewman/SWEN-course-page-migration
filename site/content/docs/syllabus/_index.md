@@ -10,8 +10,8 @@ draft: true
 
 ## Office Hours
 
-* Newman is available between 1:30pm and 3:00pm on Tuesday and Thursday in GOL-1690. You may also schedule appointments. He can be contacted @ cdnvse@rit.edu
-* Sreeja is available on Zoom on Fridays from 10:00 AM to 12:00 PM or by appointment. She can be contacted @ sb5848@rit.edu
+* Newman is available between 10:30am and 11:45am on Tuesday and Thursday in GOL-1690. You may also schedule appointments. He can be contacted @ cdnvse@rit.edu
+* Catherine is available TBD
 
 ## Course Description
 

@@ -423,10 +423,6 @@ draft: true
 
 {{% /steps %}}
 
-## DB0: Setup
-
-{{< snippet "snippets/db-project/db0-setup.md" >}}
-
 ### Grading DB0
 
 {{< snippet "snippets/db-project/db0-grading.md" >}}
