@@ -422,3 +422,11 @@ draft: true
 35. Finally, we need to tell the instructors what to grade. Create a tag on the commit that marks your completion of this setup. You can do this on the command line, but it’s probably easiest to do this in GitLab itself by going to *Repository > Tags*. Please call this tag `db0`.
 
 {{% /steps %}}
+
+## DB0: Setup
+
+{{< snippet "snippets/db-project/db0-setup.md" >}}
+
+### Grading DB0
+
+{{< snippet "snippets/db-project/db0-grading.md" >}}
