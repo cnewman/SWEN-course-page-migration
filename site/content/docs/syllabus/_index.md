@@ -10,8 +10,8 @@ draft: true
 
 ## Office Hours
 
-* Newman is available between 10:30am and 11:45am on Tuesday and Thursday in GOL-1690. You may also schedule appointments. He can be contacted @ cdnvse@rit.edu
-* Catherine is available TBD
+* Newman is available between 10:30am and 11:45am on Tuesday and Thursday in GOL-1690. You may also schedule appointments. He can be contacted @ cdnvse at rit.edu
+* Catherine is available 1:00 pm - 2:00pm on Tuesdays and Thursdays. Contact her if you need to meet outside of those times. She can be contacted via clr7695 at rit.edu.
 
 ## Course Description
 
