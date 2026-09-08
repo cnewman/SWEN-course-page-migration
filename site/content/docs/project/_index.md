@@ -50,7 +50,6 @@ All of the information you need about the project for Sprint 0 is in the [Vision
 ### Submission Instructions
 
 * Create a consolidated [Domain model](/topics/domain-analysis#exercises) that incorporates the best elements from each student's domain model. Submit your team's domain model as a PDF file in a directory called 'domain model' at the root of your repo.
-* Create your Product Backlog by populating your Trello planning board with a consolidated set of User and Spike Stories, and Epics following the instructions [here](/assignments/trello-initiation). Your instructor will look at your planning activity directly in your Trello board.
 * Your instructor will look at your team communications participation directly in your Discord workspace channels.
 
 ## Elaboration Phase / Sprint 1
@@ -67,7 +66,8 @@ All of the information you need about the project for Sprint 0 is in the [Vision
 
 * Project submissions
     * [Sprint 1 release](/docs/project/git-releases)
-    * After adding the initial stories (as instructed above), add more stories based on the vision document [Vision document](/docs/project/vision). You should create at least 1 more story per MVP feature (e.g., user management, task management, etc)
+    * Create your Product Backlog by populating your Trello planning board with a consolidated set of User and Spike Stories, and Epics following the instructions [here](/assignments/trello-initiation).
+    * Add more stories based on the vision document [Vision document](/docs/project/vision). You should create at least 1 more story per MVP feature (e.g., user management, task management, etc)
     * Format the stories correctly, adding accpetance criteria, acceptance tests, and solution tasks
     * Create an initial Definition of Done
     * Add PEP8 to your CI via [Ruff](https://github.com/astral-sh/ruff)

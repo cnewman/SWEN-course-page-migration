@@ -85,7 +85,7 @@ draft: true
       * [Chat](/docs/project/db-project/chat-system#db3-expanding-your-schema)
       * [Rideshare](/docs/project/db-project/rideshare#db3-expanding-your-schema)
       * [Library](/docs/project/db-project/library#db3-expanding-your-schema)
-  * DB2, Project Requirements, and Sprint 0 (includes Team domain model, and Trello Backlog) due Tuesday this week
+  * DB2, Project Requirements, and Sprint 0 due Tuesday this week
 
 - * 5
   * 9/20
