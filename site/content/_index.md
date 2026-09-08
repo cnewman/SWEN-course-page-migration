@@ -53,9 +53,9 @@ draft: true
 
 - * 3
   * 9/6
-  * * [CRUD](/slides/03-CRUD-Operations.pptx)
-    * [Defining Project Requirements](/topics/defining-project-requirements)
-    * [Effective Team Communications](/topics/effective-team-communications)
+  * * [CRUD](https://docs.google.com/presentation/d/1XUh79T5J9Q7fa9cboNZHWBFMqSA1eGzo)
+    * [Defining Project Requirements](https://docs.google.com/presentation/d/1MbM2bm4w5zI1PJiZT_eBgGd4O-1EQBmF)
+    * [Code Reviews](https://docs.google.com/presentation/d/1ncNLwfB5tiJ21egzeq9TkT78ymtVl-dM)
   * * [Trello Team Initiation](/assignments/trello-initiation)
     * [Complete Sprint 0](/docs/project#inception-phase--sprint-0)
     * **DB 2**
@@ -123,7 +123,7 @@ draft: true
 
 - * 7
   * 10/4
-  * * [Design and Code Communication & Code Reviews](https://docs.google.com/presentation/d/1ncNLwfB5tiJ21egzeq9TkT78ymtVl-dM)
+  * * [Effective Team Communications](/topics/effective-team-communications)
     * [Code Coverage](/topics/code-coverage)
     * [Web Frontends 1](/slides/01-Intro-to-Web-Front-Ends-part0.pptx)
   * * [Sprint 2 plan - team](/docs/project/sprint-planning#sprint-2-and-3-planning)
