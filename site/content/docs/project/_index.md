@@ -40,6 +40,8 @@ All of the information you need about the project for Sprint 0 is in the [Vision
 * Project submissions
     * [Domain model](/topics/domain-analysis#exercises)
     * [Product backlog](/assignments/trello-initiation)
+    * Create a repository for your TaskMaster project at the root of your group on Gitlab.
+    * Pin a link to your **Trello** and to your **TaskMaster** repository in your Discord group chat.
 * Other grading dimensions
     * Individual team member visibility in Discord workspace
     * Team activity on Gitlab and Trello
@@ -65,16 +67,18 @@ All of the information you need about the project for Sprint 0 is in the [Vision
 
 * Project submissions
     * [Sprint 1 release](/docs/project/git-releases)
-    * Add more stories based on the vision document [Vision document](/docs/project/vision). You should create at least 1 more story per MVP feature (e.g., user management, task management, etc)
+    * After adding the initial stories (as instructed above), add more stories based on the vision document [Vision document](/docs/project/vision). You should create at least 1 more story per MVP feature (e.g., user management, task management, etc)
     * Format the stories correctly, adding accpetance criteria, acceptance tests, and solution tasks
+    * Create an initial Definition of Done
+    * Add PEP8 to your CI via [Ruff](https://github.com/astral-sh/ruff)
     * Application implementation
         * Basic Functionality - some basic REST routes and a basic DB schema (for example, create a basic schema for tasks and a route to create/read the tasks in the db)
         * Adherence to Model View View-Model (MVVM) Architecture (just follow course instructions)
 * Other dimensions
     * [Planning and managing of activities in Trello board](/docs/project/sprint-planning#sprint_1_planning) **throughout** and in support of **Sprint 1**
     * Gitlab use for version control
-    * Slack/Discord workspace use for team communication
-    * [Individual team member visibility in Trello board, Slack workspace, and Gitlab activities](#individual-team-member-evaluation)
+    * Discord workspace use for team communication
+    * [Individual team member visibility in Trello board, Discord, and Gitlab activities](#individual-team-member-evaluation)
     * Each team member completes their individual assignments and shows competency in the programming required by the project
 
 ### Team Exercises
@@ -88,8 +92,8 @@ All of the information you need about the project for Sprint 0 is in the [Vision
 * Your instructor will observe your demo to gauge the functionality of the product, and may also do independent testing of it for the Functionality dimension. The instructor will do this privately, you will not be making presentations. Make sure you have a working prototype (i.e., make sure it works on Gitlab's pipeline)
 * Your instructor will review your code to determine how well you are adhering to the architecture and design principles that were covered in class.
 * Your instructor will look at your [planning activity](/docs/project/sprint-planning) directly in your Trello planning board. Your planning activity should show consistent updating of the story cards as stories progress through the sprint activities.
-* Your instructor will look at your version control use, and team communications directly in your Gitlab repository, and Slack workspace, respectively.
-* Your instructor will determine [individual contributions](#individual-team-member-evaluation) to the project directly from the evidence provided in your team's Trello board, Gitlab repository, and Slack workspace.
+* Your instructor will look at your version control use, and team communications directly in your Gitlab repository, and Discord workspace, respectively.
+* Your instructor will determine [individual contributions](#individual-team-member-evaluation) to the project directly from the evidence provided in your team's Trello board, Gitlab repository, and Discord workspace.
 
 ## Construction Phase / Sprint 2
 
@@ -113,8 +117,8 @@ All of the information you need about the project for Sprint 0 is in the [Vision
 * Other dimensions
     * Planning activities in Trello board
     * GitHub use for version control
-    * Slack/Discord workspace use for team communication
-    * [Individual team member visibility in Trello board, Slack/Discord workspace, and GitHub activities](#individual-team-member-evaluation)
+    * Discord workspace use for team communication
+    * [Individual team member visibility in Trello board, Discord workspace, and GitHub activities](#individual-team-member-evaluation)
 
 ### Submission Instructions
 * Create a Sprint 2 release using the instructions for creating a GitHub code release provided [here](/docs/project/git-releases).
@@ -123,7 +127,7 @@ All of the information you need about the project for Sprint 0 is in the [Vision
 * Make sure your README is at the root of the repo and your updated domain model is in the domain model directory
 * Your team should submit code coverate statistics (if it shows in the CI, that's fine. Otherwise, you can add it as part of your commit).
 * Your instructor will evaluate your Planning Activities and Version Control Activities directly in your Trello planning board and GitLab repository, respectively.
-* Your instructor will determine [individual contributions](#individual-team-member-evaluation) to the project directly from the evidence provided in your team's Trello board, GitHub repository, and Slack workspace.
+* Your instructor will determine [individual contributions](#individual-team-member-evaluation) to the project directly from the evidence provided in your team's Trello board, GitHub repository, and Discord workspace.
 
 ## Construction Phase / Sprint 3
 
@@ -145,14 +149,14 @@ All of the information you need about the project for Sprint 0 is in the [Vision
         * Unit tests and code coverage
         * Adherence to prescribed architecture and design principles
         * Code reviews (in your Gitlab instance)
-        * Code communication (through Slack/Discord)
+        * Code communication (through Discord)
         * Code Metric(s), of your choosing, through a static or dynamic analysis tool (of your choosing). This can be anything except the code coverage tool.
         * Code Documentation -- Your code should have some basic documentation (can be improved for Sprint 4). In particular, your functions should have some comments, you should have a README at the root of your project that describes how to install/use your project
 * Other dimensions
     * Planning activities in Trello board
     * GitHub use for version control
-    * Slack/Discord workspace use for team communication
-    * [Individual team member visibility in Trello board, Slack workspace, and GitHub activities](#individual-team-member-evaluation)
+    * Discord workspace use for team communication
+    * [Individual team member visibility in Trello board, Discord workspace, and GitHub activities](#individual-team-member-evaluation)
 
 ## Transition Phase / Sprint 4
 
@@ -173,4 +177,4 @@ All of the information you need about the project for Sprint 0 is in the [Vision
     * 10% additional functionality has been fully implemented
     * Code is documented -- non-trivial Functions are commented, there is a README discussing how to install and run your project in the root of your gitlab repository
 * Other dimensions
-    * [Individual team member visibility in Trello board, Slack workspace, and GitHub activities](#individual-team-member-evaluation)
+    * [Individual team member visibility in Trello board, Discord workspace, and GitHub activities](#individual-team-member-evaluation)
