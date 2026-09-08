@@ -39,7 +39,6 @@ All of the information you need about the project for Sprint 0 is in the [Vision
 
 * Project submissions
     * [Domain model](/topics/domain-analysis#exercises)
-    * [Product backlog](/assignments/trello-initiation)
     * Create a repository for your TaskMaster project at the root of your group on Gitlab.
     * Pin a link to your **Trello** and to your **TaskMaster** repository in your Discord group chat.
 * Other grading dimensions
@@ -66,7 +65,7 @@ All of the information you need about the project for Sprint 0 is in the [Vision
 
 * Project submissions
     * [Sprint 1 release](/docs/project/git-releases)
-    * Create your Product Backlog by populating your Trello planning board with a consolidated set of User and Spike Stories, and Epics following the instructions [here](/assignments/trello-initiation).
+    * Create your Product Backlog by populating your Trello planning board with a consolidated set of User and Spike Stories, and Epics following the [Product backlog instructions](/assignments/trello-initiation).
     * Add more stories based on the vision document [Vision document](/docs/project/vision). You should create at least 1 more story per MVP feature (e.g., user management, task management, etc)
     * Format the stories correctly, adding accpetance criteria, acceptance tests, and solution tasks
     * Create an initial Definition of Done
