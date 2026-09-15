@@ -78,8 +78,8 @@ draft: true
   * 9/13
   * * [Introduction to Elaboration](/topics/openup-process-phases)
     * [Sprint Planning](/topics/sprint-planning)
-    * [Aggregation](/slides/04-Aggregation-in-Relational-DBs.pptx)
-    * [Normalization](/slides/03.1-Normalization.pptx)
+    * [Aggregation](https://docs.google.com/presentation/d/1CRUz8pHXKJv3FlfOb6vjGbIsJUJJNF_d)
+    * [Normalization](https://docs.google.com/presentation/d/1swgGGUpwVg-GulBJRrNr6O9AnT6zqQpt)
   * * [Sprint 1 plan - team](/docs/project/sprint-planning#sprint-1-planning)
     * **DB 3** 
       * [Chat](/docs/project/db-project/chat-system#db3-expanding-your-schema)
