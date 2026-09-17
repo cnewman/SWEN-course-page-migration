@@ -475,12 +475,6 @@ These first few instructions will be exactly the same as the DB project, but the
     
     Also, you will notice we are using a RESTful API in the `setUp()` function to perform the DB init within unittest setup that we used to call directly. It’s all Client-Server now, so we use the `management` endpoint to set up the DB.
 
-    {{% hint info %}}
-
-    **Why not FastAPI’s `TestClient`?** FastAPI ships a `TestClient` that calls your app in-process, without a network. That’s handy, but it would let us quietly skip the part we care about in this course - a real client talking to a real server over HTTP. Stick with `requests` against a running server.
-
-    {{% /hint %}}
-
 27. Let’s run our tests. Hopefully they pass now. (Your output should be something like this)
 
     ```
