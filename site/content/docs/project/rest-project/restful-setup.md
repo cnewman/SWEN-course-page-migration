@@ -26,15 +26,15 @@ These first few instructions will be exactly the same as the DB project, but the
 
 2. Clone your project repository locally using your favorite Git client. (See our [Git page](/git-resources) for some helpful resources.)
 
-3. You will need [Python 3.9](https://www.python.org/downloads/) installed on your system. Be sure to add `python` to your PATH in installation. *SWEN lab machines:* If you are in the lab, this is pre-installed and available on the command line.
+3. You will need [Python 3.12](https://www.python.org/downloads/) installed on your system. Be sure to add `python` to your PATH in installation. *SWEN lab machines:* If you are in the lab, this is pre-installed and available on the command line.
 
-4. Install [PostgreSQL 14](https://www.postgresql.org/download/). *SWEN lab machines:* PostgreSQL is already installed on the SE lab machines.
+4. Install [PostgreSQL 17](https://www.postgresql.org/download/). *SWEN lab machines:* PostgreSQL is already installed on the SE lab machines.
 
 5. Using the PostgreSQL admin console (pgAdmin), create a user called `swen610` with a password of your choosing. This password will be stored in a file, so you don’t need to memorize it - you can mash the keyboard. Just keep that string because we’re about to put it in a file in a moment. **Note:** be sure to check the box for “User Can Login” on the Privileges tab. *SWEN lab machines:* this has been done for you. The password is `salutecaptionearthyfight`
 
 6. Still in pgAdmin, create a database also called `swen610` and make the owner of it the user `swen610`.
 
-7. Now let’s create our project structure in our local repository. We’re going to explain every file, but let’s start by turning some of our directories into [Python packages](https://docs.python.org/3.7/tutorial/modules.html#packages) by creating a bunch of directories and empty `__init__.py` files. Please use these exact folder names. Your file structure should be this:
+7. Now let’s create our project structure in our local repository. We’re going to explain every file, but let’s start by turning some of our directories into [Python packages](https://docs.python.org/3.12/tutorial/modules.html#packages) by creating a bunch of directories and empty `__init__.py` files. Please use these exact folder names. Your file structure should be this:
 
     ```
     rest-abc123/                         // your username instead of abc123
@@ -87,37 +87,50 @@ These first few instructions will be exactly the same as the DB project, but the
 
     ```yaml
     image:
-    name: kalrabb/docker-344-v2025:latest:latest
+      name: kalrabb/docker-344-v2025:latest
 
     services:
-    - postgres:17
+      - postgres:17
 
     variables:
-    POSTGRES_DB: swen610
-    POSTGRES_USER: swen610
-    POSTGRES_PASSWORD: whowatchesthewatchmen
-    PYTHON_RUN: python3
+      POSTGRES_DB: swen610
+      POSTGRES_USER: swen610
+      POSTGRES_PASSWORD: whowatchesthewatchmen
+      PYTHON_RUN: python3
 
     before_script:
-    - pip install -r requirements.txt
-    - cp config/gitlab-credentials.yml config/db.yml
-    - $PYTHON_RUN --version
-    - $PYTHON_RUN src/server.py & # fire up the server before we run our tests
-
-    - sleep 3
+      - pip install -r requirements.txt
+      - cp config/gitlab-credentials.yml config/db.yml
+      - $PYTHON_RUN --version
+      - $PYTHON_RUN src/server.py & # fire up the server before we run our tests
+      - sleep 3
 
     testrunner:
-    script:
+      script:
         - $PYTHON_RUN -m unittest -v # run the unit tests; -v prints the test being run
-
-    stage: test
+      stage: test
     ```
 
 12. Now we need to tell Python what packages we need. At the root of the repository make a file called `requirements.txt` with this content. Note: if you ever need to add new Python packages for your project, feel free to add them here and they will get installed upon every run of the CI.
 
-    You should just run this once on your local device, to install the dependencies. Use `pip install -r`
+    ```
+    fastapi==0.141.1
+    uvicorn==0.53.0
+    psycopg2==2.9.10
+    PyYAML==6.0.2
+    requests==2.32.3
+    ```
 
-    **NOTE:** MacOS users should follow the [guidance from the DB project](/docs/project/db-project) re: psycopg2-binary. i.e. if you installed psycopg2-binary, don’t attempt to re-install it from requirements.txt.
+    You should just run this once on your local device, to install the dependencies. Use `pip install -r requirements.txt`
+
+    A quick tour of what these are for:
+
+    * `fastapi` is our web framework - it turns Python functions into RESTful endpoints.
+    * `uvicorn` is the server that actually listens on a port and hands requests to FastAPI.
+    * `psycopg2` talks to PostgreSQL, and `PyYAML` parses our config files - both carried over from the DB project.
+    * `requests` is used by our **tests** to make HTTP calls to our own server.
+
+    **NOTE:** MacOS users should follow the [guidance from the DB project](/docs/project/db-project) re: psycopg2-binary. i.e. if you installed psycopg2-binary, don’t attempt to re-install it from requirements.txt. See the [Mac users](#mac-users) section below for a way to keep the CI happy while doing this.
 
 13. Let’s create out test data set. Create a file called `src/db/test_data.sql` with this content:
 
@@ -223,79 +236,91 @@ These first few instructions will be exactly the same as the DB project, but the
 17. Now we need to set up our server. Create a file called `src/server.py`. Here are its contents:
 
     ```python
-    from flask import Flask
-    from flask_restful import Resource, Api
-    from api.hello_world import HelloWorld
-    from api.management import *
+    from contextlib import asynccontextmanager
+    from fastapi import FastAPI
+    import uvicorn
 
-    app = Flask(__name__)
-    api = Api(app)
+    from api.hello_world import router as hello_world_router
+    from api.management import router as management_router
+    from db.example import rebuild_tables
 
-    api.add_resource(Init, '/manage/init') #Management API for initializing the DB
+    @asynccontextmanager
+    async def lifespan(app: FastAPI):
+        rebuild_tables()  # runs once, right before the server starts accepting requests
+        yield
 
-    api.add_resource(Version, '/manage/version') #Management API for checking DB version
+    app = FastAPI(lifespan=lifespan)
 
-    api.add_resource(HelloWorld, '/') 
-
+    app.include_router(management_router)  # Management API for initializing the DB and checking its version
+    app.include_router(hello_world_router)
 
     if __name__ == '__main__':
-        rebuild_tables()
-        app.run(debug=True)
+        uvicorn.run(app, host='127.0.0.1', port=8000)
     ```
 
-    Notice that we rebuild the tables when the server starts up. You are welcome to update this to your liking. Maybe add some command-line arguments. Or dynamically loading all resource classes from that module. Totally up to you - this is just starter.
+    A few things to notice here:
 
-18. You’ll notice that we reference an `HelloWorld` class. That should be in `src/api/hello_world.py` with this content:
+    * Notice that we rebuild the tables when the server starts up. FastAPI calls that a **lifespan** - the code before the `yield` runs at startup, and anything after it would run at shutdown. You are welcome to update this to your liking. Maybe add some command-line arguments. Or dynamically load all the routers from that module. Totally up to you - this is just starter.
+    * `uvicorn` is the actual web server - FastAPI itself only defines the endpoints, and something has to listen on a port. This is the one piece Flask handled for you with `app.run()`.
+    * Unlike Flask-RESTful, FastAPI doesn’t use a class per endpoint. We group related endpoints into an `APIRouter` and then `include_router` them onto the app.
+    * **There is no auto-reload here.** Whenever you change your server code, stop the server with `CTRL+C` and start it again. Uvicorn does have a `reload=True` option, and you are welcome to try it, but we have seen its file watcher hang on Windows and leave a dead process squatting on port 8000 - which is a far more confusing problem than just restarting the server yourself.
+
+18. You’ll notice that we reference a `hello_world` router. That should be in `src/api/hello_world.py` with this content:
 
     ```python
-    from flask_restful import Resource
+    from fastapi import APIRouter
     from db import example
 
-    class HelloWorld(Resource):
-        def get(self):
-            return dict(example.list_examples())
+    router = APIRouter()
+
+    @router.get('/')
+    def hello_world():
+        return dict(example.list_examples())
     ```
 
-    Also add the `Management` class, which will initialize/ setup the DB. This should be in `src\api\management.py` with this content:
+    Also add the management endpoints, which will initialize/ setup the DB. This should be in `src\api\management.py` with this content:
 
     ```python
-    from flask_restful import Resource, reqparse, request  #NOTE: Import from flask_restful, not python
+    from fastapi import APIRouter
 
     from db.swen610_db_utils import *
 
     from db.example import rebuild_tables
 
-    class Init(Resource):
-        def post(self):
-            rebuild_tables()
+    router = APIRouter(prefix='/manage')
 
-    class Version(Resource):
-        def get(self):
-            return (exec_get_one('SELECT VERSION()'))
+    @router.post('/init')
+    def init():
+        rebuild_tables()
+
+    @router.get('/version')
+    def version():
+        return exec_get_one('SELECT VERSION()')
     ```
 
-19. Let’s run our server now. Run python `src/server.py`. The console will look something like this:
+    The `prefix='/manage'` on the router is why these end up at `/manage/init` and `/manage/version`. Whatever your function returns gets converted to JSON for you - so the tuple that comes back from `exec_get_one` shows up as a JSON array.
+
+19. Let’s run our server now. Run `python src/server.py`. The console will look something like this:
 
     ```
     >python src\server.py
-    * Serving Flask app "server" (lazy loading)
-    * Environment: production
-    WARNING: This is a development server. Do not use it in a production deployment.
-    Use a production WSGI server instead.
-    * Debug mode: on
-    * Restarting with windowsapi reloader
-    * Debugger is active!
-    * Debugger PIN: 197-473-693
-    * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+    INFO:     Started server process [13579]
+    INFO:     Waiting for application startup.
+    INFO:     Application startup complete.
+    INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
     ```
 
-20. Open up a browser and go to http://127.0.0.1:5000. Do you see the `hello, world` in JSON?
+    Leave this terminal open and keep an eye on it - uvicorn logs every request here, and it’s also where your stacktraces will show up.
+
+20. Open up a browser and go to http://127.0.0.1:8000. Do you see the `hello, world` in JSON?
 
     * Also try the command line tool `curl` (usually installed on Windows PCs) to test this simple endpoint e.g.
-        * `curl http://localhost:5000`
+        * `curl http://localhost:8000`
         * You should see the same output
 
-21. Now let’s add some client side test code. As in the DB project, we should test that Postgres is working. Make a file called `tests/db/test_postgresql.py` and put this in it:
+21. Here’s something you get for free with FastAPI: go to http://127.0.0.1:8000/docs. FastAPI generates interactive API documentation from your code, and you can fire off requests right from the browser - including the `POST /manage/init` one, which is otherwise awkward to trigger from the address bar. Poke around in there; it’s the fastest way to sanity-check an endpoint you just wrote. (There’s a second flavor at `/redoc` if you prefer it.)
+
+22. Now let’s add some client side test code. As in the DB project, we should test that Postgres is working. Make a file called `tests/db/test_postgresql.py` and put this in it:
 
     ```python
     import unittest
@@ -304,11 +329,11 @@ These first few instructions will be exactly the same as the DB project, but the
     class TestPostgreSQL(unittest.TestCase):
 
         def test_can_connect(self):
-            version = get_rest_call(self, 'http://localhost:5000/manage/version')
+            version = get_rest_call(self, 'http://localhost:8000/manage/version')
             self.assertTrue(version[0].startswith('PostgreSQL'))
     ```
 
-22. Now let’s set up our schema and test data. Create this test called `tests/db/test_db_schema.py`
+23. Now let’s set up our schema and test data. Create this test called `tests/db/test_db_schema.py`
 
     ```python
     import unittest
@@ -318,19 +343,19 @@ These first few instructions will be exactly the same as the DB project, but the
 
         def test_rebuild_tables(self):
             """Rebuild the tables"""
-            post_rest_call(self, 'http://localhost:5000/manage/init')
-            count = get_rest_call(self, 'http://localhost:5000')
+            post_rest_call(self, 'http://localhost:8000/manage/init')
+            count = get_rest_call(self, 'http://localhost:8000')
             self.assertEqual(len(count), 1)
 
         def test_rebuild_tables_is_idempotent(self):
             """Drop and rebuild the tables twice"""
-            post_rest_call(self, 'http://localhost:5000/manage/init')
-            post_rest_call(self, 'http://localhost:5000/manage/init')
-            count = get_rest_call(self, 'http://localhost:5000')
+            post_rest_call(self, 'http://localhost:8000/manage/init')
+            post_rest_call(self, 'http://localhost:8000/manage/init')
+            count = get_rest_call(self, 'http://localhost:8000')
             self.assertEqual(len(count), 1)
     ```
 
-23. You’ll also need this test utility, called `tests/test_utils.py`
+24. You’ll also need this test utility, called `tests/test_utils.py`
 
     ```python
     import requests
@@ -373,13 +398,13 @@ These first few instructions will be exactly the same as the DB project, but the
         return response.json()
     ```
 
-24. We are now going to the the unit tests (so you will need a 2nd terminal).
+25. We are now going to run the unit tests (so you will need a 2nd terminal).
 
     **Make sure your server is still running.**
 
     The tests should pass, hopefully.
-    
-    * To see details of the unittests, use the -v switch i.e. python -m unittest -v
+
+    * To see details of the unittests, use the -v switch i.e. `python -m unittest -v`
     * At this point, your file structure should look like this now:
 
     ```
@@ -426,7 +451,7 @@ These first few instructions will be exactly the same as the DB project, but the
         |   |
     ```
 
-25. We’re not quite done. We need some automated tests for our API! This is crucial. We’re going to be using a Python library that simulates a browser called `Requests`. The Requests library is essentially a wrapper for opening up a network socket and sending HTTP data into it, and not much more. Make a test called `tests/api/test_example.py` with this content:
+26. We’re not quite done. We need some automated tests for our API! This is crucial. We’re going to be using a Python library that simulates a browser called `Requests`. The Requests library is essentially a wrapper for opening up a network socket and sending HTTP data into it, and not much more. Make a test called `tests/api/test_example.py` with this content:
 
     ```python
     import unittest
@@ -437,12 +462,12 @@ These first few instructions will be exactly the same as the DB project, but the
 
         def setUp(self):  
             """Initialize DB using API call"""
-            post_rest_call(self, 'http://localhost:5000/manage/init')
+            post_rest_call(self, 'http://localhost:8000/manage/init')
             print("DB Should be reset now")
 
         def test_hello_world(self):
             expected = { '1' : 'hello, world!' }
-            actual = get_rest_call(self, 'http://localhost:5000')
+            actual = get_rest_call(self, 'http://localhost:8000')
             self.assertEqual(expected, actual)
     ```
 
@@ -450,7 +475,13 @@ These first few instructions will be exactly the same as the DB project, but the
     
     Also, you will notice we are using a RESTful API in the `setUp()` function to perform the DB init within unittest setup that we used to call directly. It’s all Client-Server now, so we use the `management` endpoint to set up the DB.
 
-26. Let’s run our tests. Hopefully they pass now. (Your output should be something like this)
+    {{% hint info %}}
+
+    **Why not FastAPI’s `TestClient`?** FastAPI ships a `TestClient` that calls your app in-process, without a network. That’s handy, but it would let us quietly skip the part we care about in this course - a real client talking to a real server over HTTP. Stick with `requests` against a running server.
+
+    {{% /hint %}}
+
+27. Let’s run our tests. Hopefully they pass now. (Your output should be something like this)
 
     ```
     python -m unittest -v
@@ -510,12 +541,22 @@ These first few instructions will be exactly the same as the DB project, but the
         |   |
     ```
 
-27. Once it’s working - commit and push to GitLab. Make sure the CI works there as well.
+28. Once it’s working - commit and push to GitLab. Make sure the CI works there as well.
 
-28. **Important step.** Break the code in a couple of ways and note the error messages. Specifically, do the following:
+29. **Important step.** Break the code in a couple of ways and note the error messages. Specifically, do the following:
 
-    * Add an Python syntax error in `src/api/hello_world.py` while the server is running. Note that the server dies as soon as you hit Save in your editor. Going to your browser will tell you the server can’t be found.
-    * Add a runtime exception to `src/api/hello_world.py`, say add `foo.hello` that will cause a `NameError: foo not found`. Go to http://localhost:5000 in your browser. You’ll get a nifty debugging tool that shows you the stacktrace. Go to a line in the stacktrace and open up the console and run some Python within that stack frame. You’ll need to enter a PIN - that was printed to stdout when you started the server.
+    * Add a Python syntax error in `src/api/hello_world.py` - delete the colon off the end of `def hello_world():`. Note that the running server doesn’t care at all, because it already imported that file. Now stop it and start it again. It never gets as far as listening on a port; you just get a traceback ending in something like:
+
+        ```
+        File "...\src\api\hello_world.py", line 7
+            def hello_world()
+                             ^
+        SyntaxError: expected ':'
+        ```
+
+        Note that the traceback blames `server.py` first and then walks down to the real culprit. Get in the habit of reading to the *bottom* of a traceback.
+
+    * Fix that, then add a runtime exception instead: put `foo.hello` as the first line of `hello_world()`. Restart the server and go to http://localhost:8000 in your browser. This time the server starts up fine and stays up, and your browser gets a bare `Internal Server Error` with a 500 status code - no detail at all. The actual stacktrace, ending in `NameError: name 'foo' is not defined`, is printed in the **terminal where the server is running**. This is the single most important habit to build with FastAPI: when an endpoint misbehaves, the browser will rarely tell you why - go read the server terminal. When you need to poke around inside a failing request, drop a `breakpoint()` on the line above it and re-send the request; that server terminal will turn into a debugging console.
     * Stop the server and then run your tests. You’ll see lots of text fly by and probably an error that looks like `NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03C88510>: Failed to establish a new connection)`.
 
     This is a really helpful practice. Whenever you “get things working” on a new piece of technology, think about the kinds of mistakes you might make, intentionally do them, and look at how that presents itself in your development environment. That way you are less likely to get thrown off by cryptic error messages later on.
@@ -536,8 +577,10 @@ Your IDE will tell you that imports cannot be resolved. To fix this, right-click
 
 #### Mac users
 
-A (recent) update on OSX uses the default Flask port (5000) for other apps (Airplay?). This prevents Flask from listening on the same port. You can either disable Airplay (probably not the best idea), or change the Flask server port.
+* **Port conflicts.** We’re using port 8000, so the old macOS AirPlay-squats-on-port-5000 problem doesn’t apply here. But if something else on your machine already has 8000, change the `port=8000` argument in `server.py` to some other unused port (say, `port=8001`) and make the corresponding change everywhere you call the REST API from the client side e.g. `actual = get_rest_call(self, 'http://localhost:8000')` becomes `actual = get_rest_call(self, 'http://localhost:8001')`.
+* **localhost.** On some Macs `localhost` doesn’t correctly get mapped to the loopback address (don’t ask me why …). You may need to use `127.0.0.1` instead of `localhost` (or manually modify your `hosts` file, if you are comfortable doing that).
+* **psycopg2.** For the typical `psycopg2` problems, where you have to (and should have previously) install `psycopg2-binary`: make a copy of `requirements.txt` and name it `requirements-mac.txt`, then remove the `psycopg2` line from that new file. On your local Mac, use `requirements-mac.txt`, but keep the original `requirements.txt` since the CI needs that one!
 
-* To change the Flask port, modify the `app.run(debug=True)` line in `server.py` to `app.run(debug=True, port=4999)`, and make the corresponding change when calling the REST Api from the client side e.g.
-* `actual = get_rest_call(self, 'http://localhost:5000')` becomes `actual = get_rest_call(self, 'http://localhost:4999')`. Obviously, the port doesn’t have to be `4999` - it just needs to be some unused port.
-* On some MACs `localhost` doesn’t correctly get mapped to the loopback port (don’t ask me why …). You may need to use `127.0.0.1` instead of localhost (or manually modify your `hosts` file)
+#### Windows users
+
+A recent update on Windows 11 caused `localhost` to not work correctly. If you start seeing issues (slow API response or no API response), then change `localhost` to `127.0.0.1`.

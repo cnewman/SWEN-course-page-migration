@@ -21,8 +21,7 @@ You will find your teams in gitlab, and project assignments are the same as for 
 The technology stack for this project will be:
 
 * Python 3.12
-* [Flask web framework](https://flask.palletsprojects.com/en/stable/)
-* [Flask-RESTful library](https://flask-restful.readthedocs.io/en/latest/)
+* [FastAPI](https://fastapi.tiangolo.com/)
 * [Requests library for HTTP testing](https://realpython.com/python-requests/)
 * PostgreSQL 17 database
 * psycopg2 for PostgreSQL interaction

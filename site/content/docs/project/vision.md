@@ -20,7 +20,7 @@ That said, you'll also learn a lot of web development along the way. There's no 
 
 We're asking you to work with some industrial-strength web application frameworks. We believe that this will give you a very valuable experience as a full-stack developer using tools and technologies that you are likely to experience in a professional environment.
 
-Think of the technical documentation as another one of your textbooks. For example, the Flask-restful guides and the React docs. These sources will have a lot more information than you need, but you're expected to consult them first whenever you need something. Thus, beyond our startup tutorials, we will not hold your hand. We will give you broad overviews and wisdom, but the project itself will involve learning on the fly - which is a skill in and of itself.
+Think of the technical documentation as another one of your textbooks. For example, the FastAPI guides and the React docs. These sources will have a lot more information than you need, but you're expected to consult them first whenever you need something. Thus, beyond our startup tutorials, we will not hold your hand. We will give you broad overviews and wisdom, but the project itself will involve learning on the fly - which is a skill in and of itself.
 
 ## Project Overview
 
