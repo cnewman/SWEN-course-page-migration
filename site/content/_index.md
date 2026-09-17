@@ -130,13 +130,13 @@ draft: true
     * **Client 0**
       * [Nightclub](/docs/project/client-project/nightclub#client-0-startup-your-first-web-page)
       * [Nutrikit](/docs/project/client-project/nutri-kit#client-0-startup-your-first-web-page)
-  * Sprint 1 due Tuesday this week
+  * Sprint 1 and Rest 2 due Tuesday this week
 
 - * Break
   * 10/11
   * {{% cell-color color="#f59e42" %}}NO CLASS between 10/11 and 10/17{{% /cell-color %}}
   * None
-  * {{% cell-color color="#d84747" %}}Rest 2 due Tuesday this week{{% /cell-color %}}
+  * Nothing Due This week
 
 - * 8
   * 10/18
