@@ -68,11 +68,11 @@ The Product Owner desires a minimal viable product (MVP) which includes these fe
 Teams will use the following technologies for development of the app
 
 * [Postgres](https://www.postgresql.org/) for your database
-* [Flask-restful](https://flask-restful.readthedocs.io/en/latest/) for your server/middle layer
+* [FastAPI](https://fastapi.tiangolo.com/) for your server/middle layer
 * [React](https://react.dev/) for your front-end
 
 Since many of the lectures touch upon these technologies,There will be ***no deviations*** from this technology stack. You are welcome to add dependencies to your application with the approval of the Product Owner. This decision is one that the team unanimously must agree upon.
 
 ## Process
 
-The team will use the [OpenUP](https://www.utm.mx/~caff/doc/OpenUPWeb/) methodology for strategic planning activities across the life span of the project. The team will use the [Scrum process](https://www.scrumalliance.org/) for tactical day-to-day operations.
+The team will use the [OpenUP](https://www.utm.mx/~caff/doc/OpenUPWeb/) methodology for strategic planning activities across the life span of the project. The team will use the [Scrum process](https://en.wikipedia.org/wiki/Scrum_(project_management)) for tactical day-to-day operations.

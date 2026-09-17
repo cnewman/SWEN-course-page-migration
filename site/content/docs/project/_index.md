@@ -80,10 +80,6 @@ All of the information you need about the project for Sprint 0 is in the [Vision
     * [Individual team member visibility in Trello board, Discord, and Gitlab activities](#individual-team-member-evaluation)
     * Each team member completes their individual assignments and shows competency in the programming required by the project
 
-### Team Exercises
-
-* [Gitlab repository](/topics/version-control-concepts)
-
 ### Submission Instructions
 
 * Create a Sprint 1 release using the instructions for creating a Gitlab code release provided [here](/docs/project/git-releases).

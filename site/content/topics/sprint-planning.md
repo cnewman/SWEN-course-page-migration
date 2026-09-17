@@ -45,4 +45,4 @@ For your study of this topic, use some of these resources. All four videos are a
 
 ### Class Lecture
 
-* [Sprint Planning](/slides/sprint-planning.pptx)
+* [Sprint Planning](https://docs.google.com/presentation/d/1-cgJUbRbDh-HkRGwX5ZY-a5PxxN3Iemz/)
