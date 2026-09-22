@@ -42,7 +42,7 @@ To implement the functionality, use the above information to name your resources
 
 {{< snippet "/snippets/rest-project/rest1-grading.md" >}}
 
-## REST2: CRUD
+## REST2: CRUD and Authentication
 
 Create a branch `rest2-dev`. Please tag your code as `rest2` on the master branch when it is merged.
 
@@ -50,10 +50,40 @@ This iteration, you will need to implement basic CRUD operations to your data. A
 
 You will create RESTful APIs for the following functions
 
-1. Add a user (with all their information). This would be `POST`. Parameters should be in the BODY (i.e. not part of the URL)
+1. Add a user (with all their information). This would be `POST`. Parameters should be in the BODY
 2. Edit a users information. This would be a `PUT` to do a SQL `UPDATE`. Again, parameters in the BODY
 3. Remove a user. This is a `DELETE`. Consider how to identify the user
-4. List receipts and indicate how many you want (i.e. max returned). This is a `GET`. Your choice on parameters
+4. List receipts for a given user and indicate how many you want (i.e. max returned). This is a `GET`. Your choice on parameters
+5. A user can login (see below). Note that the login functionality is needed for the add, edit, remove and list functions.
+6. A logged in user can add a ride. Consider where to place parameters.
+7. All relevant APIs use a session key for authentication (once logged in)
+
+However, we can’t let just anyone come into the system and make changes, so we need to also provide **authentication**. You’ll implement just the core functionality: logging in and logging out - but with thorough testing of ‘happy path’ and ‘problem’ scenarios. From the client side, this will look like this:
+
+1. Send a `POST` request to your login endpoint with a userID and password.
+    * The userID and password should be parameters in the **BODY** of the `POST` request
+2. System returns a message that your login was successful and gives you a **session key**, which is a large random number that nobody should be able to guess.
+3. When attempting to do a CRUD operation, the operation will only work if your request also has the session key. The session key should be sent in the HEADER of each subsequent API call. Review the CRUD methods above and consider how that sequence of operations would work.
+4. If you send a request to the logout endpoint, then subsequent CRUD operations won’t work. *Note that you must be logged in to trigger a logout, otherwise anyone can log you out!*
+
+You will need a `users` table with a `username`, `userID`, `password`, and `session_key` field in your database. If you have one already, add any fields necessary. If you don’t have such a table, you need to rethink your DB design. Your test data should have a user already registered. However, *we must store our passwords securely*. This means using a one-way encryption function called a **hash digest**. You can read more about hash digests and salts over on the [Common Weakness Enumeration CWE-759](https://cwe.mitre.org/data/definitions/759.html). In pseudocode, the way you would compute the hash digest of a password would be: `hashed_password = hash(password)`
+
+For this project, we’d like you to use the SHA-512 hash digest algorithm. Find a secure way to generate a session key within your technology choice as well, not just the default random number generator for your language.
+
+From the server side, authentication would look like this:
+
+1. Client sends a request with their userID and password to the login endpoint
+2. Server computes the proper hash digest of the password
+3. Server checks if that digest exists in the database table with that username
+4. If so, generate a secure session key. (Otherwise, return a message that login was not successful)
+5. Save the session key to the user’s record in the database
+6. Return a success message with the session key
+
+For Python, these resources will be helpful:
+
+* [Python’s hashlib](https://docs.python.org/3.12/library/hashlib.html) for SHA-512 digest function
+* [Python’s secrets](https://docs.python.org/3.12/library/secrets.html) for generating a session key
+* [Online SHA512 calculator](https://abunchofutils.com/u/computing/sha512-hash-calculator/) for sanity testing
 
 ### Test Cases
 
@@ -61,8 +91,10 @@ In each test case, print out (clearly), the test being run and the result of the
 
 * You can add a new user with a password and any other user information
 * If a user already exists, the add user fails
+* You can login successfully with the right userID and password; hashing is performed as described, and incorrect passwords fail login
 * You can edit a users information; if you try to edit a non-existent user, the API fails
 * You can remove a user; again, if the user doesn’t exist, the API fails
+* If you try to remove a user (who exists), and don’t have the correct authentication session key, the API fails
 * You can list receipts, and specify a maximum number to return. Make sure you have enough receipts in the DB to test this properly
 * You can add a ride. Consider placement of parameters.
 * In all cases of failure, the API must return a reasonable error, and your unit test must display a human readable message for the error.
@@ -73,9 +105,10 @@ In each test case, print out (clearly), the test being run and the result of the
 * Does it make sense to refactor the meaning of your resource to better fit RESTful conventions?
 * What will be the structure of the APIs? How will you pass the arguments?
 
-### Grading REST2 (60 points)
+### Grading REST2 (70 points)
 
 * (20pts) CRUD operations work
+* (10pts) Authentication feature works
 * (30pts) Test cases implemented and pass
 * (05pts) RESTful API standards followed
 * (05pts) Good code maintainability and quality
