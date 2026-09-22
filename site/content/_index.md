@@ -89,7 +89,7 @@ draft: true
 
 - * 5
   * 9/20
-  * * [REST HTTP and FastAPI](slides/HTTP-REST-FastApi.pptx)
+  * * [REST HTTP and FastAPI](https://docs.google.com/presentation/d/1QJqG9M_ZXmW-Q9ksf9U0OzfM5bhfEdPG/)
     * [Unit Testing](/slides/basic-unit-testing-theory.pdf)
     * [Backlog Refinement and Estimation](/slides/Backlog_Refinement_and_Estimation.pptx)
   * * [Backlog Refinement and Estimation Homework](/topics/backlog-refinement-and-estimation#exercises)
@@ -97,6 +97,7 @@ draft: true
       * [RESTful setup instructions](/docs/project/rest-project/restful-setup)
       * [Chat](/docs/project/rest-project/chat#rest1-basic-resources-and-resource-methods)
       * [Rideshare](/docs/project/rest-project/rideshare#rest1-basic-resources-and-resource-methods)
+      * [Library](/docs/project/rest-project/library)
   * DB3 due Tuesday this week
 {{% /flex-table %}}
 
@@ -119,6 +120,7 @@ draft: true
     * **Rest 2**
       * [Chat](/docs/project/rest-project/chat#rest2-crud-and-authentication)
       * [Rideshare](/docs/project/rest-project/rideshare#rest2-crud)
+      * [Library](/docs/project/rest-project/library)
   * Rest 1 due Tuesday this week
 
 - * 7
