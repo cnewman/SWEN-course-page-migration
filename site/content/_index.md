@@ -89,11 +89,10 @@ draft: true
 
 - * 5
   * 9/20
-  * * [REST HTTP and FastAPI](https://docs.google.com/presentation/d/1QJqG9M_ZXmW-Q9ksf9U0OzfM5bhfEdPG/)
-    * [Unit Testing](/slides/basic-unit-testing-theory.pdf)
-    * [Backlog Refinement and Estimation](/slides/Backlog_Refinement_and_Estimation.pptx)
-  * * [Backlog Refinement and Estimation Homework](/topics/backlog-refinement-and-estimation#exercises)
-    * **Rest 1**
+  * * [REST HTTP and FastAPI](https://docs.google.com/presentation/d/1QJqG9M_ZXmW-Q9ksf9U0OzfM5bhfEdPG)
+    * [Unit Testing](https://docs.google.com/presentation/d/1aUzA6ZsD7m70iIGADr3RjmKNMBUwSXgaHTydlOXV094)
+    * [Backlog Refinement and Estimation](https://docs.google.com/presentation/d/1gieYYWs89aOMJlr6HJloOu3XVeEBP8w_)
+  * * **Rest 1**
       * [RESTful setup instructions](/docs/project/rest-project/restful-setup)
       * [Chat](/docs/project/rest-project/chat#rest1-basic-resources-and-resource-methods)
       * [Rideshare](/docs/project/rest-project/rideshare#rest1-basic-resources-and-resource-methods)

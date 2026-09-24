@@ -50,62 +50,9 @@ For your study of this topic, use these resources
 * [Planning poker](https://en.wikipedia.org/wiki/Planning_poker)
 * [Wideband delphi](https://en.wikipedia.org/wiki/Wideband_delphi)
 
-### Class Lecture
-
-* [Backlog Refinement and Estimation](/slides/backlog-refinement-and-estimation.pptx)
-
-### Example Acceptance Criteria and Solution Tasks
-
-#### User Story
-
-As a User, I want to add a new task with a title, description, and due date so that I can keep track of my responsibilities.
-
-#### Acceptance Criteria
-
-1. The user can access a "Create New Task" form from their dashboard.
-2. The form includes fields for title, description, and due date.
-3. The title field is required and limited to 100 characters.
-4. The description field is optional and limited to 500 characters.
-5. The due date field is required and must be a valid future date.
-6. The user receives an error message if they try to submit the form with invalid data.
-7. Upon successful submission, the new task appears in the user's task list.
-8. The user receives a confirmation message after successfully adding a task.
-
-#### Solution Tasks:
-
-1. Database:
-    * Design and create a 'tasks' table in the PostgreSQL database with appropriate fields (id, user_id, title, description, due_date, created_at, updated_at).
-    * Create necessary indexes for efficient querying.
-2. Backend (Flask):
-    * Implement a new API endpoint for task creation (e.g., POST /api/tasks).
-    * Create a database model for tasks.
-    * Implement input validation for the task creation form data.
-    * Write logic to insert the new task into the database.
-    * Implement error handling for invalid inputs.
-    * Write unit tests for the task creation functionality.
-3. Frontend (React):
-    * Design and implement a "Create New Task" form component.
-    * Add form validation on the client-side (e.g., required fields, character limits).
-    * Implement a date picker for the due date field.
-    * Create a function to send the form data to the backend API.
-    * Implement error message display for invalid inputs.
-    * Add a success message component for task creation confirmation.
-    * Update the task list component to include the newly created task.
-    * Write unit tests for the new React components.
-4. Integration and Testing:
-    * Integrate the frontend form with the backend API.
-    * Perform end-to-end testing of the task creation process.
-    * Test edge cases (e.g., submitting empty forms, invalid dates).
-    * Ensure proper error handling and display of error messages.
-5. Documentation:
-    * Update API documentation to include the new task creation endpoint.
-    * Add user guide information about creating new tasks.
-
-### Exercises
-
 #### Homework Exercises
 
-* Sprint 2/3 plan - team
+* Sprint 1 plan - team
     * For each potential Sprint 2/3 user story:
         1. Refine the story by defining acceptance criteria and solution tasks at an appropriate level of detail.
         2. As you create acceptance criteria, update your acceptance test plan.
