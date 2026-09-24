@@ -16,8 +16,6 @@ These first few instructions will be exactly the same as the DB project, but the
 
 {{% hint warning %}}
 
-**NOTE:** There will be new groups and new partners for the REST project.
-
 {{% /hint %}}
 
 {{% steps %}}
