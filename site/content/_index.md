@@ -112,7 +112,7 @@ draft: true
 - * 6
   * 9/27
   * * [Introduction to Construction](/topics/openup-process-phases)
-    * [Client-Server](/slides/RESTful-APIs.pptx)
+    * [Client-Server](https://docs.google.com/presentation/d/11Q19OfKEUP3l4VHd7Jc-FoEvPzTgJxyf)
     * [Authentication](https://docs.google.com/presentation/d/1FBpm-hgr6hPQMMVKtmAKaMHTvZiBP2Qr)
     * [Usability & Security](https://docs.google.com/presentation/d/1i8Nroxpzx1AEVWTYu-oSYzJb-5x5rHVdivXk4NPk_rY)
   * * [Complete Sprint 1](/docs/project#elaboration-phase--sprint-1)
