@@ -34,6 +34,8 @@ Sprints 2 and 3 are the **Construction Phase** of the project when the full func
 
 For this project, the project teams will not be working together long enough to develop that history. Velocity is typically calculated as a running average of the number of story points completed in the last three sprints. You will make your best estimate of each story and how many story points you can commit to for Sprint 2. You will then use your team's actual performance as a data point when creating your Sprint 3 backlog.
 
+As a team, for both Sprint 2 and Sprint 3, review the [Grading Rubric](/docs/project/)
+
 {{% hint danger %}}
 
 The last functional deliverable for your product is your Sprint 3 submission.

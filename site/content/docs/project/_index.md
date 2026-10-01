@@ -104,10 +104,10 @@ All of the information you need about the project for Sprint 0 is in the [Vision
 
 * Project submissions
     * [Sprint 2 release](/docs/project/git-releases)
-    * Design documentation - Updated Domain Model, a Readme.md that describes how to install and run your project, any other design artifacts you have created (like ER Diagram)
+    * Design documentation - Updated Domain Model, a Readme.md that describes how to install and run your project, and at least one other diagram: For example, a [Sequence Diagram](https://en.wikipedia.org/wiki/Sequence_diagram), a [State Diagram](https://en.wikipedia.org/wiki/UML_state_machine), or an [ER-Diagram](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model).
     * Application implementation
         * Basic Functionality -- Code needs to work on Gitlab, code should be tested, you should be using Continuous Integration
-        * You are keeping track of code coverage. Submit this by zipping the output (make sure it shows everything) from the Coverage tool and adding it to the documentation directory in your project repository.
+        * You are keeping track of [Code Coverage](https://coverage.readthedocs.io/en/7.16.2/). Submit this by zipping the output (make sure it shows everything) from the Coverage tool and adding it to the documentation directory in your project repository.
         * Your server implementation (rest routes) should be mostly complete by this point, and your focus should be leaning toward the web interface
 * Other dimensions
     * Planning activities in Trello board
