@@ -131,6 +131,7 @@ draft: true
     * **Client 0**
       * [Nightclub](/docs/project/client-project/nightclub#client-0-startup-your-first-web-page)
       * [Nutrikit](/docs/project/client-project/nutri-kit#client-0-startup-your-first-web-page)
+      * [Course Planner](/docs/project/client-project/course-planner#client-0-startup-your-first-web-page)
   * Sprint 1 and Rest 2 due Tuesday this week
 
 - * Break
