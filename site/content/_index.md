@@ -124,9 +124,9 @@ draft: true
 
 - * 7
   * 10/4
-  * * [Effective Team Communications](/topics/effective-team-communications)
-    * [Code Coverage](/topics/code-coverage)
-    * [Web Frontends 1](/slides/01-Intro-to-Web-Front-Ends-part0.pptx)
+  * * [Effective Team Communications](https://docs.google.com/presentation/d/1VSR9faIUkxwTN-TVb5FrOlcEqZqx2N47)
+    * [Code Coverage](https://docs.google.com/presentation/d/1s0m3KWfyuFkfglzHVXYrSg1bu-NpUCE5)
+    * [Web Frontends 1](https://docs.google.com/presentation/d/1_6XJkdRT8UV2-rw1NQJtaYtSb-anPs4F)
   * * [Sprint 2 plan - team](/docs/project/sprint-planning#sprint-2-and-3-planning)
     * **Client 0**
       * [Nightclub](/docs/project/client-project/nightclub#client-0-startup-your-first-web-page)
