@@ -1,4 +1,4 @@
-* Since the DB is on the server, it must be initialized when the Flask server starts. Notice that the `server.py` file loads the DB directly (`exec_sql_file(...)`).
+* Since the DB is on the server, it must be initialized when the FastAPI server starts. Notice that the `lifespan` function in `server.py` loads the DB directly (`exec_sql_file(...)`) before the server starts accepting requests.
 * There is a sample React file (`mycomponent.js`) provided that shows how to use the Javascript `fetch` method. Review this and adapt for your code.
     * The sample file also shows how you can use the React built-in event `componentDidMount` to trigger your code to kick off the `fetch` and get the initial DB data using a RESTful API.
 * There is a `test` folder in the sample code. This is just to show you that you can still run python client side code to confirm your API functionality. You are not required to create any client-side python code for this project.

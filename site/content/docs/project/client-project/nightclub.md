@@ -217,27 +217,27 @@ Points: 60 points total
 
 ## Client-4: Full Stack
 
-{{< snippet"/snippets/client-project/client4-overview.md" >}}
+{{< snippet "/snippets/client-project/client4-overview.md" >}}
 
 ### Setup
 
-{{< snippet"/snippets/client-project/client4-setup.md" >}}
+{{< snippet "/snippets/client-project/client4-setup.md" >}}
 
 ### Items to Note
 
-{{< snippet"/snippets/client-project/client4-note.md" >}}
+{{< snippet "/snippets/client-project/client4-note.md" >}}
 
-### Running the Flask server
+### Running the FastAPI server
 
-{{< snippet"/snippets/client-project/client4-flask-server.md" >}}
+{{< snippet "/snippets/client-project/client4-fastapi-server.md" >}}
 
 ### Running your React Client code
 
-{{< snippet"/snippets/client-project/client4-react-client.md" >}}
+{{< snippet "/snippets/client-project/client4-react-client.md" >}}
 
 ### CI/ gitlab pages
 
-{{< snippet"/snippets/client-project/client4-gitlab.md" >}}
+{{< snippet "/snippets/client-project/client4-gitlab.md" >}}
 
 ### Nightclub Specifics
 
@@ -255,7 +255,7 @@ Points: 60 points total
 
 * (5 points) Builds on the CI by Lab Day
 * (5 points) Quality feedback given
-* (10 points) Flask server and DB properly setup and initialized
+* (10 points) FastAPI server and DB properly setup and initialized
 * (10 points) API to load initial data on client (GET)
 * (20 points) API to add/ modify data (POST/ PUT)
 * (10 points) API to delete data (DELETE)
