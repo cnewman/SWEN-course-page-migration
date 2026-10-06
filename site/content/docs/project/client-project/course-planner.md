@@ -67,9 +67,7 @@ Web Page and Actions:
 
 ### Sample Output
 
-UI Specifications are often page mockups. Your page should be similar to this…
-
-<!-- TODO: add sample screenshots (course-0.0.JPG, course-0.1.JPG, course-0.2.JPG) -->
+None! This is a new project. Do your best to come up with a reasonable UI-- maybe yours will be featured here in the future (with your permission, of course).
 
 ## Client 1
 

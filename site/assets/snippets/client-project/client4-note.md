@@ -1,4 +1,4 @@
-* Since the DB is on the server, it must be initialized when the FastAPI server starts. Notice that the `lifespan` function in `server.py` loads the DB directly (`exec_sql_file(...)`) before the server starts accepting requests.
-* There is a sample React file (`mycomponent.js`) provided that shows how to use the Javascript `fetch` method. Review this and adapt for your code.
-    * The sample file also shows how you can use the React built-in event `componentDidMount` to trigger your code to kick off the `fetch` and get the initial DB data using a RESTful API.
-* There is a `test` folder in the sample code. This is just to show you that you can still run python client side code to confirm your API functionality. You are not required to create any client-side python code for this project.
+* Since the DB is on the server, it must be initialized when the FastAPI server starts. Use a `lifespan` function in `server.py` to load your schema and data (`exec_sql_file(...)`) before the server starts accepting requests, just like you did in REST.
+* Use the Javascript [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) method to call your RESTful APIs from React.
+    * To get the initial DB data when your page loads, kick off the `fetch` from a [`useEffect`](https://react.dev/reference/react/useEffect) hook (or `componentDidMount`, if you are using class components).
+* You can still write python tests with the `requests` library to confirm your API functionality, as you did in REST. You are not required to create any client-side python code for this project.

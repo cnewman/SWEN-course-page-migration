@@ -147,6 +147,7 @@ draft: true
     * **Client 1**
       * [Nightclub](/docs/project/client-project/nightclub#client-1)
       * [Nutrikit](/docs/project/client-project/nutri-kit#client-1)
+      * [Course Planner](/docs/project/client-project/course-planner#client-1)
   * Client 0 due Tuesday this week
 
 - * 9
@@ -156,6 +157,7 @@ draft: true
   * * **Client 2**
       * [Nightclub](/docs/project/client-project/nightclub#client-2-port-to-react)
       * [Nutrikit](/docs/project/client-project/nutri-kit#client-2-port-to-react)
+      * [Course Planner](/docs/project/client-project/course-planner#client-2-port-to-react)
   * Client 1 due Tuesday this week (small extension if required)
 
 - * 10
@@ -167,6 +169,7 @@ draft: true
     * **Client 3**
       * [Nightclub](/docs/project/client-project/nightclub#client-3-responsive-design-new-features)
       * [Nutrikit](/docs/project/client-project/nutri-kit#client-3-responsive-design-new-features)
+      * [Course Planner](/docs/project/client-project/nutri-kit#client-3-responsive-design-new-features)
   * Client 2, Sprint 2 due Tuesday this week
 
 - * 11
@@ -177,6 +180,7 @@ draft: true
   * **Client 4**
     * [Nightclub](/docs/project/client-project/nightclub#client-4-full-stack)
     * [Nutrikit](/docs/project/client-project/nutri-kit#client-4-full-stack)
+    * [Course Planner](/docs/project/client-project/nutri-kit#client-4-full-stack)
   * Client 3 due this week
 
 - * 12
