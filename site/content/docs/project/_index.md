@@ -64,16 +64,16 @@ All of the information you need about the project for Sprint 0 is in the [Vision
 ### Project Activities
 
 * Project submissions
-    * [Sprint 1 release](/docs/project/git-releases)
-    * Create your Product Backlog by populating your Trello planning board with a consolidated set of User and Spike Stories, and Epics following the [Product backlog instructions](/assignments/trello-initiation).
-    * Add more stories based on the vision document [Vision document](/docs/project/vision). You should create at least 1 more story per MVP feature (e.g., user management, task management, etc)
-    * Format the stories correctly, adding accpetance criteria, acceptance tests, and solution tasks
-    * Create an initial Definition of Done
-    * Add PEP8 to your CI via [Ruff](https://github.com/astral-sh/ruff)
-    * Application implementation
+    * 2 pts - [Sprint 1 release](/docs/project/git-releases)
+    * 3 pts - Create your Product Backlog by populating your Trello planning board with a consolidated set of User and Spike Stories, and Epics following the [Product backlog instructions](/assignments/trello-initiation).
+    * 3 pts - Add more stories based on the vision document [Vision document](/docs/project/vision). You should create at least 1 more story per MVP feature (e.g., user management, task management, etc)
+    * 3 pts - Format the stories correctly, adding accpetance criteria, acceptance tests, and solution tasks
+    * 2 pts - Create an initial Definition of Done
+    * 2 pts - Add PEP8 to your CI via [Ruff](https://github.com/astral-sh/ruff)
+    * 2 pts - Application implementation
         * Basic Functionality - some basic REST routes and a basic DB schema (for example, create a basic schema for tasks and a route to create/read the tasks in the db)
         * Adherence to Model View View-Model (MVVM) Architecture (just follow course instructions)
-* Other dimensions
+* Other dimensions (3 pts)
     * [Planning and managing of activities in Trello board](/docs/project/sprint-planning#sprint_1_planning) **throughout** and in support of **Sprint 1**
     * Gitlab use for version control
     * Discord workspace use for team communication

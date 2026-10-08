@@ -124,7 +124,7 @@ draft: true
 
 - * 7
   * 10/4
-  * * [Effective Team Communications](https://docs.google.com/presentation/d/1VSR9faIUkxwTN-TVb5FrOlcEqZqx2N47)
+  * * [Software Modeling and Team Communications](https://docs.google.com/presentation/d/1UoIgcmObgTPutdydB2U3Gn6HDAOXcoqn)
     * [Code Coverage](https://docs.google.com/presentation/d/1s0m3KWfyuFkfglzHVXYrSg1bu-NpUCE5)
     * [Web Frontends 1](https://docs.google.com/presentation/d/1_6XJkdRT8UV2-rw1NQJtaYtSb-anPs4F)
   * * [Sprint 2 plan - team](/docs/project/sprint-planning#sprint-2-and-3-planning)
@@ -171,7 +171,7 @@ draft: true
       * [Nightclub](/docs/project/client-project/nightclub#client-3-responsive-design-new-features)
       * [Nutrikit](/docs/project/client-project/nutri-kit#client-3-responsive-design-new-features)
       * [Course Planner](/docs/project/client-project/nutri-kit#client-3-responsive-design-new-features)
-  * Client 2, Sprint 2 due Tuesday this week
+  * Client 2, Sprint 2 due Tuesday this week; [midterm](/documents/swen610-midterm-study-guide.pdf) on Thursday
 
 - * 11
   * 11/8

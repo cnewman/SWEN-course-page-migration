@@ -62,8 +62,8 @@ Your final course grade is a combination of your grades on the following course 
 |---|---|
 |Individual Assignment|40%|
 |Term Project|30%|
-|Following proper software practices|30%|
-
+|Midterm Exam|15%|
+|Final Presentation|15%|
 {{% hint warning %}}
 **Note:** Your instructor may make individual adjustments to the term project grade in either direction based on the assessment of your contribution to the project through his or her own observations and the assessment of your teammates through peer evaluations.
 {{% /hint %}}
