@@ -142,7 +142,7 @@ draft: true
 
 - * 8
   * 10/18
-  * * [Web Frontends 2 - css boogaloo](/slides/02-Intro-to-Web-Front-Ends-part1.pptx)
+  * * [Web Frontends 2 - css boogaloo](https://docs.google.com/presentation/d/1peo53PRwc4huPjas-OmqS5FVAYZtbvtd)
     * [Javascript](https://docs.google.com/presentation/d/1NuU5X-grd-hxddeNHtX6-lU5RF7j3Hob)
   * * [Design Documentation - team](/topics/design-documentation#exercises)
     * **Client 1**
@@ -154,7 +154,6 @@ draft: true
 - * 9
   * 10/25
   * * [ReactJS](https://docs.google.com/presentation/d/1w24iPC6ZduIeGchZoUtl7AHTSS1Kao5b)
-    * [Javascript - moved back a week](https://docs.google.com/presentation/d/1NuU5X-grd-hxddeNHtX6-lU5RF7j3Hob)
   * * **Client 2**
       * [Nightclub](/docs/project/client-project/nightclub#client-2-port-to-react)
       * [Nutrikit](/docs/project/client-project/nutri-kit#client-2-port-to-react)
