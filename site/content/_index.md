@@ -174,8 +174,8 @@ draft: true
 
 - * 11
   * 11/8
-  * * [Software Metrics and Measurement](/slides/Code-Metrics.pptx)
-    * [Defensive Coding](https://docs.google.com/presentation/d/1U9AllDBa26GKRb_wVbkMZ-c_OA09m1_SNVoznbLmAl4/edit#slide=id.p1)
+  * * [Software Metrics and Measurement](https://docs.google.com/presentation/d/1QpSXiuhvH6uD8TmEZp0lJUCnuw36My6I)
+    * [Agents in SE](https://docs.google.com/presentation/d/1mW2kZtViTxTLdisoEV0VmeiKPNdvlgPWFoh9p4jZJs8)
     * [Security in Web Applications](https://docs.google.com/presentation/d/1fqLSiBuwpb8hfiRKtwGit0DSmjOvu7kyNgxlN_x7Oig)
   * **Client 4**
     * [Nightclub](/docs/project/client-project/nightclub#client-4-full-stack)
